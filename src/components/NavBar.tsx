@@ -9,13 +9,13 @@ export default function NavBar(){
 
   return(
     <nav className = "flex justify-between p-5 bg-white	 items-center items-baseline">
-      <Link to = "/" className="text-4xl  text-black font-bold inline-block align-middle">
+      <Link to = "/" className="  text-black font-bold inline-block align-middle">
       <div className = "flex items-center flex-shrink-0 ">
         <img src = {shellFull}  alt = "shellClipart" className="  mr-2 mt h-8"/>
-        <Link to = "/" className=" text-3xl  text-black font-bold  whitespace-nowrap">Vivek Jagadeesh</Link>
+        <div className=" text-2xl  text-black font-bold  whitespace-nowrap font-mono">Vivek Jagadeesh</div>
       </div>
       </Link>
-      <ul className = " text-lg font-medium items-baseline text-black hidden md:flex gap-6 mb">
+      <ul className = " text-lg font-medium items-baseline text-black hidden md:flex gap-6 mb font-mono">
         <Link to = "/" ><li>Home</li></Link>
         <Link to = "/about" ><li>About</li></Link>
         <Link to = "/certifications" ><li>Certifications</li></Link>
@@ -24,7 +24,7 @@ export default function NavBar(){
         {mobileOpen? <IoMdClose size = {25} className="cursor-pointer text-black"/> : <RxHamburgerMenu size = {25} />}
       </div>
       <ul className={`${
-        mobileOpen? 'text-black opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-y-full'} transition-transform absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center text-2xl
+        mobileOpen? 'text-black opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-y-full'} transition-transform absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center font-mono text-2xl
       }`}>
         <Link to = "/" onClick={handleClickX}><li>Home</li></Link>
         <Link to = "/about" onClick={handleClickX}><li>About</li></Link>
