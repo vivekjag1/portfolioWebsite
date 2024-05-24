@@ -1,4 +1,4 @@
-import betterVivekPhoto from "../assets/betterVivekPhoto.jpg"
+// import betterVivekPhoto from "../assets/betterVivekPhoto.jpg"
 function Home(){
   return(
     // <div className="flex flex-row h-screen w-screen justify-center items-center mb-4">
