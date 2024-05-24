@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {RxHamburgerMenu} from "react-icons/rx"
 import { IoMdClose } from "react-icons/io";
 import {useState} from "react";
-import shellFull from "../assets/shellFull.svg"
+import shellFull from "../../src/assets/shellFull.svg"
 export default function NavBar(){
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const handleClickX = () => setMobileOpen(!mobileOpen);
