@@ -8,15 +8,15 @@ export default function NavBar(){
   const handleClickX = () => setMobileOpen(!mobileOpen);
 
   return(
-    <nav className = "flex justify-between p-5 bg-white	 items-center ">
+    <nav className = "flex justify-between p-5 bg-white	 items-center items-baseline">
       <div className = "flex items-center">
         <img src = {shellFull} alt = "shellClipart" className="mr-2 mt-1 h-8"/>
-        <Link to = "/" className="text-4xl text-black font-bold inline-block align-middle">Vivek Jagadeesh</Link>
+        <Link to = "/" className="text-4xl  text-black font-bold inline-block align-middle">Vivek Jagadeesh</Link>
       </div>
-      <ul className = " text-black hidden md:flex gap-6">
-        <Link to = "/"><li>Home</li></Link>
-        <Link to = "/about"><li>About</li></Link>
-        <Link to = "/certifications"><li>Certifications</li></Link>
+      <ul className = " text-lg font-medium items-baseline text-black hidden md:flex gap-6 mb">
+        <Link to = "/" ><li>Home</li></Link>
+        <Link to = "/about" ><li>About</li></Link>
+        <Link to = "/certifications" ><li>Certifications</li></Link>
       </ul>
       <div className="md:hidden z-10" onClick = {handleClickX}>
         {mobileOpen? <IoMdClose size = {25} className="cursor-pointer text-black"/> : <RxHamburgerMenu size = {25}/>}
