@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {RxHamburgerMenu} from "react-icons/rx"
 import { IoMdClose } from "react-icons/io";
 import {useState} from "react";
-// import shellFull from "../../src/assets/shellFull.svg"
+import shellFull from "../../src/assets/shellFull.svg"
 export default function NavBar(){
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const handleClickX = () => setMobileOpen(!mobileOpen);
@@ -11,7 +11,7 @@ export default function NavBar(){
     <nav className = "flex justify-between p-5 bg-white	 items-center items-baseline">
       <Link to = "/" className="text-4xl  text-black font-bold inline-block align-middle">
       <div className = "flex items-center">
-        {/*<img src = {shellFull}  alt = "shellClipart" className="mr-2 mt-1 h-8"/>*/}
+        <img src = {shellFull}  alt = "shellClipart" className="mr-2 mt-1 h-8"/>
         <Link to = "/" className="text-4xl  text-black font-bold inline-block align-middle">Vivek Jagadeesh</Link>
       </div>
       </Link>
