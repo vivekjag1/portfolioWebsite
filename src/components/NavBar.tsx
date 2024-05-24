@@ -9,10 +9,12 @@ export default function NavBar(){
 
   return(
     <nav className = "flex justify-between p-5 bg-white	 items-center items-baseline">
+      <Link to = "/" className="text-4xl  text-black font-bold inline-block align-middle">
       <div className = "flex items-center">
-        <img src = {shellFull} alt = "shellClipart" className="mr-2 mt-1 h-8"/>
+        <img src = {shellFull}  alt = "shellClipart" className="mr-2 mt-1 h-8"/>
         <Link to = "/" className="text-4xl  text-black font-bold inline-block align-middle">Vivek Jagadeesh</Link>
       </div>
+      </Link>
       <ul className = " text-lg font-medium items-baseline text-black hidden md:flex gap-6 mb">
         <Link to = "/" ><li>Home</li></Link>
         <Link to = "/about" ><li>About</li></Link>
