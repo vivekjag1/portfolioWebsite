@@ -1,10 +1,10 @@
 
-import './App.css'
+import '../src/App.css'
 import { Route,  Routes} from "react-router-dom";
 import Home from "./routes/Home.tsx";
 import About from "./routes/About.tsx";
 import Certifications from "./routes/Certifications.tsx";
-import NavBar from "./components/NavBar.tsx";
+import NavBar from "../src/components/NavBar.tsx";
 
 
 function App(){
