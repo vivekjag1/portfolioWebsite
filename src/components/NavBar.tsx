@@ -21,7 +21,7 @@ export default function NavBar(){
         <Link to = "/certifications" ><li>Certifications</li></Link>
       </ul>
       <div className="md:hidden z-10" onClick = {handleClickX}>
-        {mobileOpen? <IoMdClose size = {25} className="cursor-pointer text-black"/> : <RxHamburgerMenu size = {25} />}
+        {mobileOpen? <IoMdClose size = {25} className="cursor-pointer text-black"/> : <RxHamburgerMenu size = {25} className = "mb-1" />}
       </div>
       <ul className={`${
         mobileOpen? 'text-black opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-y-full'} transition-transform absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center font-mono text-2xl
