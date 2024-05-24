@@ -19,6 +19,8 @@ export default function NavBar(){
         <Link to = "/" ><li>Home</li></Link>
         <Link to = "/about" ><li>About</li></Link>
         <Link to = "/certifications" ><li>Certifications</li></Link>
+        <Link to = "/projects" ><li>Projects</li></Link>
+
       </ul>
       <div className="md:hidden z-10" onClick = {handleClickX}>
         {mobileOpen? <IoMdClose size = {25} className="cursor-pointer text-black"/> : <RxHamburgerMenu size = {30} className = "h-5 mb-1.5" />}
@@ -29,6 +31,8 @@ export default function NavBar(){
         <Link to = "/" onClick={handleClickX}><li>Home</li></Link>
         <Link to = "/about" onClick={handleClickX}><li>About</li></Link>
         <Link to = "/certifications" onClick={handleClickX}><li>Certifications</li></Link>
+        <Link to = "/projects" onClick={handleClickX}><li>Projects</li></Link>
+
       </ul>
 
     </nav>
