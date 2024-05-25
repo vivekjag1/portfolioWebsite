@@ -9,7 +9,7 @@ function Home(){
               Hello,World!
             </h1>
             <br></br>
-            <h1 className = "text-black font-semibold text-2xl font-arial text-justify ml-10">
+            <h1 className = "text-black font-semibold text-2xl font-arial  ml-10">
               My name is Vivek Jagadeesh and I am a junior at Worcester Polytechnic Institute (WPI) studying Computer Science and minoring in Electrical and Computer Engineering.  My interests include Software Engineering, Systems Programming, and Cloud Computing. Visit the about page to learn more about me and my interests.
             </h1>
           </div>
