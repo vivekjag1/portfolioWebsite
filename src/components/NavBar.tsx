@@ -16,8 +16,6 @@ export default function NavBar(){
             <div className=" text-2xl  text-black font-bold  whitespace-nowrap font-mono">Vivek Jagadeesh</div>
           </div>
         </Link>
-
-
         <ul className = " absolute right-5 inline-flex items-center absoliute h-1 text-lg font-bold  text-black  md:flex gap-6  font-mono ">
           <Link to = "/" ><li>Home</li></Link>
           <Link to = "/about" ><li>About</li></Link>
