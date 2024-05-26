@@ -1,6 +1,6 @@
 
 import '../src/App.css'
-import {Route, Routes, useLocation} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Home from "./routes/Home.tsx";
 import About from "./routes/About.tsx";
 import Certifications from "./routes/Certifications.tsx";
@@ -10,8 +10,6 @@ import Footer from "./components/Footer.tsx";
 
 
 function App(){
-  const location = useLocation();
-  const goingHome = location.pathname === '/';
   return(
     <div className = "flex flex-col min-h-screen ">
       <NavBar/>
@@ -23,8 +21,7 @@ function App(){
         <Route path = "/projects" element = {<Projects/>}/>
       </Routes>
       </div>
-      {goingHome && <Footer fixed={true}/> }
-      {!goingHome && <Footer fixed={false}/> }
+      <Footer/>
     </div>
   )
 }

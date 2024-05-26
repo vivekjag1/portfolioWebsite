@@ -20,7 +20,7 @@ function Home(){
         </div>
       </section>
       <section className="flex md:hidden">
-        <div className = "flex flex-col sm:flex-row w-full">
+        <div className = "flex flex-col sm:flex-row w-screen">
           <div className="w-full h-auto grid grid-row-2 py-10 sm:py-0">
             <div className="flex flex-col items-center justify-center w-full">
               <div className="flex flex-col items-center justify-center w-full">
