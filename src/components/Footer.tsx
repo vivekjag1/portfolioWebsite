@@ -1,10 +1,10 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-export default function Footer(props:{fixed:boolean}){
+export default function Footer(){
 
   return(
-    <footer className={`bg-white text-black ${props.fixed ? 'fixed bottom-0 left-0 w-full' : ''}`}>
+    <footer className='bottom-0 left-0 w-full bg-white text-black'>
       <div className = "text-center bg-white  ">
         <p className="w-full text-center font-mono text-black">Made by Vivek Jagadeesh</p>
         <div className = " flex flex-row justify-center mt-2">

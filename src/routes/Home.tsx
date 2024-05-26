@@ -5,7 +5,7 @@ function Home(){
   return(
     <>
       <section className = "hidden md:flex ">
-        <div className="w-screen h-screen grid grid-cols-2 overflow-hidden ">
+        <div className="w-screen mt-20 grid grid-cols-2 overflow-hidden ">
           <div className = "flex flex-col  items-center justify-center  h-full col-span-1 ">
             <TypeAnimation className="text-black font-mono font-bold md:text-6xl lg:text-6xl cursor-hidden" sequence={["Hello, World!"]}
             />
