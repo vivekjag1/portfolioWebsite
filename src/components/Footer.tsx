@@ -4,7 +4,7 @@ import EmailIcon from '@mui/icons-material/Email';
 export default function Footer(){
   return(
     <footer className = " bottom-0 left-0 w-full bg-white text-white">
-      <div className = "text-center bg-white py-7 ">
+      <div className = "text-center bg-white  ">
         <p className="w-full text-center font-mono text-black">Made by Vivek Jagadeesh</p>
         <div className = " flex flex-row justify-center mt-2">
           <div className="hover:animate-bounce">
