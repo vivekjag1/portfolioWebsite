@@ -6,18 +6,22 @@ import About from "./routes/About.tsx";
 import Certifications from "./routes/Certifications.tsx";
 import NavBar from "../src/components/NavBar.tsx";
 import Projects from "./routes/Projects.tsx";
+import Footer from "./components/Footer.tsx";
 
 
 function App(){
   return(
-    <div className = "App bg-white w-full h-screen">
+    <div className = " flex flex-col min-h-screen ">
       <NavBar/>
+      <div className = "flex-grow">
       <Routes>
         <Route path = '/' element = {<Home/>}/>
         <Route path = '/about' element = {<About/>}/>
         <Route path = '/certifications' element = {<Certifications/>}/>
         <Route path = "/projects" element = {<Projects/>}/>
       </Routes>
+      </div>
+      <Footer/>
     </div>
   )
 }
