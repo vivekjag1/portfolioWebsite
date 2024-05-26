@@ -6,4 +6,5 @@ Technology stack used
 - React + TypeScript 
 - Vite
 - AWS EC2 
-- Cloudflare DNS/SSL
+- Cloudflare DNS/SSL 
+ 
