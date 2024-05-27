@@ -64,7 +64,6 @@ function About(){
         </h1>
 
       </div>
-      <div className = "mt-10 flex justify-center items-center ">
 
         <VerticalTimeline className = "">
           {
@@ -91,7 +90,6 @@ function About(){
         </VerticalTimeline>
       </div>
 
-    </div>
 
 
 

@@ -8,7 +8,7 @@ export default function NavBar(){
   const handleClickX = () => setMobileOpen(!mobileOpen);
 
   return(
-    <nav className = " fixed top-0 w-full flex justify-between p-5 bg-white	 items-center items-baseline">
+    <nav className = " fixed top-0 w-full flex justify-between p-5 bg-white	 items-center items-baseline z-50">
       <div className=" hidden md:flex flex-row items-center mb-3 mt-3 ">
       <Link to = "/" className=" absolute left-5 text-black font-bold inline-block align-middle">
           <div className = "flex items-center ">
