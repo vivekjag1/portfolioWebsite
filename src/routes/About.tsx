@@ -2,6 +2,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import secondVivekHeadshot from "../assets/secondVivekHeadshot.png";
 
 function About(){
 
@@ -44,54 +45,85 @@ function About(){
   return(
     <div className="flex flex-col  mt-20 justify-center items-center mb-4">
       <h1 className="font-bold text-5xl  font-mono">About me</h1>
-      <section>
+      <section className="hidden md:flex">
         <div className=" mt-20 grid grid-cols-2 overflow-hidden">
           <div className="flex flex-col  items-center justify-center  h-full col-span-1 ">
             <p className="font-semibold  text-lg ml-10">
-              I'm currently pursuing a bachelor's of science in Computer Science at Worcester Polytechnic Institute, with a concentration in systems development and a minor
-              in Electrical and Computer Engineering (ECE). In addition to being a student, I serve as a teaching assistant in the Computer Science department at WPI. In this role, I assist both professors and students in
-              navigating teaching and learning in a seven-week term. My primary responsibilities include holding student office hours, providing feedback on student programming assignments, and guiding students through the CS curriculum at WPI.
+              I'm currently pursuing a bachelor's of science in Computer Science at Worcester Polytechnic Institute,
+              with a concentration in systems development and a minor
+              in Electrical and Computer Engineering (ECE). In addition to being a student, I serve as a teaching
+              assistant in the Computer Science department at WPI. In this role, I assist both professors and students
+              in
+              navigating teaching and learning in a seven-week term. My primary responsibilities include holding student
+              office hours, providing feedback on student programming assignments, and guiding students through the CS
+              curriculum at WPI.
             </p>
           </div>
           <div className="items-center justify-center flex col-span-1">
-            Another vivek photo here? Wpi Logo? idk yet
+            <img src={secondVivekHeadshot} alt="vivek jagadeesh " className=""/>
+
           </div>
         </div>
       </section>
-      <div className = "mt-10 flex flex-row justify-center ">
-        <h1 className = "font-bold text-5xl  font-mono ">
+      <section className="flex md:hidden">
+        <div className="flex flex-col sm:flex-row w-screen">
+          <div className="w-full h-auto grid grid-row-2 py-10 sm:py-0">
+            <div className="flex flex-col items-center justify-center w-full">
+              <div className="flex flex-col items-center justify-center w-full">
+                <img src={secondVivekHeadshot} alt="vivek jagadeesh "/>
+
+                <div className="w-full h-auto flex flex-col items-center justify-center   sm:ml-5">
+                  <h1
+                    className="text-black font-semibold text-center text-xl sm:text-xl font-arial   overflow-x-hidden">
+                    I'm currently pursuing a bachelor's of science in Computer Science at Worcester Polytechnic Institute,
+                    with a concentration in systems development and a minor
+                    in Electrical and Computer Engineering (ECE). In addition to being a student, I serve as a teaching
+                    assistant in the Computer Science department at WPI. In this role, I assist both professors and students
+                    in
+                    navigating teaching and learning in a seven-week term. My primary responsibilities include holding student
+                    office hours, providing feedback on student programming assignments, and guiding students through the CS
+                    curriculum at WPI.
+                  </h1>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <div className=" flex flex-row justify-center ">
+        <h1 className="font-bold text-5xl  font-mono ">
           Experience
         </h1>
 
       </div>
 
-        <VerticalTimeline className = "">
-          {
-            experiences.map(exp => {
-              return(
-                <VerticalTimelineElement
-                  key = {exp.id}
-                  date = {exp.date}
-                  icon={exp.icon}
-                  contentStyle = {{ background: 'lightgray', color: '#333' }}
-                  contentArrowStyle={{ borderRight: '7px solid  black' }}
-                  iconStyle={{ background: 'black', color: 'white' }}
-                  className = " rounded-lg  p-4  mx-4"
-                  >
-                  <h3 className = "font-bold text-xl">{exp.title}</h3>
-                  <h4 className="font-semibold text-l">{exp.location}</h4>
-                  <p>{exp.description}</p>
+      <VerticalTimeline className="">
+        {
+          experiences.map(exp => {
+            return (
+              <VerticalTimelineElement
+                key={exp.id}
+                date={exp.date}
+                icon={exp.icon}
+                contentStyle={{background: 'lightgray', color: '#333'}}
+                contentArrowStyle={{borderRight: '7px solid  black'}}
+                iconStyle={{background: 'black', color: 'white'}}
+                className=" rounded-lg  p-4  mx-4"
+              >
+                <h3 className="font-bold text-xl">{exp.title}</h3>
+                <h4 className="font-semibold text-l">{exp.location}</h4>
+                <p>{exp.description}</p>
 
-                </VerticalTimelineElement>
-              )
-            })
-          }
+              </VerticalTimelineElement>
+            )
+          })
+        }
 
-        </VerticalTimeline>
-      </div>
-
-
-
+      </VerticalTimeline>
+    </div>
 
 
   )
