@@ -7,7 +7,7 @@ function Home(){
       <section className = "hidden md:flex ">
         <div className="w-screen mt-20 grid grid-cols-2 overflow-hidden ">
           <div className = "flex flex-col  items-center justify-center  h-full col-span-1 ">
-            <TypeAnimation className="text-black font-mono font-bold md:text-6xl lg:text-6xl cursor-hidden" sequence={["Hello, World!"]}
+            <TypeAnimation className="text-black font-mono font-bold md:text-6xl lg:text-6xl cursor-hidden" sequence={["Hello,World!"]}
             />
             <br></br>
             <h1 className = "text-black font-semibold text-2xl font-arial  ml-10">
@@ -26,7 +26,7 @@ function Home(){
               <div className="flex flex-col items-center justify-center w-full">
                 <img src={vivekHeadshot} alt="vivek jagadeesh "/>
                 <TypeAnimation
-                  className="text-black text-center font-mono font-bold  text-4xl md:text-6xl lg:text-8xl mt-2 " sequence={["Hello, World!"]}/>
+                  className="text-black text-center font-mono font-bold  text-4xl md:text-6xl lg:text-8xl mt-2 " sequence={["Hello,World!"]}/>
                 <div className="w-full h-auto flex flex-col items-center justify-center   sm:ml-5">
                   <h1
                     className="text-black font-semibold text-center text-xl sm:text-xl font-arial   overflow-x-hidden">
