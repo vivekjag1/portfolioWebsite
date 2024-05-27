@@ -11,7 +11,7 @@ function About(){
       id: 1,
       title: "Student - Worcester Polytechnic Institute",
       location: "Worcester, Massachusetts",
-      description: "Bachelors of Science in Computer Science, Minor in ECE",
+      description: "Bachelors of Science in Computer Science, Minor in ECE. Member of campus ACM Chapter",
       date: "August 2022 - Present",
       icon: <SchoolIcon/>,
     },
@@ -91,16 +91,12 @@ function About(){
           </div>
         </div>
       </section>
-
-
       <div className=" flex flex-row justify-center ">
         <h1 className="font-bold text-5xl  font-mono ">
           Experience
         </h1>
-
       </div>
-
-      <VerticalTimeline className="">
+      <VerticalTimeline className="text-black">
         {
           experiences.map(exp => {
             return (
@@ -111,7 +107,7 @@ function About(){
                 contentStyle={{background: 'lightgray', color: '#333'}}
                 contentArrowStyle={{borderRight: '7px solid  black'}}
                 iconStyle={{background: 'black', color: 'white'}}
-                className=" rounded-lg  p-4  mx-4"
+                className=" rounded-xl  p-4  mx-4"
               >
                 <h3 className="font-bold text-xl">{exp.title}</h3>
                 <h4 className="font-semibold text-l">{exp.location}</h4>
@@ -121,11 +117,8 @@ function About(){
             )
           })
         }
-
       </VerticalTimeline>
     </div>
-
-
   )
 }
 
