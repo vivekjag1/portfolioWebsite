@@ -11,7 +11,7 @@ function Projects(){
       <div className = "flex flex-col md:flex-row items-center justify-center mb-5">
 
     <div className = "flex flex-row justify-center md:px-5 md:mr-5 mb-5">
-      <ProjectCard projectTitle={"An application for Brigham and Womens"} projectImage={BWH} projectImageAlt={"Software Engineering Team O project"} projectDescription={"A Node.JS full stack application, designed to run on Kiosks at Boston's Brigham and Women's Hospital as part of WPI CS3733 - Software Engineering"} github={"https://github.com/vivekjag1/CS3733TeamO"} page={"/BWHCS3733"}/>
+      <ProjectCard projectTitle={"An application for Brigham and Women's"} projectImage={BWH} projectImageAlt={"Software Engineering Team O project"} projectDescription={"A Node.JS  application, designed to run on Kiosks at Boston's Brigham and Women's Hospital as part of WPI CS3733 - Software Engineering"} github={"https://github.com/vivekjag1/CS3733TeamO"} page={"/BWHCS3733"}/>
     </div>
       {/*<div className="flex flex-row justify-center md:px-5 md:mr-5 mb-5">*/}
       {/*  <ProjectCard projectTitle = {"Programming Pearls"} projectImage = {programmingPearls} projectImageAlt={"Programming Pearls by John Bentley"} projectDescription={"A collection of Algorithms from John Bentley's Programming Pearls over Winter Break 2024."} github={"https://github.com/vivekjag1/ProgrammingPearls"} page={"/programmingPearls"}/>*/}

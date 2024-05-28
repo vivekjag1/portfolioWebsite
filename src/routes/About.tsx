@@ -50,13 +50,11 @@ function About(){
           <div className="flex flex-col  items-center justify-center  h-full col-span-1 ">
             <p className="font-semibold  text-lg ml-10">
               I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
-              with a concentration in systems development and a minor
-              in Electrical and Computer Engineering (ECE). In addition to being a student, I serve as a teaching
-              assistant in the Computer Science department at WPI. In this role, I assist both professors and students
-              in
-              navigating teaching and learning in a seven-week term. My primary responsibilities include holding student
-              office hours, providing feedback on student programming assignments, and guiding students through the CS
-              curriculum at WPI.
+              with a concentration in systems development and a minor in Electrical and Computer Engineering (ECE).
+              In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
+              In this role, I assist both professors and students in creating a meaningful and substantive learning experience for everyone.
+              My primary responsibilities include holding student office hours, providing feedback on student programming assignments, guiding students through the Computer Science
+              curriculum, and working with professors to deliver the course content in the most effective manner possible.
             </p>
           </div>
           <div className="items-center justify-center flex col-span-1">
@@ -76,13 +74,11 @@ function About(){
                   <h1
                     className="text-black font-semibold text-center text-xl sm:text-xl font-arial   overflow-x-hidden">
                     I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
-                    with a concentration in systems development and a minor
-                    in Electrical and Computer Engineering (ECE). In addition to being a student, I serve as a teaching
-                    assistant in the Computer Science department at WPI. In this role, I assist both professors and students
-                    in
-                    navigating teaching and learning in a seven-week term. My primary responsibilities include holding student
-                    office hours, providing feedback on student programming assignments, and guiding students through the CS
-                    curriculum at WPI.
+                    with a concentration in systems development and a minor in Electrical and Computer Engineering (ECE).
+                    In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
+                    In this role, I assist both professors and students in creating a meaningful and substantive learning experience for everyone.
+                    My primary responsibilities include holding student office hours, providing feedback on student programming assignments, guiding students through the Computer Science
+                    curriculum, and working with professors to deliver the course content in the most effective manner possible.
                   </h1>
                 </div>
               </div>
