@@ -49,7 +49,7 @@ function About(){
         <div className=" mt-20 grid grid-cols-2 overflow-hidden">
           <div className="flex flex-col  items-center justify-center  h-full col-span-1 ">
             <p className="font-semibold  text-lg ml-10">
-              I'm currently pursuing a bachelor's of science in Computer Science at Worcester Polytechnic Institute,
+              I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
               with a concentration in systems development and a minor
               in Electrical and Computer Engineering (ECE). In addition to being a student, I serve as a teaching
               assistant in the Computer Science department at WPI. In this role, I assist both professors and students
@@ -75,7 +75,7 @@ function About(){
                 <div className="w-full h-auto flex flex-col items-center justify-center   sm:ml-5">
                   <h1
                     className="text-black font-semibold text-center text-xl sm:text-xl font-arial   overflow-x-hidden">
-                    I'm currently pursuing a bachelor's of science in Computer Science at Worcester Polytechnic Institute,
+                    I'm currently pursuing a Bachelor's of Science in Computer Science at Worcester Polytechnic Institute,
                     with a concentration in systems development and a minor
                     in Electrical and Computer Engineering (ECE). In addition to being a student, I serve as a teaching
                     assistant in the Computer Science department at WPI. In this role, I assist both professors and students
