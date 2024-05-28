@@ -78,13 +78,13 @@ export default function SoftEngProject(){
         <p className="text-lg text-left md:w-1/2 ml-5">
           The application is built on top of NodeJS, and the front end was developed using TypeScript and ReactJS. Over
           the course of the project, we leveraged  ReactJS to design 65 custom components, which allowed us to take
-          advantage of code reuse and give our website a consistent theme even though we had 10 developers
+          advantage of code reuse and gave our website a consistent theme even though we had 10 developers
           working on it.
 
 
           The application's back end utilized ExpressJS, PrismaORM, and a PostgreSQL database.
           Our backend was responsible for storing data related to the hospital map, users, and service requests.
-          Additionally, we utilized Auth0 to secure our application by using user authentication, role-based access control, API protection, and
+          Additionally, we utilized Auth0 to secure our application  using user authentication, role-based access control, API protection, and
           auto-account creation/deletion upon employee creation and deletion by an admin user.
 
           Finally, we utilized AWS EC2 and RDS to host our application and database in the cloud and configured AWS EC2
@@ -93,8 +93,7 @@ export default function SoftEngProject(){
           We deployed to AWS following each iteration and eventually developed a pipeline using docker-hub auto-deploy
           with GitHub actions.
 
-          This allowed us to easily deploy our application at the end of each iteration, and store a much larger volume
-          of data, than we would have been able to had we used a local PostgreSQL server.
+          This allowed us to easily deploy our application at the end of each iteration, and test deployment between iterations.
         </p>
       </div>
       <img src={evolution} alt="Changes to the pathfinding page"
@@ -115,14 +114,14 @@ export default function SoftEngProject(){
           <br></br>
           <br></br>
 
-          Beginning in Iteration 2, I implemented all of our Auth0 user management in the application. This included
+          Beginning in Iteration 2, I was responsible for implementing all of the Auth0 related features in our application. This included
           developing a custom higher-order component to restrict access to certain pages to hospital staff, Role Based
           Access Control to grant different permissions to staff and administrators, API Protection, automatic creation
           and deletion of employee accounts upon CSV file upload and employee deletion, and the creation of a profile
           dashboard for users.
 
           I found that interacting with Auth0's management API to verify account permissions based on roles and to
-          control user account information ( privileges, create, delete, change password, etc.), was the most fun Auth0-related feature to implement over the course of the project as it allowed us to create an extremely
+          control user account information (privileges, create, delete, change password, etc.), was the most fun Auth0-related feature to implement over the course of the project as it allowed us to create an extremely
           personalized and complete user experience.
           Implementing Auth0 also gave me the chance to interact more with the front end of our application, and led me
           to re-write our page routing logic to support authenticated pages.
@@ -147,25 +146,32 @@ export default function SoftEngProject(){
           <br></br>
           <br></br>
           A challenge that I encountered in this course was coordinating with a team of ten developers.
-          Scheduling meetings and social events was very difficult, as was ensuring that code written by the developers followed a standard convention.
-          We were able to use consistent agile scrum meetings, frequent communication, and code reviews to overcome these challenges, and ended up with a product that reflected the
+          Scheduling meetings and social events was very difficult, as was ensuring that code written by the developers
+          followed a standard convention.
+          We were able to use consistent agile scrum meetings, frequent communication, and code reviews to overcome
+          these challenges, and ended up with a product that reflected the
           various strengths of the developers on our team.
 
-
+          <br></br>
+          <br></br>
 
           Reflecting on this experience, I'm very proud of the application our team developed during this course.
-          All parts of our Software System are integrated very closely, which enabled us to develop a very professional user
+          All parts of our software system are integrated very closely, which enabled us to develop a very professional
+          user
           experience. I'm also very proud of how our team utilized our own version of the agile methodology.
-          While we had our ups and downs, we really hit our stride when we made modifications to the agile methodology- such as the use of traditional Kanban coding marathons. This
+          While we had our ups and downs, we really hit our stride when we made modifications to the agile methodology -
+          such as the use of traditional Kanban coding marathons. This
           led to an agile environment unique to the team and led to our eventual success.
           <br></br>
           <br></br>
           If I had to change one thing about the process of developing this application, I would have liked our team to
           make
           modifications to the agile methodology earlier on. There is no one-size-fits-all approach to
-          agile, and in the end, our team hit its stride only when we developed a version of the agile methodology that was unique to us. I
+          agile, and in the end, our team hit its stride only when we developed a version of the agile methodology that
+          was unique to us. I
           believe
-          that had we implemented these modifications earlier on, it would have greatly increased our productivity and helped us create a balanced
+          that had we implemented these modifications earlier on, it would have greatly increased our productivity and
+          helped us create a balanced
           workload.
         </p>
       </div>

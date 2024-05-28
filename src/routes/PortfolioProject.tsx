@@ -53,9 +53,8 @@ export default function PortfolioProject(){
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 ">
-          Following the conclusion of my sophomore year at WPI, I wanted a way to showcase my projects, work experience,
-          and goals in a way that also demonstrated the skills in web development that I gained during
-          my previous project (An Application for Brigham and Women's Hospital).
+          Following the conclusion of my sophomore year at WPI, I wanted a way to showcase my education, projects, work experience,
+          and goals in a way that also demonstrated web development skills.
           Additionally, I wanted to use this project as a way to experiment with cloud computing alongside the AWS
           certifications that I was working towards.
           Each of these goals led me to develop my own portfolio website using TypeScript, React, Vite, TailwindCSS,
@@ -77,11 +76,11 @@ export default function PortfolioProject(){
           technology stack for this project,
           I debated using static HTML, however, I settled on React due to its integration with TypeScript, which
           allowed me to develop the website in a more programmatic environment.
-          Additionally, I used TailwindCss for inline styling while developing this website. This was an easy choice, as
+          Additionally, I used TailwindCSS for inline styling while developing this website. This was an easy choice, as
           I found the ability to style elements quickly greatly decreased my development time and made it easier to
           implement the desired user experience.
           The last major component of the technology stack relates to how the website is hosted.
-          While there are many web-hosting services, I chose to use AWS as I was pursuing AWS certifications at the
+          While there are a plethora of web-hosting services, I chose to use AWS Elastic Cloud as I was pursuing AWS certifications at the
           time and wanted a way to experiment with cloud computing while developing this project.
           Furthermore, using AWS also allowed me to learn how to use Docker, as the application was built
           locally, containerized, and then run on EC2 using Docker.
@@ -114,7 +113,7 @@ export default function PortfolioProject(){
           <br></br>
           <br></br>
           The most challenging part of designing this website was ensuring that it scaled properly on mobile devices, including tablets and phones.
-          To ensure that the website was responsive, I utilized TailwindCss classes to create column-based layouts on larger devices, and row-based layouts on mobile devices, which ensured that all of the website content fit on each screen size.
+          To ensure that the website was responsive, I utilized TailwindCSS classes to create column-based layouts on larger devices, and row-based layouts on mobile devices, which ensured that all of the website content fit on each screen size.
 
           Additionally, I found AWS deployment to be quite challenging while I was still getting my footing with Docker and AWS EC2.
           I spent the first few days of this project experimenting with the React+Vite starter code and getting it deployed to AWS and my custom domain.
