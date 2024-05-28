@@ -11,7 +11,7 @@ function About(){
       id: 1,
       title: "Student - Worcester Polytechnic Institute",
       location: "Worcester, Massachusetts",
-      description: "Bachelors of Science in Computer Science, Minor in ECE. Member of campus ACM Chapter",
+      description: "Bachelor of Science in Computer Science, Minor in Electrical and Computer Engineering. Member of campus ACM Chapter",
       date: "August 2022 - Present",
       icon: <SchoolIcon/>,
     },
