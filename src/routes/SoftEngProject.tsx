@@ -16,7 +16,7 @@ export default function SoftEngProject(){
         Version Control, UI/UX design </h3>
       <h3 className="mb-5 text-lg ">Technology Stack: Node.JS, TypeScript, React.JS, TailwindCSS, PrismaORM, PostgreSQL, ExpressJS, Auth0, AWS EC2 and RDS</h3>
       <img src={BWH} alt="Software Engineering Team O Final Project"
-           className="w-3/4 mx-auto max-w-[70rem] max-h-full"/>
+           className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl"/>
       <div className="hidden md:flex justify-center">
         <Stack spacing={2} direction="row" className="items-center mt-5">
           <Button href="https://github.com/vivekjag1/CS3733TeamO" target="_blank" variant="contained"
@@ -96,7 +96,7 @@ export default function SoftEngProject(){
         </p>
       </div>
       <img src={evolution} alt="Changes to the pathfinding page"
-           className="w-3/4 mx-auto max-w-[70rem] max-h-full"/>
+           className="w-3/4 mx-auto max-w-[70rem] max-h-full mt-5"/>
       <h3 className="text-lg text-gray-400 mt-2"> Evolution of the Pathfinding page between from Iteration 1 to
         Iteration 5</h3>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">My Contributions and Results</h1>
@@ -130,8 +130,8 @@ export default function SoftEngProject(){
         </p>
       </div>
       <img src={finalMapedit} alt="Final Map Edit Page "
-           className="w-3/4 mx-auto max-w-[70rem] max-h-full"/>
-      <h3 className="text-lg text-gray-400 mt-2">One of my largest contributions to the team was the refactor of the map
+           className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl mt-5"/>
+      <h3 className="text-lg text-gray-400 mt-2">One of my most significant contributions to the team was the refactor of the map
         edit page to the above design. </h3>
       <div className="flex flex-row items-center justify-center mt-2">
         <p className="text-lg  text-left md:w-1/2 ml-5">

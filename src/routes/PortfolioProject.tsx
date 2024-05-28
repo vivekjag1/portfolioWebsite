@@ -17,8 +17,8 @@ export default function PortfolioProject(){
       <h3 className="mb-5 text-lg ">Technology Stack: Node.JS, TypeScript, React.JS, TailwindCSS, Docker,AWS EC2,
         Cloudflare
         DNS</h3>
-      <img src={portfolioHeroPage} alt="Software Engineering Team O Final Project"
-           className="w-3/4 mx-auto max-w-[70rem] max-h-full"/>
+      <img src={portfolioHeroPage} alt="Portfolio Hero Page"
+           className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl"/>
       <div className="hidden md:flex justify-center">
         <Stack spacing={2} direction="row" className="items-center mt-5">
           <Button href="https://github.com/vivekjag1/portfolioWebsite" target="_blank" variant="contained"
@@ -64,8 +64,8 @@ export default function PortfolioProject(){
           Docker, Custom Domains, and more.
         </p>
       </div>
-      <img src={mobileUI} alt="Changes to the pathfinding page"
-           className="w-3/4 mx-auto max-w-[15rem] max-h-full"/>
+      <img src={mobileUI} alt="Responsive mobile UI"
+           className="w-3/4 mx-auto max-w-[15rem] max-h-full shadow-2xl mt-5"/>
       <h3 className="text-lg text-gray-400 mt-2"> The text, images, NavBar, and Footer are all responsive, and change to
         ensure the website looks attractive on all devices, regardless of size. </h3>
 
@@ -93,7 +93,7 @@ export default function PortfolioProject(){
         </p>
       </div>
       <img src={vivekAboutSection} alt="The about section of the website with a graphical resume"
-           className="w-3/4 mx-auto max-w-[70rem] max-h-full"/>
+           className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl mt-5"/>
       <h3 className="text-lg text-gray-400 mt-2">One of the most interesting pages to design was the about page, which
         contains a graphical resume</h3>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Results</h1>
