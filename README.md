@@ -1,6 +1,6 @@
 # Vivek Jagadeesh's portfolio website
 
-This repository is a portfolio website for Vivek Jagadeesh, a student at Worcester polytechnic institute. 
+This repository is a portfolio website for Vivek Jagadeesh, a student at Worcester polytechnic institute. The website is publicly available at https://vivekjagadeesh.com
 
 Technology stack used 
 - React + TypeScript 
