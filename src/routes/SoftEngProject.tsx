@@ -14,7 +14,7 @@ export default function SoftEngProject(){
       <h2 className="mb-5 text-lg font-semibold">March 2024 - May 2024</h2>
       <h3 className="mb-5 text-lg ">Skills developed: Agile Methodology, Full stack development,User Authentication,
         Version Control, UI/UX design </h3>
-      <h3 className="mb-5 text-lg ">Technology Stack: Node.JS, TypeScript, React.JS, TailwindCSS, PrismaORM, PostgresSQL, ExpressJS, Auth0, AWS EC2 and RDS</h3>
+      <h3 className="mb-5 text-lg ">Technology Stack: Node.JS, TypeScript, React.JS, TailwindCSS, PrismaORM, PostgreSQL, ExpressJS, Auth0, AWS EC2 and RDS</h3>
       <img src={BWH} alt="Software Engineering Team O Final Project"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full"/>
       <div className="hidden md:flex justify-center">
@@ -80,7 +80,7 @@ export default function SoftEngProject(){
           the course of the project, we leveraged  ReactJS to design 65 custom components, which allowed to us to take
           advantage of code reuse and give our website a consistent team despite the fact that we had 10 developers
           working on it.
-          The application's back end was utilized ExpressJS, PrismaORM, and a PostgresSQL database.
+          The application's back end was utilized ExpressJS, PrismaORM, and a PostgreSQL database.
           Our backend was responsible for storing data related to the hospital map, users and service requests.
           Additionally, we utilized Auth0 to provide user authentication, role based access control, API protection, and
           auto-account creation/deletion upon employee creation and deletion by an admin user.
@@ -92,7 +92,7 @@ export default function SoftEngProject(){
           with GitHub actions.
 
           This allowed us to easily deploy our application at the end of each iteration, and store a much larger volume
-          of data than we would have been able to had we used a local PostgresSQL server.
+          of data than we would have been able to had we used a local PostgreSQL server.
         </p>
       </div>
       <img src={evolution} alt="Changes to the pathfinding page"
@@ -103,7 +103,7 @@ export default function SoftEngProject(){
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5">
           At the beginning of this project, I worked almost exclusively on the back end of our application.
-          Specifically, I developed the PostgresSQL database schemas, Express routes, Map Data Upload and Download via
+          Specifically, I developed the PostgreSQL database schemas, Express routes, Map Data Upload and Download via
           .CSV files, and File Validation.
           I really enjoyed working on these features as I took CS3431 - Database Systems the term prior to taking
           Software Engineering, and enjoyed applying the content from Databases to create a comprehensive user
