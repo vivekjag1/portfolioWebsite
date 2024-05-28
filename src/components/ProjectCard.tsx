@@ -17,6 +17,7 @@ interface projectCardProps{
 export default function ProjectCard(props:projectCardProps){
   return(
     <Link to = {props.page}>
+
     <Card sx = {{width:"21.5625rem", height: "22rem", background:"lightgray"}} className = "hover:shadow-2xl">
       <CardMedia
         component="img"
