@@ -1,6 +1,5 @@
 import ProjectCard from "../components/ProjectCard.tsx";
 import BWH from "../assets/BWH.png"
-import programmingPearls from "../assets/programmingPearls.png"
 import portfolioHeroPage from "../assets/portfolioHero.png"
 
 function Projects(){
@@ -14,9 +13,9 @@ function Projects(){
     <div className = "flex flex-row justify-center md:px-5 md:mr-5 mb-5">
       <ProjectCard projectTitle={"An application for Brigham and Womens"} projectImage={BWH} projectImageAlt={"Software Engineering Team O project"} projectDescription={"A Node.JS full stack application, designed to run on Kiosks at Boston's Brigham and Women's Hospital as part of WPI CS3733 - Software Engineering"} github={"https://github.com/vivekjag1/CS3733TeamO"} page={"/BWHCS3733"}/>
     </div>
-      <div className="flex flex-row justify-center md:px-5 md:mr-5 mb-5">
-        <ProjectCard projectTitle = {"Programming Pearls"} projectImage = {programmingPearls} projectImageAlt={"Programming Pearls by John Bentley"} projectDescription={"A collection of Algorithms from John Bentley's Programming Pearls over Winter Break 2024."} github={"https://github.com/vivekjag1/ProgrammingPearls"} page={"/programmingPearls"}/>
-      </div>
+      {/*<div className="flex flex-row justify-center md:px-5 md:mr-5 mb-5">*/}
+      {/*  <ProjectCard projectTitle = {"Programming Pearls"} projectImage = {programmingPearls} projectImageAlt={"Programming Pearls by John Bentley"} projectDescription={"A collection of Algorithms from John Bentley's Programming Pearls over Winter Break 2024."} github={"https://github.com/vivekjag1/ProgrammingPearls"} page={"/programmingPearls"}/>*/}
+      {/*</div>*/}
       <div className = "flex flex-row justify-center md:px-5 md:mr-5 mb-5">
         <ProjectCard projectTitle = {"Portfolio Website"} projectImage = {portfolioHeroPage} projectImageAlt={"A portfolio website for Vivek Jagadeesh"} projectDescription={"A portfolio website for Vivek Jagadeesh, designed using React, TypeScript, Vite, TailwindCSS, and hosted with AWS EC2 and Cloudflare DNS"} github={"https://github.com/vivekjag1/portfolioWebsite"} page={"/portfolio"}/>
 

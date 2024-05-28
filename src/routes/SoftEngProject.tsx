@@ -62,32 +62,35 @@ export default function SoftEngProject(){
       </div>
 
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Overview</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 ">
-          During the spring semester of the 2023-2024 academic year, I served as an assistant lead developer on a team
-          of 9 other Computer Science majors as we developed an application for Brigham and Women's hospital as a part
+          During the spring semester of the 2023-2024 academic year, I served as an assistant lead software engineer on a team
+          of 9 other students as we developed an application for Brigham and Women's hospital as a part
           of WPI CS3733 - Software Engineering with Professor Wilson Wong.
           Our application was developed over the course of five agile sprints, each lasting for one week and concluding
           with a presentation and technology demonstration. While I began the project as a backend developer, I quickly
-          moved to be a full-stack developer and made significant contributions across the technology stack.
+          became a full-stack developer and made significant contributions to all components of our project.
         </p>
       </div>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">The Technology Stack</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5">
           The application is built on top of NodeJS, and the front end was developed using TypeScript and ReactJS. Over
-          the course of the project, we levered ReactJS to design 65 custom components, which allowed to us to take
+          the course of the project, we leveraged  ReactJS to design 65 custom components, which allowed to us to take
           advantage of code reuse and give our website a consistent team despite the fact that we had 10 developers
           working on it.
-          The application's backend was utilized ExpressJS, PrismaORM, and a PostgresSQL database.
+          The application's back end was utilized ExpressJS, PrismaORM, and a PostgresSQL database.
           Our backend was responsible for storing data related to the hospital map, users and service requests.
           Additionally, we utilized Auth0 to provide user authentication, role based access control, API protection, and
           auto-account creation/deletion upon employee creation and deletion by an admin user.
+
           Finally, we utilized AWS EC2 and RDS to host our application and database in the cloud, and configured AWS EC2
           to work with our custom domain (brighamwomens.com).
+
           We deployed to AWS following each iteration, and eventually developed a pipeline using docker-hub auto deploy
           with GitHub actions.
+
           This allowed us to easily deploy our application at the end of each iteration, and store a much larger volume
           of data than we would have been able to had we used a local PostgresSQL server.
         </p>
@@ -96,7 +99,7 @@ export default function SoftEngProject(){
            className="w-3/4 mx-auto max-w-[70rem] max-h-full"/>
       <h3 className="text-lg text-gray-400 mt-2"> Evolution of the Pathfinding page between from Iteration 1 to
         Iteration 5</h3>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">My Experience and Contributions</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">My Contributions and Results</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5">
           At the beginning of this project, I worked almost exclusively on the back end of our application.

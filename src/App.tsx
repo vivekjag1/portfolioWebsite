@@ -25,7 +25,6 @@ function App(){
         <Route path = "/BWHCS3733" element = {<SoftEngProject/>}/>
         <Route path = "/programmingPearls" element = {<ProgrammingPearls/>}/>
         <Route path = "/portfolio" element = {<PortfolioProject/>}/>
-
       </Routes>
       </div>
       <Footer/>
