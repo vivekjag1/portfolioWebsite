@@ -34,7 +34,7 @@ function About(){
       id: 1,
       title: "Student - Worcester Polytechnic Institute",
       location: "Worcester, Massachusetts",
-      description: "Bachelor of Science in Computer Science, Minor in Electrical and Computer Engineering. Member of campus ACM Chapter",
+      description: "Bachelor of Science in Computer Science, Minor in Electrical and Computer Engineering.",
       date: "August 2022 - Present",
       icon: <SchoolIcon/>,
     },
@@ -42,7 +42,7 @@ function About(){
       id:2,
       title:"Student Assistant - Worcester Polytechnic Institute Department of Computer Science",
       location: "Worcester, Massachusetts",
-      description: "Student Teaching Assistant in the Computer Science Department. Responsible for guiding students through coursework, WPI CS curriculum, and grading assignments. Currently assisting in teaching CS 3013- Operating Systems",
+      description: "Selected by the CS department faculty to serve as a Student Assistant starting in Summer 2024. Responsible for assisting students in the completion of course assignments and exams, and professors in delivering course content in the most effective way. Currently assisting in teaching CS 3013 - Operating Systems with Professor Craig Wills",
       date: "May 2024 - Present",
       icon: <WorkIcon/>
     },
@@ -50,7 +50,7 @@ function About(){
       id:3,
       title: "Legislative Intern - Massachusetts House of Representatives",
       location: "Boston, Massachusetts",
-      description: "As a legislative intern for State Representative Adam Scanlon, I was responsible for writing legislative memos, policy recommendations, and communicating with constituents through a weekly newsletter",
+      description: "As a legislative intern for State Representative Adam Scanlon, I was responsible for writing legislative memos, policy recommendations, and communicating with constituents through a weekly newsletter.",
       date: "June 2021 - June 2022",
       icon: <WorkIcon/>
     },
@@ -58,7 +58,7 @@ function About(){
       id: 4,
       title: "Field Intern - Dave Cavell for Congress",
       location: "Brookline, Massachusetts",
-      description: "As a field intern for Dave Cavell congressional campaign, I was responsible for speaking with members of my community and advocating for the candidate.",
+      description: "As a field intern for Dave Cavell congressional campaign, I was responsible for speaking with members of my community, writing op-eds in support of the candidate, and hosting community events to discuss policies and issues.",
       date: "June 2020 - September 2020",
       icon: <WorkIcon/>,
       textForButton: "Check out my editorial in the Sun Chronicle!"
