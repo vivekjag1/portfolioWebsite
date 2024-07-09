@@ -218,7 +218,7 @@ function About(){
         <div className="flex flex-row space-x-4 mb-10">
           <FrameworkComponent imageString={oracleLogo} imageAlt={"Oracle"} description={"Oracle"}/>
           <FrameworkComponent imageString={postgresLogo} imageAlt={"PostgreSQL"} description={"PostgreSQL"}/>
-          <FrameworkComponent imageString={mongoLogo} imageAlt={"Mongo DB"} description={"Mongo DB"}/>
+          <FrameworkComponent imageString={mongoLogo} imageAlt={"MongoDB"} description={"MongoDB"}/>
         </div>
       </div>
 
@@ -227,7 +227,7 @@ function About(){
         <div className="flex flex-col space-x-4 mb-10">
           <MobileFramework imageString={oracleLogo} imageAlt={"Oracle"} description={"Oracle"}/>
           <MobileFramework imageString={postgresLogo} imageAlt={"PostgreSQL"} description={"PostgreSQL"}/>
-          <MobileFramework imageString={mongoLogo} imageAlt={"Mongo DB"} description={"Mongo DB"}/>
+          <MobileFramework imageString={mongoLogo} imageAlt={"MongoDB"} description={"MongoDB"}/>
         </div>
       </div>
 
@@ -239,7 +239,7 @@ function About(){
         <div className="flex flex-row space-x-4 mb-10">
           <FrameworkComponent imageString={awsLogo} imageAlt={"AWS"} description={"AWS EC2 & RDS"}/>
           <FrameworkComponent imageString={azureLogo} imageAlt={"Microsoft Azure"} description={"Microsoft Azure"}/>
-          <FrameworkComponent imageString={atlasLogo} imageAlt={"Mongo DB Atlas"} description={"Mongo DB Atlas"}/>
+          <FrameworkComponent imageString={atlasLogo} imageAlt={"MongoDB Atlas"} description={"MongoDB Atlas"}/>
           <FrameworkComponent imageString={vercelLogo} imageAlt={"Vercel Cloud"} description={"Vercel Cloud"}/>
           <FrameworkComponent imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
         </div>
@@ -249,7 +249,7 @@ function About(){
         <div className="flex flex-col space-x-4 mb-10">
           <MobileFramework imageString={awsLogo} imageAlt={"AWS"} description={"AWS EC2 & RDS"}/>
           <MobileFramework imageString={azureLogo} imageAlt={"Microsoft Azure"} description={"Microsoft Azure"}/>
-          <MobileFramework imageString={atlasLogo} imageAlt={"Mongo DB Atlas"} description={"Mongo DB Atlas"}/>
+          <MobileFramework imageString={atlasLogo} imageAlt={"MongoDB Atlas"} description={"MongoDB Atlas"}/>
           <MobileFramework imageString={vercelLogo} imageAlt={"Vercel Cloud"} description={"Vercel Cloud"}/>
           <MobileFramework imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
         </div>
