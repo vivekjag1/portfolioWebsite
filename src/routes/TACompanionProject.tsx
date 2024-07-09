@@ -17,7 +17,6 @@ import kanban from "../assets/kanban.png"
 
 
 import MobileFramework from "../components/MobileFramework.tsx";
-import finalMapedit from "../assets/finalMapEditPage.png";
 
 export default function TACompanionProject(){
   return(
@@ -107,15 +106,13 @@ export default function TACompanionProject(){
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5">
           The first choice that I made in designing the technology stack for this application was using Next.js.
-          I opted to use next.js instead of other JavasScript frameworks (such as Vue.js and Node.js) since
+          I opted to use Next.js instead of other JavasScript frameworks (such as Vue.js and Node.js) since
           Next allows developers to specify whether a page is rendered statically, on the client side, or on the server
           side.
           Using the different kinds of page rendering allowed me to make the application perform well without too much
           work.
           Additionally, I chose to use Next.js due to its seamless integration with react, and bundled backend server,
           both of which further simplified development.
-
-
           <br/><br/>
           TA Companion's front-end was developed using React.js, TailwindCSS, and TypeScript. I chose to use react for
           this project
@@ -123,9 +120,9 @@ export default function TACompanionProject(){
           industry-standard front-end framework for JavaScript web applications.
 
 
-          Similarly, I chose to use TailwindCSS
+          Furthermore, I chose to use TailwindCSS
           as opposed to traditional css due to its inline styling capabilities.
-          This greatly sped up the process of developing the application, and enabled me to easily create a unique and
+          This greatly sped up the process of developing TA Companion, and enabled me to easily create a unique and
           consistent theme for the entire application.
 
           Finally, I chose to use TypeScript rather than JavaScript for this project to enforce type-safety in all parts
@@ -133,12 +130,9 @@ export default function TACompanionProject(){
           have to worry about using the wrong type with an implicit cast, which was especially important when developing
           the calendar component.
           <br/><br/>
-          For my backend server, I chose to use Apollo GraphQL. I chose to use GraphQL over a traditional rest
-          API framework like express.js because it eliminates under and over fetching.
-
-
+          For my backend server, I chose to use Apollo GraphQL rather than a traditional REST API server like Express.JS. I made this choice primarily due to the elimination of over and under fetching when using GraphQL.
           When using Express.js, I found that I either needed to
-          implement more API endpoints than necessary, or have to conduct heavy
+          implement more API endpoints than necessary, or had to conduct heavy
           processing on the results returned by an API because I only need a portion of the return value. With GraphQL,
           I was able to specify the exact resources which I needed in the front-end,
           with no extra-processing or routes. Furthermore, Apollo GraphQL allowed me to take advantage of API results
@@ -146,12 +140,12 @@ export default function TACompanionProject(){
           <br/><br/>
           The last choice I made when designing the technology stack was to use MongoDB rather than a traditional
           relational DBMS like PostgreSQL or Oracle. I found that
-          for the features I would be implementing, a relational database would be overkill (since there would be almost
+          for the features that I would be implementing, a relational database would be overkill (since there would be almost
           0 relations),
           and that MongoDB would be better suited for TA Companion due to its lightweight nature.
           Furthermore, since MongoDB stores JSON objects, I could completely leave off certain fields on a document,
           rather than storing a null value (which is expensive).
-          Finally, MongoDB was an easy choice for this project due to its include object wrapper Mongoose. In contrast
+          Finally, MongoDB was an easy choice for this project due to its included object wrapper Mongoose. In contrast
           to PrismaORM (which I would have used had I opted for a relational DBMS),
           Mongoose does not create cloud migrations (which makes it easier to deploy the application), and still
           includes complete CRUD functionality.
@@ -185,12 +179,18 @@ export default function TACompanionProject(){
           effortlessly lint, test, and deploy my application when I added code to the production branch of my GitHub
           repository. This eliminated the need to containerize my code, or to SSH into a remote sever every time I
           wanted to deploy my application.
+
+
           Furthermore, since Vercel automatically lints the application before it is deployed, I knew my application
           would be stable as soon as it was deployed, and that if a deployment failed,
           there would be detailed logging that showed exactly what I needed to fix.
+
+          At the start of the project, I was using Azure web apps, however, the free tier was significantly slower than vercel, which prompted me to switch to a different cloud service provider.
+
+
           <br/><br/>
           Similarly, MongoDB Atlas was chosen as a cloud DBMS due to its easy setup and generous free tier. Initially, I
-          was using Azure Cosmos, however, the free tier was significantly less
+          was using Azure CosmosDB, however, the free tier was significantly less
           flexible when compared to MongoDB Atlas. Additionally, I found Atlas to perform slightly better than the free
           tier of CosmosDB.
 
@@ -210,14 +210,11 @@ export default function TACompanionProject(){
           designing an application which served a purpose in my daily life and could be used by other students.
           Reflecting on the experience, I am happy to report that I added Next.js, GraphQL, and MongoDB to my skills set
           while still developing an application which I am able to use in my role as a Teaching Assistant.
-
-
-          <br></br>
           <br></br>
 
           I found that the most challenging part of building TA Companion was the UI design. While I had a general
           vision for the finished product, I went through several versions of each feature's UI
-          (including a complete change from Material UI to ShadCn UI) until I felt that TA Companion was both visually
+          (including a complete UI overhaul from Material UI to ShadCn UI) until I felt that TA Companion was both visually
           appealing and easy to use.
 
           Specifically, the Kanban to-do system went through 4 different user interfaces, some using custom components
@@ -226,17 +223,17 @@ export default function TACompanionProject(){
           interfaces which are both functional and visually appealing.
 
           <br></br>
-          <br></br>
           I particularly enjoyed building the backend of TA Companion. I had never used MongoDB and GraphQL, which
           presented a fun challenge during the course of developing this application.
-          I especially enjoyed using these technologies as I have used several competitors(Express.js, Oracle,
-          PostgreSQL), and I enjoyed thinking about where TA Companion's technology stack
-          improved upon the other options. This will make my future project work simpler as I now understand the
+
+          I especially enjoyed using these technologies as I am very familiar with their competitors (Express.js, Oracle,
+          PostgreSQL), and found that the technology stack used in TA Companion offers a different set of features than these other technologies.
+   This will make my future project work simpler as I now understand the
           considerations that go into designing a technology stack.
 
           <br></br>
-          <br></br>
-          If I could do it all again, one change I would make is using official WPI course and degree information.
+
+          If I could do it all over again, one change I would make is using official WPI course and degree information.
           Unfortunately, I was unable to get access to the university's workday API, which would have enabled me to tailor the experience a bit more to WPI students.
           However, this can be easily added down the line, and other developers who may wish to use my code can easily add their own data for the tracking sheet/course features.
 
