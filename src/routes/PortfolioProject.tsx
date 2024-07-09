@@ -5,6 +5,15 @@ import LanguageIcon from "@mui/icons-material/Language";
 import {Stack} from "@mui/material";
 import vivekAboutSection from "../assets/vivekAboutSection.png";
 import mobileUI from "../assets/mobileUI.png"
+import FrameworkComponent from "../components/FrameworkComponent.tsx";
+import nodeLogo from "../assets/nodeLogo.png";
+import typescriptLogo from "../assets/typescriptLogo.png";
+import reactLogo from "../assets/reactLogo.png";
+import tailwindCSSLogo from "../assets/tailwindLogo.png";
+import expressLogo from "../assets/expressLogo.png";
+import prismaLogo from "../assets/prismaLogo.png";
+import postgresLogo from "../assets/postgresqllogo.png";
+import MobileFramework from "../components/MobileFramework.tsx";
 
 
 export default function PortfolioProject(){
@@ -53,7 +62,8 @@ export default function PortfolioProject(){
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 ">
-          Following the conclusion of my sophomore year at WPI, I wanted a way to showcase my education, projects, work experience,
+          Following the conclusion of my sophomore year at WPI, I wanted a way to showcase my education, projects, work
+          experience,
           and goals in a way that also demonstrated web development skills.
           Additionally, I wanted to use this project as a way to experiment with cloud computing alongside the AWS
           certifications that I was working towards.
@@ -70,6 +80,26 @@ export default function PortfolioProject(){
 
 
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">The Technology Stack</h1>
+      <div className="hidden sm:flex md:flex items-center justify-center">
+        <div className="flex flex-row space-x-4 mb-10">
+          <FrameworkComponent imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
+
+          <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
+          <FrameworkComponent imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
+          <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
+
+
+        </div>
+      </div>
+
+      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
+        <MobileFramework imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
+
+        <MobileFramework imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
+        <MobileFramework imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
+        <MobileFramework imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
+
+      </div>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5">
           This portfolio website was built using ReactJS and Vite as the front-end framework. While designing the
@@ -80,7 +110,8 @@ export default function PortfolioProject(){
           I found the ability to style elements quickly greatly decreased my development time and made it easier to
           implement the desired user experience.
           The last major component of the technology stack relates to how the website is hosted.
-          While there are a plethora of web-hosting services, I chose to use AWS Elastic Cloud as I was pursuing AWS certifications at the
+          While there are a plethora of web-hosting services, I chose to use AWS Elastic Cloud as I was pursuing AWS
+          certifications at the
           time and wanted a way to experiment with cloud computing while developing this project.
           Furthermore, using AWS also allowed me to learn how to use Docker, as the application was built
           locally, containerized, and then run on EC2 using Docker.
@@ -112,13 +143,20 @@ export default function PortfolioProject(){
           process for building and deploying my application to vivekjagadeesh.com through AWS EC2.
           <br></br>
           <br></br>
-          The most challenging part of designing this website was ensuring that it scaled properly on mobile devices, including tablets and phones.
-          To ensure that the website was responsive, I utilized TailwindCSS classes to create column-based layouts on larger devices, and row-based layouts on mobile devices, which ensured that all of the website content fit on each screen size.
+          The most challenging part of designing this website was ensuring that it scaled properly on mobile devices,
+          including tablets and phones.
+          To ensure that the website was responsive, I utilized TailwindCSS classes to create column-based layouts on
+          larger devices, and row-based layouts on mobile devices, which ensured that all of the website content fit on
+          each screen size.
 
-          Additionally, I found AWS deployment to be quite challenging while I was still getting my footing with Docker and AWS EC2.
-          I spent the first few days of this project experimenting with the React+Vite starter code and getting it deployed to AWS and my custom domain.
-          During this portion of the project, I was able to understand how various AWS services (including Route 53, and Elastic IP) would be crucial in the development of my website.
-          Furthermore, I was able to develop a pipeline for AWS deployment which allowed me to quickly deploy my project to AWS during the development of this project.
+          Additionally, I found AWS deployment to be quite challenging while I was still getting my footing with Docker
+          and AWS EC2.
+          I spent the first few days of this project experimenting with the React+Vite starter code and getting it
+          deployed to AWS and my custom domain.
+          During this portion of the project, I was able to understand how various AWS services (including Route 53, and
+          Elastic IP) would be crucial in the development of my website.
+          Furthermore, I was able to develop a pipeline for AWS deployment which allowed me to quickly deploy my project
+          to AWS during the development of this project.
         </p>
       </div>
 

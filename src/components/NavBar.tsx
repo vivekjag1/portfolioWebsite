@@ -20,7 +20,6 @@ export default function NavBar(){
           <Link to = "/" ><li>Home</li></Link>
           <Link to = "/about" ><li>About</li></Link>
           <Link to = "/projects" ><li>Projects</li></Link>
-          <Link to = "/certifications" ><li>Certifications</li></Link>
         </ul>
       </div>
       <div className="md:hidden z-10 flex flex-row items-center" onClick = {handleClickX}>
@@ -39,7 +38,6 @@ export default function NavBar(){
         <Link to = "/" onClick={handleClickX}><li>Home</li></Link>
         <Link to = "/about" onClick={handleClickX}><li>About</li></Link>
         <Link to = "/projects" onClick={handleClickX}><li>Projects</li></Link>
-        <Link to = "/certifications" onClick={handleClickX}><li>Certifications</li></Link>
 
       </ul>
 

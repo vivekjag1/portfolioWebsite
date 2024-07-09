@@ -7,6 +7,17 @@ import { Stack} from "@mui/material";
 import LanguageIcon from '@mui/icons-material/Language';
 import userManual from "../assets/TeamOUserManual.pdf";
 import DownloadIcon from '@mui/icons-material/Download';
+import FrameworkComponent from "../components/FrameworkComponent.tsx";
+import typescriptLogo from "../assets/typescriptLogo.png";
+import reactLogo from "../assets/reactLogo.png";
+import tailwindCSSLogo from "../assets/tailwindLogo.png";
+import expressLogo from "../assets/expressLogo.png";
+import postgresLogo from "../assets/postgresqllogo.png";
+import MobileFramework from "../components/MobileFramework.tsx";
+import nodeLogo from "../assets/nodeLogo.png";
+import prismaLogo from "../assets/prismaLogo.png";
+
+
 export default function SoftEngProject(){
   return(
     <div className=" mt-20 text-center">
@@ -14,7 +25,8 @@ export default function SoftEngProject(){
       <h2 className="mb-5 text-lg font-semibold">March 2024 - May 2024</h2>
       <h3 className="mb-5 text-lg ">Skills developed: Agile Methodology, Full stack development,User Authentication,
         Version Control, UI/UX design </h3>
-      <h3 className="mb-5 text-lg ">Technology Stack: Node.JS, TypeScript, React.JS, TailwindCSS, PrismaORM, PostgreSQL, ExpressJS, Auth0, AWS EC2 and RDS</h3>
+      <h3 className="mb-5 text-lg ">Technology Stack: Node.JS, TypeScript, React.JS, TailwindCSS, PrismaORM, PostgreSQL,
+        ExpressJS, Auth0, AWS EC2 and RDS</h3>
       <img src={BWH} alt="Software Engineering Team O Final Project"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl"/>
       <div className="hidden md:flex justify-center">
@@ -65,7 +77,8 @@ export default function SoftEngProject(){
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 ">
-          During the spring semester of the 2023-2024 academic year, I served as an assistant lead software engineer on a team
+          During the spring semester of the 2023-2024 academic year, I served as an assistant lead software engineer on
+          a team
           of 9 other students as we developed an application for Brigham and Women's Hospital as a part
           of WPI CS3733 - Software Engineering with Professor Wilson Wong.
           Our application was developed over the course of five agile sprints, each lasting for one week and concluding
@@ -74,17 +87,45 @@ export default function SoftEngProject(){
         </p>
       </div>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">The Technology Stack</h1>
+      <div className="hidden sm:flex md:flex items-center justify-center">
+        <div className="flex flex-row space-x-4 mb-10">
+          <FrameworkComponent imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
+
+          <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
+          <FrameworkComponent imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
+          <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
+          <FrameworkComponent imageString={expressLogo} imageAlt={"ExpressJS"} description={"Express.JS"}/>
+          <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"}
+                              description={"PrismaORM"}/><FrameworkComponent imageString={postgresLogo} imageAlt={"PostgreSQL"}
+                              description={"PostgreSQL"}/>
+
+        </div>
+      </div>
+
+      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
+        <MobileFramework imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
+
+        <MobileFramework imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
+        <MobileFramework imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
+        <MobileFramework imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
+        <MobileFramework imageString={expressLogo} imageAlt={"ExpressJS"} description={"Express.JS"}/>
+        <MobileFramework imageString={prismaLogo} imageAlt={"PrismaORM"}
+                         description={"PrismaORM"}/>
+        <MobileFramework imageString={postgresLogo} imageAlt={"PostgreSQL"}
+                         description={"PostgreSQL"}/>
+      </div>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5">
           The application is built on top of NodeJS, and the front end was developed using TypeScript and ReactJS. Over
-          the course of the project, we leveraged  ReactJS to design 65 custom components, which allowed us to take
+          the course of the project, we leveraged ReactJS to design 65 custom components, which allowed us to take
           advantage of code reuse and gave our website a consistent theme even though we had 10 developers
           working on it.
 
 
           The application's back end utilized ExpressJS, PrismaORM, and a PostgreSQL database.
           Our backend was responsible for storing data related to the hospital map, users, and service requests.
-          Additionally, we utilized Auth0 to secure our application  using user authentication, role-based access control, API protection, and
+          Additionally, we utilized Auth0 to secure our application using user authentication, role-based access
+          control, API protection, and
           auto-account creation/deletion upon employee creation and deletion by an admin user.
 
           Finally, we utilized AWS EC2 and RDS to host our application and database in the cloud and configured AWS EC2
@@ -93,7 +134,8 @@ export default function SoftEngProject(){
           We deployed to AWS following each iteration and eventually developed a pipeline using docker-hub auto-deploy
           with GitHub actions.
 
-          This allowed us to easily deploy our application at the end of each iteration, and test deployment between iterations.
+          This allowed us to easily deploy our application at the end of each iteration, and test deployment between
+          iterations.
         </p>
       </div>
       <img src={evolution} alt="Changes to the pathfinding page"
@@ -107,21 +149,24 @@ export default function SoftEngProject(){
           Specifically, I developed the PostgreSQL database schemas, Express routes, Map Data Upload and Download via
           .CSV files, and File Validation.
           I enjoyed working on these features as I took CS3431 - Database Systems the term before taking
-          Software Engineering, and enjoyed applying the content that I had learned in Databases to create a comprehensive user
+          Software Engineering, and enjoyed applying the content that I had learned in Databases to create a
+          comprehensive user
           experience for our application.
 
 
           <br></br>
           <br></br>
 
-          Beginning in Iteration 2, I was responsible for implementing all of the Auth0 related features in our application. This included
+          Beginning in Iteration 2, I was responsible for implementing all of the Auth0 related features in our
+          application. This included
           developing a custom higher-order component to restrict access to certain pages to hospital staff, Role Based
           Access Control to grant different permissions to staff and administrators, API Protection, automatic creation
           and deletion of employee accounts upon CSV file upload and employee deletion, and the creation of a profile
           dashboard for users.
 
           I found that interacting with Auth0's management API to verify account permissions based on roles and to
-          control user account information (privileges, create, delete, change password, etc.), was the most fun Auth0-related feature to implement over the course of the project as it allowed us to create an extremely
+          control user account information (privileges, create, delete, change password, etc.), was the most fun
+          Auth0-related feature to implement over the course of the project as it allowed us to create an extremely
           personalized and complete user experience.
           Implementing Auth0 also gave me the chance to interact more with the front end of our application, and led me
           to re-write our page routing logic to support authenticated pages.
@@ -131,7 +176,8 @@ export default function SoftEngProject(){
       </div>
       <img src={finalMapedit} alt="Final Map Edit Page "
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl mt-5"/>
-      <h3 className="text-lg text-gray-400 mt-2">One of my most significant contributions to the team was the refactoring of the map
+      <h3 className="text-lg text-gray-400 mt-2">One of my most significant contributions to the team was the
+        refactoring of the map
         edit page to the above design. </h3>
       <div className="flex flex-row items-center justify-center mt-2">
         <p className="text-lg  text-left md:w-1/2 ml-5">
