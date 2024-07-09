@@ -152,7 +152,7 @@ function About(){
       </div>
       <div className="hidden sm:flex md:flex">
         <div className="flex flex-row space-x-4 mb-10">
-          <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypessScript"} description={"TypeScript"}/>
+          <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
           <FrameworkComponent imageString={CLogo} imageAlt={"C"} description={"C"}/>
           <FrameworkComponent imageString={CPPLogo} imageAlt={"C++"} description={"C++"}/>
           <FrameworkComponent imageString={javaLogo} imageAlt={"Java"} description={"Java"}/>
@@ -174,10 +174,9 @@ function About(){
         <MobileFramework imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
         <MobileFramework imageString={asmLogo} imageAlt={"Assembly Language x86-64"}
                          description={"Assembly Language x86-64"}/>
-        <div className="flex flex-col items-center">
-          <img src={SQLLogo} alt={"SQL"} className="h-[11rem] mr-5"/>
-          <p className="mt-2 text-center italic">{"SQL (Oracle & PostgreSQL)"}</p>
-        </div>
+        <MobileFramework imageString={SQLLogo} imageAlt={"SQL"}
+                         description={"SQL (Oracle & PostgreSQL)"}/>
+
       </div>
 
       <div className=" hidden md:flex flex-row justify-center">
