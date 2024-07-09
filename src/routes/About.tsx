@@ -180,7 +180,7 @@ function About(){
         </div>
       </div>
 
-      <div className=" flex flex-row justify-center">
+      <div className=" hidden md:flex flex-row justify-center">
         <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Software Frameworks</h1>
       </div>
       <div className="hidden sm:flex md:flex">
