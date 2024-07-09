@@ -10,9 +10,8 @@ import nodeLogo from "../assets/nodeLogo.png";
 import typescriptLogo from "../assets/typescriptLogo.png";
 import reactLogo from "../assets/reactLogo.png";
 import tailwindCSSLogo from "../assets/tailwindLogo.png";
-import expressLogo from "../assets/expressLogo.png";
-import prismaLogo from "../assets/prismaLogo.png";
-import postgresLogo from "../assets/postgresqllogo.png";
+import dockerLogo from "../assets/dockerLogo.png"
+
 import MobileFramework from "../components/MobileFramework.tsx";
 
 
@@ -87,6 +86,7 @@ export default function PortfolioProject(){
           <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
           <FrameworkComponent imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
           <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
+          <FrameworkComponent imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
 
 
         </div>
@@ -98,6 +98,7 @@ export default function PortfolioProject(){
         <MobileFramework imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
         <MobileFramework imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
         <MobileFramework imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
+        <MobileFramework imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
 
       </div>
       <div className="flex flex-row items-center justify-center">
