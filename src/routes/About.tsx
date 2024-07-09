@@ -3,7 +3,29 @@ import WorkIcon from '@mui/icons-material/Work';
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import secondVivekHeadshot from "../assets/secondVivekHeadshot.png";
-
+import typescriptLogo from "../assets/typescriptLogo.png";
+import CLogo from "../assets/CLogo.png";
+import CPPLogo from "../assets/CPPLogo.png";
+import javaLogo from "../assets/javaLogo.png";
+import SQLLogo from "../assets/SQLLogo.png";
+import pythonLogo from "../assets/pythonLogo.png";
+import asmLogo from "../assets/assemblyLanguage.png";
+import nextLogo from "../assets/nextLogo.png";
+import nodeLogo from "../assets/nodeLogo.png";
+import reactLogo from "../assets/reactLogo.png";
+import tailwindCSSLogo from "../assets/tailwindLogo.png";
+import graphqlLogo from "../assets/graphqlLogo.png";
+import expressLogo from "../assets/expressLogo.png";
+import prismaLogo from "../assets/prismaLogo.png";
+import oracleLogo from "../assets/oracleLogo.png";
+import postgresLogo from "../assets/postgresqllogo.png";
+import mongoLogo from "../assets/mongodbLogo.png";
+import awsLogo from "../assets/awsLogo.png";
+import azureLogo from "../assets/azureLogo.png";
+import atlasLogo from "../assets/atlas-raw.webp"
+import vercelLogo from "../assets/vercelLogo.png"
+import dockerLogo from "../assets/dockerLogo.png"
+import FrameworkComponent from "../components/FrameworkComponent.tsx";
 function About(){
 
   const experiences = [
@@ -52,9 +74,12 @@ function About(){
               I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
               with a concentration in systems development and a minor in Electrical and Computer Engineering (ECE).
               In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
-              In this role, I assist both professors and students in creating a meaningful and substantive learning experience for everyone.
-              My primary responsibilities include holding student office hours, providing feedback on student programming assignments, guiding students through the Computer Science
-              curriculum, and working with professors to deliver the course content in the most effective manner possible.
+              In this role, I assist both professors and students in creating a meaningful and substantive learning
+              experience for everyone.
+              My primary responsibilities include holding student office hours, providing feedback on student
+              programming assignments, guiding students through the Computer Science
+              curriculum, and working with professors to deliver the course content in the most effective manner
+              possible.
             </p>
           </div>
           <div className="items-center justify-center flex col-span-1">
@@ -74,11 +99,15 @@ function About(){
                   <h1
                     className="text-black font-semibold text-center text-xl sm:text-xl font-arial   overflow-x-hidden">
                     I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
-                    with a concentration in systems development and a minor in Electrical and Computer Engineering (ECE).
+                    with a concentration in systems development and a minor in Electrical and Computer Engineering
+                    (ECE).
                     In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
-                    In this role, I assist both professors and students in creating a meaningful and substantive learning experience for everyone.
-                    My primary responsibilities include holding student office hours, providing feedback on student programming assignments, guiding students through the Computer Science
-                    curriculum, and working with professors to deliver the course content in the most effective manner possible.
+                    In this role, I assist both professors and students in creating a meaningful and substantive
+                    learning experience for everyone.
+                    My primary responsibilities include holding student office hours, providing feedback on student
+                    programming assignments, guiding students through the Computer Science
+                    curriculum, and working with professors to deliver the course content in the most effective manner
+                    possible.
                   </h1>
                 </div>
               </div>
@@ -114,6 +143,57 @@ function About(){
           })
         }
       </VerticalTimeline>
+      <div className=" flex flex-row justify-center">
+        <h1 className="font-bold text-5xl font-mono">Skills</h1>
+      </div>
+      <div className=" flex flex-row justify-center">
+        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Programming Languages</h1>
+      </div>
+      <div className="flex flex-row space-x-4 mb-10">
+        <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypeScript"} description={"TypeScript"}/>
+        <FrameworkComponent imageString={CLogo} imageAlt={"C"} description={"C"}/>
+        <FrameworkComponent imageString={CPPLogo} imageAlt={"C++"} description={"C++"}/>
+        <FrameworkComponent imageString={javaLogo} imageAlt={"Java"} description={"Java"}/>
+        <FrameworkComponent imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
+        <FrameworkComponent imageString={asmLogo} imageAlt={"Assembly Language x86-64"}
+                            description={"Assembly Language x86-64"}/>
+        <div className="flex flex-col items-center">
+          <img src={SQLLogo} alt={"SQL"} className="h-[11rem] mr-5"/>
+          <p className="mt-2 text-center italic">{"SQL (Oracle & PostgreSQL)"}</p>
+        </div>
+      </div>
+
+      <div className=" flex flex-row justify-center">
+        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Software Frameworks</h1>
+      </div>
+      <div className="flex flex-row space-x-4 mb-10">
+        <FrameworkComponent imageString={nextLogo} imageAlt={"Next.js"} description={"Next.js"}/>
+        <FrameworkComponent imageString={nodeLogo} imageAlt={"Node.js"} description={"Node.js"}/>
+        <FrameworkComponent imageString={reactLogo} imageAlt={"React.js"} description={"React.js"}/>
+        <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"TailwindCSS"} description={"TailwindCSS"}/>
+        <FrameworkComponent imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
+        <FrameworkComponent imageString={expressLogo} imageAlt={"GraphQL"} description={"Express.js"}/>
+        <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"} description={"PrismaORM"}/>
+      </div>
+      <div className=" flex flex-row justify-center">
+        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Database Management Systems</h1>
+      </div>
+      <div className="flex flex-row space-x-4 mb-10">
+        <FrameworkComponent imageString={oracleLogo} imageAlt={"Oracle"} description={"Oracle"}/>
+        <FrameworkComponent imageString={postgresLogo} imageAlt={"PostgreSQL"} description={"PostgreSQL"}/>
+        <FrameworkComponent imageString={mongoLogo} imageAlt={"Mongo DB"} description={"Mongo DB"}/>
+
+      </div>
+      <div className=" flex flex-row justify-center">
+        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Cloud Computing & Containers</h1>
+      </div>
+      <div className="flex flex-row space-x-4 mb-10">
+        <FrameworkComponent imageString={awsLogo} imageAlt={"AWS"} description={"AWS EC2 & RDS"}/>
+        <FrameworkComponent imageString={azureLogo} imageAlt={"Microsoft Azure"} description={"Microsoft Azure"}/>
+        <FrameworkComponent imageString={atlasLogo} imageAlt={"Mongo DB Atlas"} description={"Mongo DB Atlas"}/>
+        <FrameworkComponent imageString={vercelLogo} imageAlt={"Vercel Cloud"} description={"Vercel Cloud"}/>
+        <FrameworkComponent imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
+      </div>
     </div>
   )
 }
