@@ -26,6 +26,7 @@ import atlasLogo from "../assets/atlas-raw.webp"
 import vercelLogo from "../assets/vercelLogo.png"
 import dockerLogo from "../assets/dockerLogo.png"
 import FrameworkComponent from "../components/FrameworkComponent.tsx";
+import MobileFramework from "../components/MobileFramework.tsx";
 function About(){
 
   const experiences = [
@@ -149,14 +150,30 @@ function About(){
       <div className=" flex flex-row justify-center">
         <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Programming Languages</h1>
       </div>
-      <div className="flex flex-row space-x-4 mb-10">
-        <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypeScript"} description={"TypeScript"}/>
-        <FrameworkComponent imageString={CLogo} imageAlt={"C"} description={"C"}/>
-        <FrameworkComponent imageString={CPPLogo} imageAlt={"C++"} description={"C++"}/>
-        <FrameworkComponent imageString={javaLogo} imageAlt={"Java"} description={"Java"}/>
-        <FrameworkComponent imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
-        <FrameworkComponent imageString={asmLogo} imageAlt={"Assembly Language x86-64"}
-                            description={"Assembly Language x86-64"}/>
+      <div className="hidden sm:flex md:flex">
+        <div className="flex flex-row space-x-4 mb-10">
+          <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypessScript"} description={"TypeScript"}/>
+          <FrameworkComponent imageString={CLogo} imageAlt={"C"} description={"C"}/>
+          <FrameworkComponent imageString={CPPLogo} imageAlt={"C++"} description={"C++"}/>
+          <FrameworkComponent imageString={javaLogo} imageAlt={"Java"} description={"Java"}/>
+          <FrameworkComponent imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
+          <FrameworkComponent imageString={asmLogo} imageAlt={"Assembly Language x86-64"}
+                              description={"Assembly Language x86-64"}/>
+          <div className="flex flex-col items-center">
+            <img src={SQLLogo} alt={"SQL"} className="h-[11rem] mr-5"/>
+            <p className="mt-2 text-center italic">{"SQL (Oracle & PostgreSQL)"}</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
+        <MobileFramework imageString={typescriptLogo} imageAlt={"TypeScript"} description={"TypeScript"}/>
+        <MobileFramework imageString={CLogo} imageAlt={"C"} description={"C"}/>
+        <MobileFramework imageString={CPPLogo} imageAlt={"C++"} description={"C++"}/>
+        <MobileFramework imageString={javaLogo} imageAlt={"Java"} description={"Java"}/>
+        <MobileFramework imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
+        <MobileFramework imageString={asmLogo} imageAlt={"Assembly Language x86-64"}
+                         description={"Assembly Language x86-64"}/>
         <div className="flex flex-col items-center">
           <img src={SQLLogo} alt={"SQL"} className="h-[11rem] mr-5"/>
           <p className="mt-2 text-center italic">{"SQL (Oracle & PostgreSQL)"}</p>
@@ -166,33 +183,76 @@ function About(){
       <div className=" flex flex-row justify-center">
         <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Software Frameworks</h1>
       </div>
-      <div className="flex flex-row space-x-4 mb-10">
-        <FrameworkComponent imageString={nextLogo} imageAlt={"Next.js"} description={"Next.js"}/>
-        <FrameworkComponent imageString={nodeLogo} imageAlt={"Node.js"} description={"Node.js"}/>
-        <FrameworkComponent imageString={reactLogo} imageAlt={"React.js"} description={"React.js"}/>
-        <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"TailwindCSS"} description={"TailwindCSS"}/>
-        <FrameworkComponent imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
-        <FrameworkComponent imageString={expressLogo} imageAlt={"GraphQL"} description={"Express.js"}/>
-        <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"} description={"PrismaORM"}/>
-      </div>
-      <div className=" flex flex-row justify-center">
-        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Database Management Systems</h1>
-      </div>
-      <div className="flex flex-row space-x-4 mb-10">
-        <FrameworkComponent imageString={oracleLogo} imageAlt={"Oracle"} description={"Oracle"}/>
-        <FrameworkComponent imageString={postgresLogo} imageAlt={"PostgreSQL"} description={"PostgreSQL"}/>
-        <FrameworkComponent imageString={mongoLogo} imageAlt={"Mongo DB"} description={"Mongo DB"}/>
+      <div className="hidden sm:flex md:flex">
+        <div className="flex flex-row space-x-4 mb-10">
+          <FrameworkComponent imageString={nextLogo} imageAlt={"Next.js"} description={"Next.js"}/>
+          <FrameworkComponent imageString={nodeLogo} imageAlt={"Node.js"} description={"Node.js"}/>
+          <FrameworkComponent imageString={reactLogo} imageAlt={"React.js"} description={"React.js"}/>
+          <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"TailwindCSS"} description={"TailwindCSS"}/>
+          <FrameworkComponent imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
+          <FrameworkComponent imageString={expressLogo} imageAlt={"GraphQL"} description={"Express.js"}/>
+          <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"} description={"PrismaORM"}/>
 
+        </div>
       </div>
+      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
+        <div className=" flex flex-col justify-center">
+          <h1 className="font-bold text-3xl text-center font-mono mt-4 mb-4">Software Frameworks</h1>
+        </div>
+        <div className="flex flex-col space-x-4 mb-10">
+          <MobileFramework imageString={nextLogo} imageAlt={"Next.js"} description={"Next.js"}/>
+          <MobileFramework imageString={nodeLogo} imageAlt={"Node.js"} description={"Node.js"}/>
+          <MobileFramework imageString={reactLogo} imageAlt={"React.js"} description={"React.js"}/>
+          <MobileFramework imageString={tailwindCSSLogo} imageAlt={"TailwindCSS"} description={"TailwindCSS"}/>
+          <MobileFramework imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
+          <MobileFramework imageString={expressLogo} imageAlt={"GraphQL"} description={"Express.js"}/>
+          <MobileFramework imageString={prismaLogo} imageAlt={"PrismaORM"} description={"PrismaORM"}/>
+        </div>
+      </div>
+
+
       <div className=" flex flex-row justify-center">
+        <h1 className="font-bold text-3xl font-mono mt-4 text-center mb-4">Database Management Systems</h1>
+      </div>
+      <div className="hidden sm:flex md:flex">
+        <div className="flex flex-row space-x-4 mb-10">
+          <FrameworkComponent imageString={oracleLogo} imageAlt={"Oracle"} description={"Oracle"}/>
+          <FrameworkComponent imageString={postgresLogo} imageAlt={"PostgreSQL"} description={"PostgreSQL"}/>
+          <FrameworkComponent imageString={mongoLogo} imageAlt={"Mongo DB"} description={"Mongo DB"}/>
+        </div>
+      </div>
+
+
+      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
+        <div className="flex flex-col space-x-4 mb-10">
+          <MobileFramework imageString={oracleLogo} imageAlt={"Oracle"} description={"Oracle"}/>
+          <MobileFramework imageString={postgresLogo} imageAlt={"PostgreSQL"} description={"PostgreSQL"}/>
+          <MobileFramework imageString={mongoLogo} imageAlt={"Mongo DB"} description={"Mongo DB"}/>
+        </div>
+      </div>
+
+
+      <div className=" flex flex-row text-center justify-center">
         <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Cloud Computing & Containers</h1>
       </div>
-      <div className="flex flex-row space-x-4 mb-10">
-        <FrameworkComponent imageString={awsLogo} imageAlt={"AWS"} description={"AWS EC2 & RDS"}/>
-        <FrameworkComponent imageString={azureLogo} imageAlt={"Microsoft Azure"} description={"Microsoft Azure"}/>
-        <FrameworkComponent imageString={atlasLogo} imageAlt={"Mongo DB Atlas"} description={"Mongo DB Atlas"}/>
-        <FrameworkComponent imageString={vercelLogo} imageAlt={"Vercel Cloud"} description={"Vercel Cloud"}/>
-        <FrameworkComponent imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
+      <div className="hidden sm:flex md:flex">
+        <div className="flex flex-row space-x-4 mb-10">
+          <FrameworkComponent imageString={awsLogo} imageAlt={"AWS"} description={"AWS EC2 & RDS"}/>
+          <FrameworkComponent imageString={azureLogo} imageAlt={"Microsoft Azure"} description={"Microsoft Azure"}/>
+          <FrameworkComponent imageString={atlasLogo} imageAlt={"Mongo DB Atlas"} description={"Mongo DB Atlas"}/>
+          <FrameworkComponent imageString={vercelLogo} imageAlt={"Vercel Cloud"} description={"Vercel Cloud"}/>
+          <FrameworkComponent imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
+        </div>
+      </div>
+
+      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
+        <div className="flex flex-col space-x-4 mb-10">
+          <MobileFramework imageString={awsLogo} imageAlt={"AWS"} description={"AWS EC2 & RDS"}/>
+          <MobileFramework imageString={azureLogo} imageAlt={"Microsoft Azure"} description={"Microsoft Azure"}/>
+          <MobileFramework imageString={atlasLogo} imageAlt={"Mongo DB Atlas"} description={"Mongo DB Atlas"}/>
+          <MobileFramework imageString={vercelLogo} imageAlt={"Vercel Cloud"} description={"Vercel Cloud"}/>
+          <MobileFramework imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
+        </div>
       </div>
     </div>
   )
