@@ -240,7 +240,14 @@ function About(){
         <div className="flex flex-row space-x-4 mb-10">
           <FrameworkComponent imageString={skLearnLogo} imageAlt={"Sci-Kit Learn"} description={"Sci-Kit Learn"}/>
           <FrameworkComponent imageString={kerasLogo} imageAlt={"Keras"} description={"Keras"}/>
-          <FrameworkComponent imageString={tensorFlow} imageAlt={"TensorFlow"} description={"TensorFlow"}/>
+          <FrameworkComponent imageString={tensorFlow} imageAlt={"tensorFlow"} description={"TensorFlow"}/>
+        </div>
+      </div>
+      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
+        <div className="flex flex-col space-x-4 mb-10">
+          <MobileFramework imageString={skLearnLogo} imageAlt={"Sci-Kit Learn"} description={"Sci-Kit Learn"}/>
+          <MobileFramework imageString={kerasLogo} imageAlt={"Keras"} description={"Keras"}/>
+          <MobileFramework imageString={tensorFlow} imageAlt={"tensorFlow"} description={"TensorFlow"}/>
         </div>
       </div>
 

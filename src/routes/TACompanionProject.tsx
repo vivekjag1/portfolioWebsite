@@ -68,7 +68,7 @@ export default function TACompanionProject(){
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 ">
-          During the summer of 2024, when I began my role as a student assistant in the Computer Science Department, I
+          During the summer of 2024, when I began my role as a Student Teaching Assistant in the Computer Science Department, I
           quickly found that Workday (which WPI uses for recording hours, grades, and dispersing pay)
           was unintuitive and lacked features which would be helpful to student workers. This led me to design TA
           Companion, an application which allows its users to create tasks
@@ -130,13 +130,13 @@ export default function TACompanionProject(){
           have to worry about using the wrong type with an implicit cast, which was especially important when developing
           the calendar component.
           <br/><br/>
-          For my backend server, I chose to use Apollo GraphQL rather than a traditional REST API server like Express.JS. I made this choice primarily due to the elimination of over and under fetching when using GraphQL.
+          For my backend server, I chose to use Apollo GraphQL rather than a traditional REST API server like Express.JS. I made this choice because GraphQL prevents both over and underfetching.
           When using Express.js, I found that I either needed to
           implement more API endpoints than necessary, or had to conduct heavy
           processing on the results returned by an API because I only need a portion of the return value. With GraphQL,
           I was able to specify the exact resources which I needed in the front-end,
           with no extra-processing or routes. Furthermore, Apollo GraphQL allowed me to take advantage of API results
-          caching, which makes TA Companion even more performant.
+          caching, further enhancing the performance of TA Companion.
           <br/><br/>
           The last choice I made when designing the technology stack was to use MongoDB rather than a traditional
           relational DBMS like PostgreSQL or Oracle. I found that

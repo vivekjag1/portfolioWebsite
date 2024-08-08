@@ -16,7 +16,6 @@ import classifierHome from "../assets/classifierHome.png"
 import comparison from "../assets/comparison.png"
 import AWSLogo from "../assets/awsLogo.png"
 import dockerLogo from "../assets/dockerIcon.png"
-
 import MobileFramework from "../components/MobileFramework.tsx";
 
 export default function MLBClassifier(){
@@ -120,14 +119,13 @@ export default function MLBClassifier(){
           framework.
 
           <br/><br/>
-          MLB Classifier's frontend was developed using Next.js, TypeScript React and TailwindCSS. Choosing Next.js over
+          As mentioned earlier, MLB Classifier's frontend was developed using Next.js, TypeScript React and TailwindCSS. 
+          Choosing Next.js over
           similar JavaScript frameworks was an easy choice, as its support for client/server side rendering allowed me
           to optimize the performance of the application.
           Similarly, choosing React and TailwindCSS were both easy choices as I have significant experience with each of
-          these frameworks, using React and TailwindCSS greatly sped up the development time and allowed me to focus on
-          developing the machine learning model for the application.
-          Furthermore, React enabled me to create reusable components, which allowed me to take advantage of code-reuse,
-          and contexts, which allowed me to share data between several components.
+          these frameworks, which allowed me to spend less time building the UI and more time on the machine-learning capabilities of the application. 
+          Furthermore, using custom components and contexts, I was able to create reusable UI elements and pass global state between components.
           Finally, TailwindCSS allowed me to quickly design a unique, consistent, and attractive UI for MLB Classifier.
 
           <br/><br/>
@@ -144,7 +142,7 @@ export default function MLBClassifier(){
           The last choice I made when designing the technology stack was to use PostgreSQL for the database.
           I made this choice because the data in this application (Pitchers and Pitches) formed a natural relationship
           with each other and would not require null values to be stored (had this been the case a database which
-          supported JSON objects would be more amenable)
+          supported JSON objects would have made more sense). 
           Furthermore, PostgreSQL was easy to setup on AWS RDS and on my local machine during development.
         </p>
       </div>
@@ -171,9 +169,9 @@ export default function MLBClassifier(){
         <p className="text-lg text-left md:w-1/2 ml-5">
           Another consideration I had to make in the development of this project was cloud deployment.
           While deciding which cloud service provider to use, I weighed cost, ease of deployment, and scalability.
-          Each of these considerations led me to choose to deploy my project in 2 Docker Containers running on AWS EC2, and a PostgreSQL server running on AWS RDS.
-          AWS EC2 and RDS both offer generous free tiers, fast access time, and were easy enough to deploy to. Furthermore, I used Docker Hub as the container register for this project as it was both free and easy to use.
-          Initially, I planned to deploy the project on Google Cloud, but reverted to AWS due to the high costs of GCP.
+          Each of these considerations led me to choose to deploy my project in 2 Docker Containers (one for the UI and another for the API services) running on AWS EC2, and a PostgreSQL server running on AWS RDS.
+          AWS EC2 and RDS both offer generous free tiers, low latency, and were easy enough to deploy to. Furthermore, I used Docker Hub as the container register for this project as it was both free and easy to use.
+          Initially, I planned to deploy the project on Google Cloud, but opted to use AWS due to the high costs of GCP and my familiarity with AWS. 
         </p>
       </div>
 
@@ -186,14 +184,21 @@ export default function MLBClassifier(){
           challenging as it ended up being.
           However, as I began looking for a data set, I found that much of the available data either did not use
           relevant metrics, was not complete, or was not easily accessible.
-          Fortunately, I was able to use Baseball Savant's StatCast data to develop a training data set which
-          prioritized pitch movement, a defining feature of pitch types in the MLB.
+          Fortunately, I was able to use Baseball Savant's repository of StatCast data to develop a training data set which
+          was easily accessible and comprehensive.
+
+
           However, even after I found data from Baseball Savant, I found it difficult to select a group of features
-          (metrics) which accurately characterized pitch types.
+          (metrics) which accurately characterized pitch types. 
+
+
+
+
+
           Initially, I developed my first machine learning model using a data set which prioritized spin rate rather
           than pitch movement, which led to an accuracy of 70% rather than the 92% I achieved with the final dataset.
           Eventually, after conducting some research into the matter, I determined that pitch movement would be a much
-          better indicator of pitch type than spin rate, and utilized the appropriate data from baseball savant to craft
+          better indicator of pitch type than spin rate, and utilized the appropriate data from Baseball Savant to craft
           the final dataset.
 
 
@@ -220,7 +225,7 @@ export default function MLBClassifier(){
           Once I decided to use a traditional Neural Network, I needed to determine the parameters that would be used
           with Sci-Kit Learn's MLP Classifier.
           I decided to fix the mini-batch size at 50 during training, which allowed for the back-propagation algorithm
-          to run as frequently as possible and for training time to be minimized. Another important decision I made in
+          to run as frequently as possible (which meant the weights of the network would be updated frequently) and for training time to be minimized. Another important decision I made in
           the
           design
           of the machine learning model was to use a learning rate of .001 which allowed the model to learn effectivley
@@ -246,9 +251,7 @@ export default function MLBClassifier(){
         <p className="text-lg text-left md:w-1/2 ml-5">
           When I started this project, I set out to gain an understanding of machine learning, and gain experience
           designing machine learning models with the hope of using machine learning in future applications.
-          I am pleased that reflecting the experience, I feel confident in my ability to build machine learning models
-          in Python with Sci-Kit Learn and Keras, and strategically use machine learning in web applications using
-          frameworks like Flask and Next.JS.
+          Reflecting this experience, I feel confident in my ability to develop machine learning models and meaningfully incorperate ML models in web applications using frameworks like Flask and Next.js.
           <br></br>
           <br></br>
 
@@ -284,15 +287,20 @@ export default function MLBClassifier(){
           which may have been caused by fatigue or injury, but may have decreased the true accuracy of the model.
           <br></br>
           <br></br>
-          Reflecting on MLB Classifier, I am extremely proud of the product which I produced. I believe that this is an
+          Reflecting on MLB Classifier, I am extremely proud of the product which I produced.  
+          
+          
+          I believe that this is an
           application which can be used by fans to better understand Baseball,
           and the importance of analytics and machine learning in sports. I am also proud of the technology stack which
           I designed, as it represents my understanding of each part of an application, even when they may not directly
           compatible (ex: TypeScript and Python).
-          Finally, I am truly proud of the seamless user-experience this software provides despite the complicated
+          Furthermore, I am truly proud of the seamless user-experience this software provides despite the complicated
           nature of the software system. All portions of the application (Frontend, backend, and machine learning) are
           integrated seamlessly and contribute
           to the professional nature of this application.
+          Finally, I'm proud of the fact that I was able to learn the fundamentals of Machine and Deep learning on my own, without any prior coursework or project experience in the subject. 
+
 
 
         </p>
