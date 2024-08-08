@@ -1,7 +1,7 @@
 import ProjectCard from "../components/ProjectCard.tsx";
 import BWH from "../assets/BWH.png"
-import portfolioHeroPage from "../assets/portfolioHero.png"
 import taCompanionHero from "../assets/taCompanionHero.png"
+import MLBHero from "../assets/MLBHero.png"
 
 function Projects(){
   return(
@@ -25,10 +25,10 @@ function Projects(){
                        github={"https://github.com/vivekjag1/portfolioWebsite"} page={"/tacompanion"}/>
         </div>
         <div className="flex flex-row justify-center md:px-5 md:mr-5 mb-5">
-          <ProjectCard projectTitle={"Portfolio Website"} projectImage={portfolioHeroPage}
-                       projectImageAlt={"A portfolio website for Vivek Jagadeesh"}
-                       projectDescription={"A portfolio website for Vivek Jagadeesh, designed using React, TypeScript, Vite, TailwindCSS, and hosted with AWS EC2 and Cloudflare DNS"}
-                       github={"https://github.com/vivekjag1/portfolioWebsite"} page={"/portfolio"}/>
+          <ProjectCard projectTitle={"MLB Classifier"} projectImage={MLBHero}
+                       projectImageAlt={"A machine learning application for classifying MLB pitches"}
+                       projectDescription={"A machine learning application for classifying MLB pitches developed using Next.JS Python Flask, and hosted on AWS EC2 & RDS"}
+                       github={"https://github.com/vivekjag1/MLBStatClassifier"} page={"/MLBClassifier"}/>
         </div>
       </div>
 

@@ -87,8 +87,6 @@ export default function PortfolioProject(){
           <FrameworkComponent imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
           <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
           <FrameworkComponent imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
-
-
         </div>
       </div>
 

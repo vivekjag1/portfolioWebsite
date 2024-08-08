@@ -211,6 +211,7 @@ export default function TACompanionProject(){
           Reflecting on the experience, I am happy to report that I added Next.js, GraphQL, and MongoDB to my skills set
           while still developing an application which I am able to use in my role as a Teaching Assistant.
           <br></br>
+          <br></br>
 
           I found that the most challenging part of building TA Companion was the UI design. While I had a general
           vision for the finished product, I went through several versions of each feature's UI
@@ -223,6 +224,7 @@ export default function TACompanionProject(){
           interfaces which are both functional and visually appealing.
 
           <br></br>
+          <br></br>
           I particularly enjoyed building the backend of TA Companion. I had never used MongoDB and GraphQL, which
           presented a fun challenge during the course of developing this application.
 
@@ -231,6 +233,7 @@ export default function TACompanionProject(){
    This will make my future project work simpler as I now understand the
           considerations that go into designing a technology stack.
 
+          <br></br>
           <br></br>
 
           If I could do it all over again, one change I would make is using official WPI course and degree information.

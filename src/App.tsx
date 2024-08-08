@@ -8,8 +8,9 @@ import NavBar from "../src/components/NavBar.tsx";
 import Projects from "./routes/Projects.tsx";
 import Footer from "./components/Footer.tsx";
 import SoftEngProject from "./routes/SoftEngProject.tsx";
-import PortfolioProject from "./routes/PortfolioProject.tsx";
 import TACompanionProject from "./routes/TACompanionProject.tsx";
+import MLBClassifier from "./routes/MLBClassifier.tsx";
+
 
 
 function App(){
@@ -23,8 +24,8 @@ function App(){
         <Route path = '/certifications' element = {<Certifications/>}/>
         <Route path = "/projects" element = {<Projects/>}/>
         <Route path = "/BWHCS3733" element = {<SoftEngProject/>}/>
-        <Route path = "/portfolio" element = {<PortfolioProject/>}/>
         <Route path = "/taCompanion" element = {<TACompanionProject/>}/>
+        <Route path = "/MLBClassifier" element = {<MLBClassifier/>}/>
       </Routes>
       </div>
       <Footer/>

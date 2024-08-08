@@ -9,7 +9,7 @@ import CPPLogo from "../assets/CPPLogo.png";
 import javaLogo from "../assets/javaLogo.png";
 import SQLLogo from "../assets/SQLLogo.png";
 import pythonLogo from "../assets/pythonLogo.png";
-import asmLogo from "../assets/assemblyLanguage.png";
+import skLearnLogo from "../assets/skLearn.png"
 import nextLogo from "../assets/nextLogo.png";
 import nodeLogo from "../assets/nodeLogo.png";
 import reactLogo from "../assets/reactLogo.png";
@@ -25,7 +25,10 @@ import azureLogo from "../assets/azureLogo.png";
 import atlasLogo from "../assets/atlas-raw.webp"
 import vercelLogo from "../assets/vercelLogo.png"
 import dockerLogo from "../assets/dockerLogo.png"
-import FrameworkComponent from "../components/FrameworkComponent.tsx";
+import flaskLogo from "../assets/flaskLogo.svg"
+import kerasLogo from "../assets/kerasLogo.png"
+import tensorFlow from "../assets/tensorFlow.png"
+ import FrameworkComponent from "../components/FrameworkComponent.tsx";
 import MobileFramework from "../components/MobileFramework.tsx";
 function About(){
 
@@ -157,8 +160,7 @@ function About(){
           <FrameworkComponent imageString={CPPLogo} imageAlt={"C++"} description={"C++"}/>
           <FrameworkComponent imageString={javaLogo} imageAlt={"Java"} description={"Java"}/>
           <FrameworkComponent imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
-          <FrameworkComponent imageString={asmLogo} imageAlt={"Assembly Language x86-64"}
-                              description={"Assembly Language x86-64"}/>
+
           <div className="flex flex-col items-center">
             <img src={SQLLogo} alt={"SQL"} className="h-[11rem] mr-5"/>
             <p className="mt-2 text-center italic">{"SQL (Oracle & PostgreSQL)"}</p>
@@ -172,8 +174,6 @@ function About(){
         <MobileFramework imageString={CPPLogo} imageAlt={"C++"} description={"C++"}/>
         <MobileFramework imageString={javaLogo} imageAlt={"Java"} description={"Java"}/>
         <MobileFramework imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
-        <MobileFramework imageString={asmLogo} imageAlt={"Assembly Language x86-64"}
-                         description={"Assembly Language x86-64"}/>
         <MobileFramework imageString={SQLLogo} imageAlt={"SQL"}
                          description={"SQL (Oracle & PostgreSQL)"}/>
 
@@ -189,8 +189,11 @@ function About(){
           <FrameworkComponent imageString={reactLogo} imageAlt={"React.js"} description={"React.js"}/>
           <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"TailwindCSS"} description={"TailwindCSS"}/>
           <FrameworkComponent imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
+          <FrameworkComponent imageString={flaskLogo} imageAlt={"Flask"} description={"Flask"}/>
+
           <FrameworkComponent imageString={expressLogo} imageAlt={"GraphQL"} description={"Express.js"}/>
           <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"} description={"PrismaORM"}/>
+
 
         </div>
       </div>
@@ -204,6 +207,7 @@ function About(){
           <MobileFramework imageString={reactLogo} imageAlt={"React.js"} description={"React.js"}/>
           <MobileFramework imageString={tailwindCSSLogo} imageAlt={"TailwindCSS"} description={"TailwindCSS"}/>
           <MobileFramework imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
+          <MobileFramework imageString={flaskLogo} imageAlt={"Flask"} description={"Flask"}/>
           <MobileFramework imageString={expressLogo} imageAlt={"GraphQL"} description={"Express.js"}/>
           <MobileFramework imageString={prismaLogo} imageAlt={"PrismaORM"} description={"PrismaORM"}/>
         </div>
@@ -227,6 +231,16 @@ function About(){
           <MobileFramework imageString={oracleLogo} imageAlt={"Oracle"} description={"Oracle"}/>
           <MobileFramework imageString={postgresLogo} imageAlt={"PostgreSQL"} description={"PostgreSQL"}/>
           <MobileFramework imageString={mongoLogo} imageAlt={"MongoDB"} description={"MongoDB"}/>
+        </div>
+      </div>
+      <div className=" flex flex-row text-center justify-center">
+        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Machine & Deep learning </h1>
+      </div>
+      <div className="hidden sm:flex md:flex">
+        <div className="flex flex-row space-x-4 mb-10">
+          <FrameworkComponent imageString={skLearnLogo} imageAlt={"Sci-Kit Learn"} description={"Sci-Kit Learn"}/>
+          <FrameworkComponent imageString={kerasLogo} imageAlt={"Keras"} description={"Keras"}/>
+          <FrameworkComponent imageString={tensorFlow} imageAlt={"TensorFlow"} description={"TensorFlow"}/>
         </div>
       </div>
 
