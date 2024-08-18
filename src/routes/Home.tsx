@@ -69,8 +69,8 @@ function Home(){
                                   bgcolor: 'black'
                                 }}
                                 className="mr-4 hover:bg-black"> About Me</Button>
-                        <Button variant="contained" className=" text-white mx-auto" href="https://brighamwomens.com"
-                                target="_blank"
+                        <Button variant="contained" className=" text-white mx-auto" href="/projects"
+
                                 startIcon={<MonitorIcon/>} sx={{
                           "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
                           width: "10rem",
