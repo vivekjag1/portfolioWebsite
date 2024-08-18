@@ -21,8 +21,7 @@ import MobileFramework from "../components/MobileFramework.tsx";
 export default function TACompanionProject(){
   return(
     <div className=" mt-20 text-center">
-      <h1 className="mb-5 text-4xl font-bold font-mono">TA Companion - An application for Computer Science Teaching
-        Assistants</h1>
+      <h1 className="mb-5 text-4xl font-bold font-mono">TA Companion</h1>
       <h2 className="mb-5 text-lg font-semibold">May 2024 - July 2024 </h2>
       <h3 className="mb-5 text-lg ">Skills developed: UI/UX design, Full Stack Frameworks, No SQL Databases,
         server/client side rendering, GraphQL APIs

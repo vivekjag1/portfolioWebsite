@@ -21,8 +21,7 @@ import MobileFramework from "../components/MobileFramework.tsx";
 export default function MLBClassifier(){
   return(
     <div className=" mt-20 text-center">
-      <h1 className="mb-5 text-4xl font-bold font-mono"> MLB Classifier - A machine learning application for classifying
-        MLB pitches</h1>
+      <h1 className="mb-5 text-4xl text-center font-bold font-mono">MLB Classifier</h1>
       <h2 className="mb-5 text-lg font-semibold">July 2024 - August 2024 </h2>
       <h3 className="mb-5 text-lg ">Skills developed: Machine/Deep learning model development, Data Set design, CI/CD
         pipelines, UI/UX design, Cloud Deployment</h3>
@@ -68,14 +67,10 @@ export default function MLBClassifier(){
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
-          From my childhood to my adolescence, I have been an avid Red Sox fan.
-          Over the course of my fandom, I have often caught myself wondering "What Pitch Was that?" and being amazed
-          that TV broadcasts are able to classify a pitch in real time.
-          As I began to experiment with machine/deep learning in the summer of 2024, I discovered that many of the
-          modern statistics collected during MLB games would make it possible to develop a machine learning model which
-          answered my curiosities, leading me to develop MLB Classifier - an
-          application for classifying MLB pitches based off of Stat Cast statistics.
 
+          As a life-long fan of the Boston Red Sox, I have always been interested in the intersection between computer science and professional sports.
+          As I began to experiment with machine/deep learning in the summer of 2024, I discovered that one application of computing to professional baseball was the use of machine learning
+          to classify MLB pitches by type. This led me to develop MLB Classifier - a machine learning application which classifies MLB pitches by type using StatCast data.
 
         </p>
       </div>
