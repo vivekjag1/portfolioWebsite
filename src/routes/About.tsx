@@ -2,7 +2,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import secondVivekHeadshot from "../assets/secondVivekHeadshot.png";
+import secondVivekHeadshot from "../assets/Vivek-Headshot-Updated.jpg";
 import typescriptLogo from "../assets/typescriptLogo.png";
 import CLogo from "../assets/CLogo.png";
 import CPPLogo from "../assets/CPPLogo.png";
@@ -45,7 +45,9 @@ function About(){
       id:2,
       title:"Student Assistant - Worcester Polytechnic Institute Department of Computer Science",
       location: "Worcester, Massachusetts",
-      description: "Selected by the CS department faculty to serve as a Student Assistant starting in Summer 2024. Responsible for assisting students in the completion of course assignments and exams, and professors in delivering course content in the most effective way. Currently assisting in teaching CS 3013 - Operating Systems with Professor Craig Wills",
+      description:
+        "Selected by the CS department faculty to serve as a Student Assistant starting in Summer 2024. " +
+        "Responsible for assisting students in the completion of course assignments and exams, and professors in delivering course content in the most effective way.",
       date: "May 2024 - Present",
       icon: <WorkIcon/>
     },
@@ -53,7 +55,8 @@ function About(){
       id:3,
       title: "Legislative Intern - Massachusetts House of Representatives",
       location: "Boston, Massachusetts",
-      description: "As a legislative intern for State Representative Adam Scanlon, I was responsible for writing legislative memos, policy recommendations, and communicating with constituents through a weekly newsletter.",
+      description: "As a legislative intern for State Representative Adam Scanlon, " +
+        "I was responsible for writing legislative memos, policy recommendations, and communicating with constituents through a weekly newsletter.",
       date: "June 2021 - June 2022",
       icon: <WorkIcon/>
     },
@@ -74,7 +77,7 @@ function About(){
       <section className="hidden md:flex">
         <div className=" mt-20 grid grid-cols-2 overflow-hidden">
           <div className="flex flex-col  items-center justify-center  h-full col-span-1 ">
-            <p className="font-semibold  text-lg ml-10">
+            <p className="text-black  text-2xl font-arial  ml-20">
               I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
               with a concentration in systems development and a minor in Electrical and Computer Engineering (ECE).
               In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
@@ -86,8 +89,8 @@ function About(){
               possible.
             </p>
           </div>
-          <div className="items-center justify-center flex col-span-1">
-            <img src={secondVivekHeadshot} alt="vivek jagadeesh " className=""/>
+          <div className="items-center justify-center flex ml-20 col-span-1">
+            <img src={secondVivekHeadshot} alt="vivek jagadeesh " className=" ml-20 max-h-[40rem]"/>
 
           </div>
         </div>
@@ -101,7 +104,7 @@ function About(){
 
                 <div className="w-full h-auto flex flex-col items-center justify-center   sm:ml-5">
                   <h1
-                    className="text-black font-semibold text-center text-xl sm:text-xl font-arial   overflow-x-hidden">
+                    className="text-xl mt-7 text-left md:w-1/2 ml-5">
                     I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
                     with a concentration in systems development and a minor in Electrical and Computer Engineering
                     (ECE).

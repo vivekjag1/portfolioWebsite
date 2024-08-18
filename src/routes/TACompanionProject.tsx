@@ -67,7 +67,7 @@ export default function TACompanionProject(){
 
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5 ">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
           During the summer of 2024, when I began my role as a Student Teaching Assistant in the Computer Science Department, I
           quickly found that Workday (which WPI uses for recording hours, grades, and dispersing pay)
           was unintuitive and lacked features which would be helpful to student workers. This led me to design TA
@@ -104,7 +104,7 @@ export default function TACompanionProject(){
                          description={"MongoDB"}/>
       </div>
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
           The first choice that I made in designing the technology stack for this application was using Next.js.
           I opted to use Next.js instead of other JavasScript frameworks (such as Vue.js and Node.js) since
           Next allows developers to specify whether a page is rendered statically, on the client side, or on the server
@@ -169,7 +169,7 @@ export default function TACompanionProject(){
       </div>
 
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           Another consideration I had to make while designing the technology stack was cloud deployment. I considered a
           variety of factors when picking a cloud provider,
           such as the inclusion of a CI/CD pipeline, and cost. In the end, I settled on Vercel Cloud for the frontend,
@@ -205,7 +205,7 @@ export default function TACompanionProject(){
       </h3>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Results</h1>
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           When I started this project, I knew that I wanted to become familiar with a new set of frameworks while still
           designing an application which served a purpose in my daily life and could be used by other students.
           Reflecting on the experience, I am happy to report that I added Next.js, GraphQL, and MongoDB to my skills set

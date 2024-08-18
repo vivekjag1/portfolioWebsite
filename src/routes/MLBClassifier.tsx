@@ -67,7 +67,7 @@ export default function MLBClassifier(){
 
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5 ">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
           From my childhood to my adolescence, I have been an avid Red Sox fan.
           Over the course of my fandom, I have often caught myself wondering "What Pitch Was that?" and being amazed
           that TV broadcasts are able to classify a pitch in real time.
@@ -109,7 +109,7 @@ export default function MLBClassifier(){
                          description={"PostgreSQL"}/>
       </div>
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           When designing the technology stack, I knew that the portions of the project which involved building the
           machine learning model and training the neural network needed to be written in Python.
           However, in my previous project experience, I grew very fond of the advanced rendering capabilities of
@@ -166,7 +166,7 @@ export default function MLBClassifier(){
       </div>
 
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           Another consideration I had to make in the development of this project was cloud deployment.
           While deciding which cloud service provider to use, I weighed cost, ease of deployment, and scalability.
           Each of these considerations led me to choose to deploy my project in 2 Docker Containers (one for the UI and another for the API services) running on AWS EC2, and a PostgreSQL server running on AWS RDS.
@@ -179,7 +179,7 @@ export default function MLBClassifier(){
 
 
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           At the beginning of this project, I did not expect finding a good, publicly available dataset to be as
           challenging as it ended up being.
           However, as I began looking for a data set, I found that much of the available data either did not use
@@ -216,7 +216,7 @@ export default function MLBClassifier(){
       </div>
 
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           The most challenging part of developing MLB Classifier was creating the machine learning model. Initially, I
           started by using a Convoluted Neural Network (CNN) from Keras, however, I soon realized
           that due to the small dimension of the feature vectors, that a traditional Neural Network would perform better
@@ -248,7 +248,7 @@ export default function MLBClassifier(){
 
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Results</h1>
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           When I started this project, I set out to gain an understanding of machine learning, and gain experience
           designing machine learning models with the hope of using machine learning in future applications.
           Reflecting this experience, I feel confident in my ability to develop machine learning models and meaningfully incorperate ML models in web applications using frameworks like Flask and Next.js.

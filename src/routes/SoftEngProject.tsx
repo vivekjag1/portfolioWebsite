@@ -76,7 +76,7 @@ export default function SoftEngProject(){
 
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5 ">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
           During D-Term  of the 2023-2024 academic year, I served as an assistant lead software engineer on
           a team of 9 other students as we developed an application for Brigham and Women's Hospital as a part
           of WPI CS3733 - Software Engineering with Professor Wilson Wong.
@@ -115,7 +115,7 @@ export default function SoftEngProject(){
                          description={"PostgreSQL"}/>
       </div>
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
         This application was built using Node.js as the underlaying JavaScript framework, and the front end was developed using TypeScript and React.js. 
         Over the course of the project, we leveraged ReactJS to design 65 custom components, which allowed us to take
           advantage of code reuse and gave our website a consistent theme even though we had a team of 10 students. 
@@ -143,7 +143,7 @@ export default function SoftEngProject(){
         Iteration 5</h3>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">My Contributions and Results</h1>
       <div className="flex flex-row items-center justify-center">
-        <p className="text-lg text-left md:w-1/2 ml-5">
+        <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           At the beginning of this project, I worked almost exclusively on the back end of our application.
           Specifically, I developed the PostgreSQL database schemas, Express APIs, Map Data Upload and Download via
           .CSV files, and File Validation.
@@ -179,7 +179,7 @@ export default function SoftEngProject(){
         refactoring of the map
         edit page to the above design. </h3>
       <div className="flex flex-row items-center justify-center mt-2">
-        <p className="text-lg  text-left md:w-1/2 ml-5">
+        <p className="text-lg  text-left md:w-1/2 ml-5 mr-5">
           In the final iterations of the project, I became a full-stack developer and made significant contributions to
           the front end of our application while still working on the back end of the application.
           Specifically, I developed one of our service request pages along with two other students and contributed to
