@@ -139,8 +139,7 @@ export default function SoftEngProject(){
       </div>
       <img src={evolution} alt="Changes to the pathfinding page"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full mt-5"/>
-      <h3 className="text-lg text-gray-400 mt-2"> Evolution of the Pathfinding page between from Iteration 1 to
-        Iteration 5</h3>
+      <h3 className="text-lg text-gray-400 mt-2"> initial vs final pathfinding page</h3>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">My Contributions and Results</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
