@@ -20,10 +20,10 @@ export default function SoftEngProject(){
   return(
     <div className=" mt-20 text-center">
       <h1 className="mb-5 text-4xl font-bold font-mono">An application for Brigham and Women's Hospital</h1>
-      <h2 className="mb-5 text-lg font-semibold">March 2024 - May 2024</h2>
-      <h3 className="mb-5 text-lg ">Skills developed: Agile Methodology, Full stack development, User Authentication,
+      <h2 className="mb-5 text-lg font-semibold font-arial ">March 2024 - May 2024</h2>
+      <h3 className="mb-5 text-lg italic font-arial ">Skills developed: Agile Methodology, Full stack development, User Authentication,
         Version Control, UI/UX design </h3>
-      <h3 className="mb-5 text-lg ">Technology Stack: Node.js, TypeScript, React.js, TailwindCSS, Express.js, PrismaORM, PostgreSQL,
+      <h3 className="mb-5 text-lg italic font-arial ">Technology Stack: Node.js, TypeScript, React.js, TailwindCSS, Express.js, PrismaORM, PostgreSQL,
         Auth0, AWS EC2 and RDS</h3>
       <img src={BWH} alt="Software Engineering Team O Final Project"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl"/>
@@ -73,7 +73,7 @@ export default function SoftEngProject(){
       </div>
 
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
           During D-Term  of the 2023-2024 academic year, I served as an assistant lead software engineer on
@@ -85,7 +85,7 @@ export default function SoftEngProject(){
           The application allows users to navigate around the hospital, edit the hospital maps, view map data, submit and view service requests, and manage employees. 
         </p>
       </div>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">The Technology Stack</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
       <div className="hidden sm:flex md:flex items-center justify-center">
         <div className="flex flex-row space-x-4 mb-10">
           <FrameworkComponent imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
@@ -139,7 +139,7 @@ export default function SoftEngProject(){
       <img src={evolution} alt="Changes to the pathfinding page"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full mt-5"/>
       <h3 className="text-lg text-gray-400 mt-2"> initial vs final pathfinding page</h3>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">My Contributions and Results</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">My Contributions and Results</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           At the beginning of this project, I worked almost exclusively on the back end of our application.
