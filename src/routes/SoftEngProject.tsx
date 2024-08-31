@@ -16,8 +16,6 @@ import postgresLogo from "../assets/postgresqllogo.png";
 import MobileFramework from "../components/MobileFramework.tsx";
 import nodeLogo from "../assets/nodeLogo.png";
 import prismaLogo from "../assets/prismaLogo.png";
-
-
 export default function SoftEngProject(){
   return(
     <div className=" mt-20 text-center">

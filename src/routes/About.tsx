@@ -2,7 +2,8 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import secondVivekHeadshot from "../assets/Vivek-Headshot-Updated.jpg";
+//import secondVivekHeadshot from "../assets/Vivek-Headshot-Updated.jpg";
+import vivekHeadhshotCutout from "../assets/vivekHeadshotCutout.png";
 import typescriptLogo from "../assets/typescriptLogo.png";
 import CLogo from "../assets/CLogo.png";
 import CPPLogo from "../assets/CPPLogo.png";
@@ -90,7 +91,7 @@ function About(){
             </p>
           </div>
           <div className="items-center justify-center flex ml-20 col-span-1">
-            <img src={secondVivekHeadshot} alt="vivek jagadeesh " className=" ml-20 max-h-[40rem]"/>
+            <img src={vivekHeadhshotCutout} alt="vivek jagadeesh " className=" ml-20 max-h-[40rem]"/>
 
           </div>
         </div>
@@ -100,7 +101,7 @@ function About(){
           <div className="w-full h-auto grid grid-row-2 py-10 sm:py-0">
             <div className="flex flex-col items-center justify-center w-full">
               <div className="flex flex-col items-center justify-center w-full">
-                <img src={secondVivekHeadshot} alt="vivek jagadeesh "/>
+                <img src={vivekHeadhshotCutout} alt="vivek jagadeesh "/>
 
                 <div className="w-full h-auto flex flex-col items-center justify-center   sm:ml-5">
                   <h1
