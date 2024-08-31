@@ -50,7 +50,7 @@ function Home(){
               <div className="flex flex-col items-center justify-center w-full">
                 <img src={vivekHeadshot} alt="vivek jagadeesh" />
                 <TypeAnimation
-                  className="text-black text-center font-mono font-bold  text-4xl md:text-6xl lg:text-8xl mt-2 " sequence={["Hello,World!"]}/>
+                  className="text-black text-center font-mono font-bold  text-4xl md:text-6xl lg:text-8xl mt-2 " sequence={["Hello, World!"]}/>
                 <div className="w-full h-auto flex flex-col items-center justify-center   sm:ml-5">
                   <h1
                     className="text-xl mt-7 text-left md:w-1/2 ml-5 ">

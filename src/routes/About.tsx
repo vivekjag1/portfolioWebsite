@@ -154,8 +154,9 @@ function About(){
       <div className=" flex flex-row justify-center">
         <h1 className="font-bold text-5xl font-mono">Skills</h1>
       </div>
+
       <div className=" flex flex-row justify-center">
-        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Programming Languages</h1>
+        <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Programming Languages</h1>
       </div>
       <div className="hidden sm:flex md:flex">
         <div className="flex flex-row space-x-4 mb-10">
@@ -184,7 +185,7 @@ function About(){
       </div>
 
       <div className=" hidden md:flex flex-row justify-center">
-        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Software Frameworks</h1>
+        <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Software Frameworks</h1>
       </div>
       <div className="hidden sm:flex md:flex">
         <div className="flex flex-row space-x-4 mb-10">
@@ -219,7 +220,7 @@ function About(){
 
 
       <div className=" flex flex-row justify-center">
-        <h1 className="font-bold text-3xl font-mono mt-4 text-center mb-4">Database Management Systems</h1>
+        <h1 className="font-bold text-3xl font-arial mt-4 text-center mb-4">Database Management Systems</h1>
       </div>
       <div className="hidden sm:flex md:flex">
         <div className="flex flex-row space-x-4 mb-10">
@@ -238,7 +239,7 @@ function About(){
         </div>
       </div>
       <div className=" flex flex-row text-center justify-center">
-        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Machine & Deep learning </h1>
+        <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Machine & Deep learning </h1>
       </div>
       <div className="hidden sm:flex md:flex">
         <div className="flex flex-row space-x-4 mb-10">
@@ -257,7 +258,7 @@ function About(){
 
 
       <div className=" flex flex-row text-center justify-center">
-        <h1 className="font-bold text-3xl font-mono mt-4 mb-4">Cloud Computing & Containers</h1>
+        <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Cloud Computing & Containers</h1>
       </div>
       <div className="hidden sm:flex md:flex">
         <div className="flex flex-row space-x-4 mb-10">

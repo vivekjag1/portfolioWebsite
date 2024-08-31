@@ -21,12 +21,13 @@ export default function SoftEngProject(){
     <div className=" mt-20 text-center">
       <h1 className="mb-5 text-4xl font-bold font-mono">An application for Brigham and Women's Hospital</h1>
       <h2 className="mb-5 text-lg font-semibold">March 2024 - May 2024</h2>
-      <h3 className="mb-5 text-lg ">Skills developed: Agile Methodology, Full stack development,User Authentication,
+      <h3 className="mb-5 text-lg ">Skills developed: Agile Methodology, Full stack development, User Authentication,
         Version Control, UI/UX design </h3>
       <h3 className="mb-5 text-lg ">Technology Stack: Node.js, TypeScript, React.js, TailwindCSS, Express.js, PrismaORM, PostgreSQL,
         Auth0, AWS EC2 and RDS</h3>
       <img src={BWH} alt="Software Engineering Team O Final Project"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl"/>
+
       <div className="hidden md:flex justify-center">
         <Stack spacing={2} direction="row" className="items-center mt-5">
           <Button href="https://github.com/vivekjag1/CS3733TeamO" target="_blank" variant="contained"
