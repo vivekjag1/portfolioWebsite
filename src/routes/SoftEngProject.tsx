@@ -1,5 +1,7 @@
 import BWH from "../assets/BWH.png"
-import evolution from "../assets/evolutionPathfinding.png"
+// import evolution from "../assets/evolutionPathfinding.png"
+import oldPathfinding from "../assets/oldPathfinding.webp";
+import newPathfinding from "../assets/newPathfinding.png";
 import finalMapedit from "../assets/finalMapEditPage.png"
 import Button from "@mui/material/Button";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -21,9 +23,9 @@ export default function SoftEngProject(){
     <div className=" mt-20 text-center">
       <h1 className="mb-5 text-4xl font-bold font-mono">An application for Brigham and Women's Hospital</h1>
       <h2 className="mb-5 text-lg font-semibold font-arial ">March 2024 - May 2024</h2>
-      <h3 className="mb-5 text-lg italic font-arial ">Skills developed: Agile Methodology, Full stack development, User Authentication,
+      <h3 className="mb-5 text-lg italic font-arial "> Agile Methodology, Full stack development, User Authentication,
         Version Control, UI/UX design </h3>
-      <h3 className="mb-5 text-lg italic font-arial ">Technology Stack: Node.js, TypeScript, React.js, TailwindCSS, Express.js, PrismaORM, PostgreSQL,
+      <h3 className="mb-5 text-lg italic font-arial ">Node.js, TypeScript, React.js, TailwindCSS, Express.js, PrismaORM, PostgreSQL,
         Auth0, AWS EC2 and RDS</h3>
       <img src={BWH} alt="Software Engineering Team O Final Project"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl"/>
@@ -78,11 +80,10 @@ export default function SoftEngProject(){
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
           During D-Term  of the 2023-2024 academic year, I served as an assistant lead software engineer on
           a team of 9 other students as we developed an application for Brigham and Women's Hospital as a part
-          of WPI CS3733 - Software Engineering with Professor Wilson Wong.
+          of WPI CS 3733 - Software Engineering with Professor Wilson Wong.
           Our application was developed over the course of five agile sprints, each lasting for one week and concluding
-          with a presentation and technology demonstration. While I began the project as a back-end developer, I quickly
-          became a full-stack engineer and made significant contributions to all components of our project.
-          The application allows users to navigate around the hospital, edit the hospital maps, view map data, submit and view service requests, and manage employees. 
+          with a presentation and technology demonstration. Initially, I was responsible for developing the back-end of our application (REST APIs, PostgreSQL schema) but quickly transitioned to contribute to all parts
+          of the application. The final application allows users to navigate around the hospital, edit the hospital map (admins. only), submit service requests, and manage hospital employees.
         </p>
       </div>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
@@ -115,19 +116,22 @@ export default function SoftEngProject(){
       </div>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
-        This application was built using Node.js as the underlaying JavaScript framework, and the front end was developed using TypeScript and React.js. 
-        Over the course of the project, we leveraged ReactJS to design 65 custom components, which allowed us to take
-          advantage of code reuse and gave our website a consistent theme even though we had a team of 10 students. 
+          Our application was built using Node.js and Vite as our JavaScript frameworks. Furthermore, we utilized TypeScript rather than JavaScript for the purposes of ensuring type-safety throughout the application.
+
+          The user experience of the application was built using React.js.
 
 
-          The application's back end was developed using ExpressJS, PrismaORM, and a PostgreSQL database.
-          Our backend was responsible for storing data related to the hospital map, users, and service requests.
-          Additionally, we utilized Auth0 to secure our application using user authentication, role-based access
-          control, API protection, and
-          auto-account creation/deletion upon employee creation and deletion by an admin user.
+          Over the course of the project, we leveraged React.js to design 65 custom components, which allowed us to take
+          advantage of code reuse and gave our website a consistent theme even though we had a team of 10 students.
 
-          Finally, we utilized AWS EC2 and RDS to host our application and database in the cloud and configured AWS EC2
-          to work with our custom domain (brighamwomens.com).
+
+          The application's back-end was developed using ExpressJS, PrismaORM, and a PostgreSQL database.
+          The express.js REST APIs were responsible for providing database CRUD operations, while the database itself stored information regarding the hospital map, users, and service requests.
+
+          Throughout the application, we utilized Auth0 to provide user authentication, role-based access control, API protection, and auto-account creation and deletion upon employee creation and deletion by an administrator.
+
+
+          Finally, our application utilized AWS EC2 and RDS to host our application in the cloud, and utilized Cloudflare DNS for our custom domain.
 
           We deployed to AWS following each iteration and eventually developed a pipeline using docker-hub auto-deploy
           with GitHub actions.
@@ -136,15 +140,26 @@ export default function SoftEngProject(){
           iterations.
         </p>
       </div>
-      <img src={evolution} alt="Changes to the pathfinding page"
-           className="w-3/4 mx-auto max-w-[70rem] max-h-full mt-5"/>
-      <h3 className="text-lg text-gray-400 mt-2"> initial vs final pathfinding page</h3>
+      <div className="flex items-center justify-center ">
+        <img src={oldPathfinding} alt="Changes to the pathfinding page"
+             className="w-3/4  max-w-[35rem] max-h-full mt-5 mr-10 shadow-2xl"/>
+        <img src={newPathfinding} alt="Changes to the pathfinding page"
+             className="w-3/4  max-w-[35rem] max-h-full mt-5 ml-10 shadow-2xl"/>
+      </div>
+
+
+      <figcaption className="text-lg text-gray-400  italic  mt-2"> The evolution of the application pathfinding page from iteration 1 to iteration 5</figcaption>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">My Contributions and Results</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
+
+
           At the beginning of this project, I worked almost exclusively on the back end of our application.
           Specifically, I developed the PostgreSQL database schemas, Express APIs, Map Data Upload and Download via
           .CSV files, and File Validation.
+
+
+
           I enjoyed working on these features as I took CS3431 - Database Systems the term before taking
           Software Engineering, and enjoyed applying the content that I had learned in Databases to create a
           comprehensive user
@@ -173,24 +188,28 @@ export default function SoftEngProject(){
       </div>
       <img src={finalMapedit} alt="Final Map Edit Page "
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl mt-5"/>
-      <h3 className="text-lg text-gray-400 mt-2">One of my most significant contributions to the team was the
+      <figcaption className="text-lg text-gray-400 mt-2 italic">One of my most significant contributions to the team was the
         refactoring of the map
-        edit page to the above design. </h3>
+        edit page to the above design. </figcaption>
       <div className="flex flex-row items-center justify-center mt-2">
         <p className="text-lg  text-left md:w-1/2 ml-5 mr-5">
           In the final iterations of the project, I became a full-stack developer and made significant contributions to
           the front end of our application while still working on the back end of the application.
-          Specifically, I developed one of our service request pages along with two other students and contributed to
+          Specifically, I developed one of our service request pages and contributed to
           the near-complete overhaul of the graphical map-edit page.
           I enjoyed developing these parts of the application (particularly the map edit page), as it allowed me to
-          truly understand how all parts of our software systems (Front End, Algorithms, and Back end) interact to
+          truly understand how all parts of our software systems  interact to
           create a cohesive application.
 
           <br></br>
           <br></br>
+
           The most challenging part of this experience was coordinating with a team of ten people.
-          Scheduling meetings and social events was very difficult as was ensuring that everyone's code
-          followed a standard convention.
+          Finding time to schedule our daily scrum meetings meetings and social events was very difficult due to everybody's obligations outside of class.
+          Furthermore, I also found it challenging to establish a standard for the code produced by our team. Our group had very different backgrounds, and it was challenging to ensure that
+          students were able to pick up work from others.
+
+
           We were able to use consistent agile scrum meetings, frequent communication, and code reviews to overcome
           these challenges, and ended up with a product that reflected the
           various strengths of the developers on our team.
@@ -209,7 +228,7 @@ export default function SoftEngProject(){
           <br></br>
           If I had to change one thing about the process of developing this application, I would have liked our team to
           make
-          modifications to the agile methodology earlier on. There is no one-size-fits-all approach to
+          modifications to the agile methodology earlier in the term . There is no one-size-fits-all approach to
           agile, and in the end, our team hit its stride only when we developed a version of the agile methodology that
           was unique to us. I
           believe
