@@ -22,11 +22,11 @@ export default function TACompanionProject(){
   return(
     <div className=" mt-20 text-center">
       <h1 className="mb-5 text-4xl font-bold font-mono">TA Companion</h1>
-      <h2 className="mb-5 text-lg font-semibold">May 2024 - July 2024 </h2>
-      <h3 className="mb-5 text-lg ">Skills developed: UI/UX design, Full Stack Frameworks, No SQL Databases,
+      <h2 className="mb-5 text-lg font-semibold font-arial">May 2024 - July 2024 </h2>
+      <h3 className="mb-5 text-lg italic font-arial"> UI/UX design, Full Stack Frameworks, No SQL Databases,
         server/client side rendering, GraphQL APIs
       </h3>
-      <h3 className="mb-5 text-lg ">Technology Stack: Next.js, TypeScript, React.js, TailwindCSS, GraphQL, Mongoose,
+      <h3 className="mb-5 text-lg font-arial italic"> Next.js, TypeScript, React.js, TailwindCSS, GraphQL, Mongoose,
         MongoDB, Auth0, Vercel Cloud, MongoDB Atlas</h3>
       <img src={taCompanionHero} alt="Software Engineering Team O Final Project"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl"/>
