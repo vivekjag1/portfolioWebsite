@@ -140,15 +140,23 @@ export default function SoftEngProject(){
           iterations.
         </p>
       </div>
-      <div className="flex items-center justify-center ">
+      <div className=" sm:hidden md:flex items-center justify-center ">
         <img src={oldPathfinding} alt="Changes to the pathfinding page"
-             className="w-3/4  max-w-[35rem] max-h-full mt-5 mr-10 shadow-2xl"/>
+             className="w-3/4  max-w-[35rem] max-h-full mt-5 mr-10 ml-10 shadow-2xl"/>
         <img src={newPathfinding} alt="Changes to the pathfinding page"
              className="w-3/4  max-w-[35rem] max-h-full mt-5 ml-10 shadow-2xl"/>
       </div>
+      {/*<div className="lg:hidden sm:flex flex-col items-center mb-2">*/}
+      {/*  <img src={oldPathfinding} alt="Changes to the pathfinding page"*/}
+      {/*       className="w-3/4  max-w-[35rem] max-h-full mt-5 mr-10 ml-10 shadow-2xl"/>*/}
+      {/*  <img src={newPathfinding} alt="Changes to the pathfinding page"*/}
+      {/*       className="w-3/4  max-w-[35rem] max-h-full mt-5 ml-10 shadow-2xl"/>*/}
+      {/*</div>*/}
 
 
-      <figcaption className="text-lg text-gray-400  italic  mt-2"> The evolution of the application pathfinding page from iteration 1 to iteration 5</figcaption>
+      <figcaption className="text-lg text-gray-400  italic  mt-2"> The evolution of the application pathfinding page
+        from iteration 1 to iteration 5
+      </figcaption>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">My Contributions and Results</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
