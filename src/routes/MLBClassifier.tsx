@@ -23,9 +23,9 @@ export default function MLBClassifier(){
     <div className=" mt-20 text-center">
       <h1 className="mb-5 text-4xl text-center font-bold font-mono">MLB Classifier</h1>
       <h2 className="mb-5 text-lg font-semibold">July 2024 - August 2024 </h2>
-      <h3 className="mb-5 text-lg ">Skills developed: Machine/Deep learning model development, Data Set design, CI/CD
+      <h3 className="mb-5 text-lg italic"> Machine/Deep learning model development, Data Set design, CI/CD
         pipelines, UI/UX design, Cloud Deployment</h3>
-      <h3 className="mb-5 text-lg ">Technology Stack: Next.js, TypeScript, React.js, TailwindCSS, Python, Flask, Sci-Kit
+      <h3 className="mb-5 text-lg italic"> Next.js, TypeScript, React.js, TailwindCSS, Python, Flask, Sci-Kit
         learn , PostgreSQL, AWS EC2 & RDS</h3>
       <img src={mlbHero} alt="MLB Classifier hero page "
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl"/>
