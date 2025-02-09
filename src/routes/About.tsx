@@ -74,13 +74,13 @@ function About(){
   ]
   return(
     <div className="flex flex-col  mt-20 justify-center items-center mb-4">
-      <h1 className="font-bold text-5xl  font-mono">About me</h1>
+      <h1 className="font-bold text-5xl font-arial">About me</h1>
       <section className="hidden md:flex">
         <div className=" mt-20 grid grid-cols-2 overflow-hidden">
           <div className="flex flex-col  items-center justify-center  h-full col-span-1 ">
             <p className="text-black  text-2xl font-arial  ml-20">
               I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
-              with a concentration in systems development and a minor in Electrical and Computer Engineering (ECE).
+              with a concentration in systems development.
               In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
               In this role, I assist both professors and students in creating a meaningful and substantive learning
               experience for everyone.
@@ -107,8 +107,7 @@ function About(){
                   <h1
                     className="text-xl mt-7 text-left md:w-1/2 ml-5">
                     I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
-                    with a concentration in systems development and a minor in Electrical and Computer Engineering
-                    (ECE).
+                    with a concentration in systems development.
                     In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
                     In this role, I assist both professors and students in creating a meaningful and substantive
                     learning experience for everyone.
@@ -125,7 +124,7 @@ function About(){
         </div>
       </section>
       <div className=" flex flex-row justify-center ">
-        <h1 className="font-bold text-5xl  font-mono ">
+        <h1 className="font-bold text-5xl  font-arial ">
           Experience
         </h1>
       </div>
@@ -152,7 +151,7 @@ function About(){
         }
       </VerticalTimeline>
       <div className=" flex flex-row justify-center">
-        <h1 className="font-bold text-5xl font-mono">Skills</h1>
+        <h1 className="font-bold text-5xl font-arial">Skills</h1>
       </div>
 
       <div className=" flex flex-row justify-center">
@@ -204,7 +203,7 @@ function About(){
       </div>
       <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
         <div className=" flex flex-col justify-center">
-          <h1 className="font-bold text-3xl text-center font-mono mt-4 mb-4">Software Frameworks</h1>
+          <h1 className="font-bold text-3xl text-center font-arial mt-4 mb-4">Software Frameworks</h1>
         </div>
         <div className="flex flex-col space-x-4 mb-10">
           <MobileFramework imageString={nextLogo} imageAlt={"Next.js"} description={"Next.js"}/>

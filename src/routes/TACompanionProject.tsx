@@ -21,7 +21,7 @@ import MobileFramework from "../components/MobileFramework.tsx";
 export default function TACompanionProject(){
   return(
     <div className=" mt-20 text-center">
-      <h1 className="mb-5 text-4xl font-bold font-mono">TA Companion</h1>
+      <h1 className="mb-5 text-4xl font-bold font-arial">TA Companion</h1>
       <h2 className="mb-5 text-lg font-semibold font-arial">May 2024 - July 2024 </h2>
       <h3 className="mb-5 text-lg italic font-arial"> UI/UX design, Full Stack Frameworks, No SQL Databases,
         server/client side rendering, GraphQL APIs
@@ -65,7 +65,7 @@ export default function TACompanionProject(){
       </div>
 
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
           During the summer of 2024, when I began my role as a Student Teaching Assistant in the Computer Science Department, I
@@ -78,7 +78,7 @@ export default function TACompanionProject(){
 
         </p>
       </div>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">The Technology Stack</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
       <div className="hidden sm:flex md:flex items-center justify-center">
         <div className="flex flex-row space-x-4 mb-10">
           <FrameworkComponent imageString={nextLogo} imageAlt={"nextjs"} description={"Next.js"}/>
@@ -153,7 +153,7 @@ export default function TACompanionProject(){
       </div>
 
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Cloud Deployment</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Cloud Deployment</h1>
       <div className="hidden sm:flex md:flex items-center justify-center">
         <div className="flex flex-row space-x-4 mb-10">
           <FrameworkComponent imageString={vercelLogo} imageAlt={"vercel platform"} description={"Vercel Cloud"}/>
@@ -203,7 +203,7 @@ export default function TACompanionProject(){
         which allows users to create to-do items by course and role, and drag cards between
         columns.
       </h3>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Results</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Results</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           When I started this project, I knew that I wanted to become familiar with a new set of frameworks while still

@@ -6,7 +6,7 @@ export default function Footer(){
   return(
     <footer className='bottom-0 left-0 w-full bg-white text-black'>
       <div className = "text-center bg-white  ">
-        <p className="w-full text-center font-mono text-black">Built by Vivek Jagadeesh</p>
+        <p className="w-full text-center font-arial text-black">Built by Vivek Jagadeesh</p>
         <div className = " flex flex-row justify-center mt-2">
           <div className="hover:animate-bounce">
             <a href="https://github.com/vivekjag1" target="_blank" className="hover:animate-bounce">

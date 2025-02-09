@@ -7,7 +7,7 @@ function Projects(){
   return(
     <>
     <div className="flex flex-row mt-20 justify-center  mb-4">
-      <h1 className="font-bold md:text-5xl font-mono">Projects</h1>
+      <h1 className="font-bold md:text-5xl font-arial">Projects</h1>
     </div>
       <div className="flex flex-col md:flex-row items-center justify-center mb-5">
 

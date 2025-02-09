@@ -21,7 +21,7 @@ import MobileFramework from "../components/MobileFramework.tsx";
 export default function MLBClassifier(){
   return(
     <div className=" mt-20 text-center">
-      <h1 className="mb-5 text-4xl text-center font-bold font-mono">MLB Classifier</h1>
+      <h1 className="mb-5 text-4xl text-center font-bold font-arial">MLB Classifier</h1>
       <h2 className="mb-5 text-lg font-semibold">July 2024 - August 2024 </h2>
       <h3 className="mb-5 text-lg italic"> Machine/Deep learning model development, Data Set design, CI/CD
         pipelines, UI/UX design, Cloud Deployment</h3>
@@ -64,7 +64,7 @@ export default function MLBClassifier(){
       </div>
 
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Project Overview</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Project Overview</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
 
@@ -74,7 +74,7 @@ export default function MLBClassifier(){
 
         </p>
       </div>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">The Technology Stack</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
       <div className="hidden sm:flex md:flex items-center justify-center">
         <div className="flex flex-row space-x-4 mb-10">
           <FrameworkComponent imageString={sklearnLogo} imageAlt={"Sci-Kit learn"} description={"Sci-Kit Learn"}/>
@@ -148,7 +148,7 @@ export default function MLBClassifier(){
         pitch</h3>
 
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Cloud Deployment</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Cloud Deployment</h1>
       <div className="hidden sm:flex md:flex items-center justify-center">
         <div className="flex flex-row space-x-4 mb-10">
           <FrameworkComponent imageString={AWSLogo} imageAlt={"AWS"} description={"AWS"}/>
@@ -170,7 +170,7 @@ export default function MLBClassifier(){
         </p>
       </div>
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Developing the Data Set</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Developing the Data Set</h1>
 
 
       <div className="flex flex-row items-center justify-center">
@@ -199,7 +199,7 @@ export default function MLBClassifier(){
 
         </p>
       </div>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Developing the Machine Learning Model with Sci-Kit
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Developing the Machine Learning Model with Sci-Kit
         Learn</h1>
       <div className="hidden sm:flex md:flex items-center justify-center">
         <div className="flex flex-row space-x-4 mb-10">
@@ -241,7 +241,7 @@ export default function MLBClassifier(){
         pitchers and their pitch arsenal, allowing users to compare their favorite pitchers </h3>
 
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-mono">Results</h1>
+      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Results</h1>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           When I started this project, I set out to gain an understanding of machine learning, and gain experience
