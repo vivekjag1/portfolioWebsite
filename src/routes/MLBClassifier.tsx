@@ -143,7 +143,7 @@ export default function MLBClassifier(){
       </div>
       <img src={classifierHome} alt="Pitch Classifier Page "
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl mt-5"/>
-      <h3 className="text-lg text-gray-400 mt-2">The defining feature of MLB Classifier is its classification feature,
+      <h3 className="text-lg text-gray-400 italic mt-2">The defining feature of MLB Classifier is its classification feature,
         which allows users to classify a pitch by type using the Velocity, X-Break, Z-Break, Rise and Tail of a
         pitch</h3>
 
@@ -237,7 +237,7 @@ export default function MLBClassifier(){
 
       <img src={comparison} alt="Pitcher comparison page"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl mt-5"/>
-      <h3 className="text-lg text-gray-400 mt-2">MLB Classifier uses its data to allow for the easy comparison between
+      <h3 className="text-lg text-gray-400 italic mt-2">MLB Classifier uses its data to allow for the easy comparison between
         pitchers and their pitch arsenal, allowing users to compare their favorite pitchers </h3>
 
 

@@ -21,11 +21,11 @@ function Home(){
             <div className="hidden md:flex justify-center">
 
             <Stack spacing={2} direction="row" className="items-center mt-7">
-              <Button href="/about"  variant="contained"
+              <Button href="about"  variant="contained"
                       startIcon={<PersonIcon/>}
                       sx={{"&.MuiButtonBase-root:hover": {backgroundColor: "black"}, width: "10rem", bgcolor: 'black'}}
                       className="mr-4 hover:bg-black"> About Me </Button>
-              <Button variant="contained" className=" text-white mx-auto" href="/projects"
+              <Button variant="contained" className=" text-white mx-auto" href="projects"
                       startIcon={<MonitorIcon/>} sx={{
                 "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
                 width: "10rem",
@@ -34,9 +34,6 @@ function Home(){
 
             </Stack>
             </div>
-
-
-
           </div>
           <div className = "flex items-center justify-center  ml-20  h-fit w-11/12  col-span-1">
             <img src={vivekHeadshot} alt = "Vivek Jagadeesh" className="  max-h-[46rem] mt-5 ml-20 overflow-hidden"/>

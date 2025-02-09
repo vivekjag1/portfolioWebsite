@@ -30,6 +30,7 @@ export default function TACompanionProject(){
         MongoDB, Auth0, Vercel Cloud, MongoDB Atlas</h3>
       <img src={taCompanionHero} alt="Software Engineering Team O Final Project"
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl"/>
+
       <div className="hidden md:flex justify-center">
         <Stack spacing={2} direction="row" className="items-center mt-5">
           <Button href="https://github.com/vivekjag1/TACompanion" target="_blank" variant="contained"
@@ -198,7 +199,7 @@ export default function TACompanionProject(){
       </div>
       <img src={kanban} alt="Final Map Edit Page "
            className="w-3/4 mx-auto max-w-[70rem] max-h-full shadow-2xl mt-5"/>
-      <h3 className="text-lg text-gray-400 mt-2">One of the more interesting pages to design was the Kanban to-do page,
+      <h3 className="text-lg text-gray-400 italic mt-2">One of the more interesting pages to design was the Kanban to-do page,
         which allows users to create to-do items by course and role, and drag cards between
         columns.
       </h3>
