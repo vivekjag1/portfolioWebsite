@@ -66,21 +66,29 @@ function Home(){
                   <div className="md:hidden sm:flex ">
                     <div className="flex justify-center">
                       <Stack spacing={2} direction="column" className="items-center mt-5">
-                        <Button href="/about"   variant="contained"
-                                startIcon={<PersonIcon/>}
-                                sx={{
-                                  "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
-                                  width: "10rem",
-                                  bgcolor: 'black'
-                                }}
-                                className="mr-4 hover:bg-black"> About Me</Button>
-                        <Button variant="contained" className=" text-white mx-auto" href="/projects"
+                        <Link to = "/about">
+                          <Button   variant="contained"
+                                  startIcon={<PersonIcon/>}
+                                  sx={{
+                                    "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
+                                    width: "10rem",
+                                    bgcolor: 'black'
+                                  }}
+                                  className="mr-4 hover:bg-black"> About Me</Button>
 
-                                startIcon={<MonitorIcon/>} sx={{
-                          "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
-                          width: "10rem",
-                          bgcolor: 'black'
-                        }}> Projects</Button>
+                        </Link>
+                        <Link to="/about">
+                          <Button variant="contained" className=" text-white mx-auto"
+
+                                  startIcon={<MonitorIcon/>} sx={{
+                            "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
+                            width: "10rem",
+                            bgcolor: 'black'
+                          }}> Projects</Button>
+
+                        </Link>
+
+
 
                       </Stack>
                     </div>
