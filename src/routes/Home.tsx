@@ -3,6 +3,7 @@ import {TypeAnimation} from "react-type-animation";
 import Button from '@mui/material/Button';
 import MonitorIcon from '@mui/icons-material/Monitor';
 import PersonIcon from '@mui/icons-material/Person';
+import { Link } from "react-router-dom";
 import {Stack} from "@mui/material";
 
 function Home(){
@@ -21,13 +22,13 @@ function Home(){
             <div className="hidden md:flex justify-center">
 
             <Stack spacing={2} direction="row" className="items-center mt-7">
-              <a href="/about">
+              <Link to="/about">
                 <Button  variant="contained"
                          startIcon={<PersonIcon/>}
                          sx={{"&.MuiButtonBase-root:hover": {backgroundColor: "black"}, width: "10rem", bgcolor: 'black'}}
                          className="mr-4 hover:bg-black"> About Me </Button>
-              </a>
-              <a href="/projects">
+              </Link>
+              <Link to="/projects">
                 <Button variant="contained" className=" text-white mx-auto"
                         startIcon={<MonitorIcon/>} sx={{
                   "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
@@ -35,7 +36,7 @@ function Home(){
                   bgcolor: 'black'
                 }}>Projects</Button>
 
-              </a>
+              </Link>
 
 
 
