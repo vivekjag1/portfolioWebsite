@@ -21,16 +21,23 @@ function Home(){
             <div className="hidden md:flex justify-center">
 
             <Stack spacing={2} direction="row" className="items-center mt-7">
-              <Button href="about"  variant="contained"
-                      startIcon={<PersonIcon/>}
-                      sx={{"&.MuiButtonBase-root:hover": {backgroundColor: "black"}, width: "10rem", bgcolor: 'black'}}
-                      className="mr-4 hover:bg-black"> About Me </Button>
-              <Button variant="contained" className=" text-white mx-auto" href="projects"
-                      startIcon={<MonitorIcon/>} sx={{
-                "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
-                width: "10rem",
-                bgcolor: 'black'
-              }}>Projects</Button>
+              <a href="/about">
+                <Button  variant="contained"
+                         startIcon={<PersonIcon/>}
+                         sx={{"&.MuiButtonBase-root:hover": {backgroundColor: "black"}, width: "10rem", bgcolor: 'black'}}
+                         className="mr-4 hover:bg-black"> About Me </Button>
+              </a>
+              <a href="/projects">
+                <Button variant="contained" className=" text-white mx-auto"
+                        startIcon={<MonitorIcon/>} sx={{
+                  "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
+                  width: "10rem",
+                  bgcolor: 'black'
+                }}>Projects</Button>
+
+              </a>
+
+
 
             </Stack>
             </div>
