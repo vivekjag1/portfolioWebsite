@@ -7,19 +7,22 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/',
   plugins: [react()],
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name]-[hash].js`,
+        chunkFileNames: `assets/[name]-[hash].js`,
+        assetFileNames: `assets/[name]-[hash].[ext]`
+      }
+    }
+  },
   resolve:{
     alias:{
       "@": path.resolve(__dirname, "./src"),
+      "@components": "/src/components",
+      "@routes": "/src/routes",
     }
   },
-  server: {
-    hmr: {
-      overlay: false,
-    },
-    port: 80,
-    strictPort: true,
-    host: true,
 
-
-  }
 });
