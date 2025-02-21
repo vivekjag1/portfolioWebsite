@@ -38,31 +38,38 @@ function About(){
       id: 1,
       title: "Student - Worcester Polytechnic Institute",
       location: "Worcester, Massachusetts",
-      description: "Bachelor of Science in Computer Science, Minor in Electrical and Computer Engineering.",
+      description: "Bachelor of Science in Computer Science.",
       date: "August 2022 - Present",
       icon: <SchoolIcon/>,
     },
     {
-      id:2,
+      id: 2,
+      title: " Software Engineering Intern - Waters Corporation",
+      location: "Milford, Massachusetts",
+      description: "Incoming Software Engineering intern for the Digital Experiences team at Waters Corporation",
+      date: "June 2025 - August 2025",
+      icon: <WorkIcon/>,
+    },
+
+    {
+      id:3,
       title:"Student Assistant - Worcester Polytechnic Institute Department of Computer Science",
       location: "Worcester, Massachusetts",
-      description:
-        "Selected by the CS department faculty to serve as a Student Assistant starting in Summer 2024. " +
-        "Responsible for assisting students in the completion of course assignments and exams, and professors in delivering course content in the most effective way.",
+      description: "As a Student Assistant for WPI's department of Computer Science, I serve as an agile coach and guide teams of four students in developing full stack web applications. I also feedback on assignments and collaborate with professors to develop course materials.",
       date: "May 2024 - Present",
       icon: <WorkIcon/>
     },
     {
-      id:3,
+      id:4,
       title: "Legislative Intern - Massachusetts House of Representatives",
       location: "Boston, Massachusetts",
       description: "As a legislative intern for State Representative Adam Scanlon, " +
-        "I was responsible for writing legislative memos, policy recommendations, and communicating with constituents through a weekly newsletter.",
+        "I was responsible for writing legislative memos, policy recommendations, and communicating with constituents.",
       date: "June 2021 - June 2022",
       icon: <WorkIcon/>
     },
     {
-      id: 4,
+      id: 5,
       title: "Field Intern - Dave Cavell for Congress",
       location: "Brookline, Massachusetts",
       description: "As a field intern for Dave Cavell congressional campaign, I was responsible for speaking with members of my community, writing op-eds in support of the candidate, and hosting community events to discuss policies and issues.",
@@ -83,11 +90,8 @@ function About(){
               with a concentration in systems development.
               In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
               In this role, I assist both professors and students in creating a meaningful and substantive learning
-              experience for everyone.
-              My primary responsibilities include holding student office hours, providing feedback on student
-              programming assignments, guiding students through the Computer Science
-              curriculum, and working with professors to deliver the course content in the most effective manner
-              possible.
+              experience.
+              My primary responsibilities include coaching agile software engineering teams, running recitation sessions, analyzing web applications, and working with professors to develop course materials.
             </p>
           </div>
           <div className="items-center justify-center flex ml-20 col-span-1">
@@ -109,12 +113,9 @@ function About(){
                     I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
                     with a concentration in systems development.
                     In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
-                    In this role, I assist both professors and students in creating a meaningful and substantive
-                    learning experience for everyone.
-                    My primary responsibilities include holding student office hours, providing feedback on student
-                    programming assignments, guiding students through the Computer Science
-                    curriculum, and working with professors to deliver the course content in the most effective manner
-                    possible.
+                    In this role, I assist both professors and students in creating a meaningful and substantive learning
+                    experience for everyone.
+                    My primary responsibilities include coaching agile software engineering teams, running recitation sessions, analyzing web applications, and working with professors to develop course materials.
                   </h1>
                 </div>
               </div>
