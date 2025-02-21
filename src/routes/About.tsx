@@ -55,7 +55,7 @@ function About(){
       id:3,
       title:"Student Assistant - Worcester Polytechnic Institute Department of Computer Science",
       location: "Worcester, Massachusetts",
-      description: "As a Student Assistant for WPI's department of Computer Science, I serve as an agile coach and guide teams of four students in developing full stack web applications. I also feedback on assignments and collaborate with professors to develop course materials.",
+      description: "As a Student Assistant for WPI's department of Computer Science, I serve as an agile coach and guide teams of four students in developing full stack web applications. I also provide feedback on assignments and collaborate with professors to develop course materials.",
       date: "May 2024 - Present",
       icon: <WorkIcon/>
     },
