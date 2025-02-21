@@ -71,7 +71,7 @@ function Home(){
                                   className="mr-4 hover:bg-black"> About Me</Button>
 
                         </Link>
-                        <Link to="/about">
+                        <Link to="/projects">
                           <Button variant="contained" className=" text-white mx-auto"
 
                                   startIcon={<MonitorIcon/>} sx={{
