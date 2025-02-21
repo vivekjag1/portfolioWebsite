@@ -23,7 +23,7 @@ export default function NavBar(){
       <Link to = "/" className=" absolute left-5 text-black font-bold inline-block align-middle">
           <div className = "flex items-center ">
             <img src = {shellFull}  alt = "shellClipart" className="  mr-2 mt h-8"/>
-            <div className=" text-2xl  text-black font-bold  whitespace-nowrap font-arial">Vivek Jagadeesh</div>
+            <div className=" text-2xl  text-black font-bold  whitespace-nowrap font-mono">Vivek Jagadeesh</div>
           </div>
         </Link>
         <ul
