@@ -20,7 +20,7 @@ function App(){
       <div className = "flex-grow">
       <Routes>
         <Route path = '/' element = {<Home/>}/>
-        <Route path = '/about' element = {<About/>}/>
+        <Route path = 'about' element = {<About/>}/>
         <Route path = '/certifications' element = {<Certifications/>}/>
         <Route path = "/projects" element = {<Projects/>}/>
         <Route path = "/BWHCS3733" element = {<SoftEngProject/>}/>
