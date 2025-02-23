@@ -24,7 +24,7 @@ import awsLogo from "../assets/aws.svg";
 import azureLogo from "../assets/azureLogo.png";
 import atlasLogo from "../assets/atlas-raw.webp"
 import vercelLogo from "../assets/vercelLogo.png"
-import dockerLogo from "../assets/dockerLogo.png"
+import dockerLogo from "../assets/docker.svg"
 import flaskLogo from "../assets/Flask.svg"
 import kerasLogo from "../assets/keras.svg"
 import tensorFlow from "../assets/tensorflow.svg"

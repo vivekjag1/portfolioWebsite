@@ -15,7 +15,7 @@ import sklearnLogo from "../assets/skLearn.png"
 import classifierHome from "../assets/classifierHome.png"
 import comparison from "../assets/comparison.png"
 import AWSLogo from "../assets/aws.svg"
-import dockerLogo from "../assets/dockerIcon.png"
+import dockerLogo from "../assets/docker.svg"
 
 export default function MLBClassifier(){
   return(
