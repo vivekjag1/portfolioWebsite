@@ -139,7 +139,7 @@ function About(){
                 key={exp.id}
                 date={exp.date}
                 icon={exp.icon}
-                contentStyle={{background: 'lightgray', color: '#333'}}
+                contentStyle={{background:  '#E2E8F0', color: '#333'}}
                 contentArrowStyle={{borderRight: '7px solid  black'}}
                 iconStyle={{background: 'black', color: 'white'}}
                 className=" rounded-xl  p-4  mx-4"
