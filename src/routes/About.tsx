@@ -176,7 +176,7 @@ function About(){
       <div className=" flex flex-row justify-center">
         <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Software Frameworks</h1>
       </div>
-      <div className="flex flex-col lg:flex-row  ">
+      <div className="flex flex-col lg:flex-row mb-3 ">
         <FrameworkComponent imageString={nextLogo} imageAlt={"Next.js"} description={"Next.js"}/>
         <FrameworkComponent imageString={nodeLogo} imageAlt={"Node.js"} description={"Node.js"}/>
         <FrameworkComponent imageString={reactLogo} imageAlt={"React.js"} description={"React.js"}/>

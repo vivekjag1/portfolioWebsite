@@ -74,7 +74,7 @@ export default function MLBClassifier(){
         </p>
       </div>
       <h1 className="mb-5 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
-      <div className="flex flex-col items-center justify-center lg:flex-row  ">
+      <div className="flex flex-col items-center justify-center lg:flex-row mb-3 ">
         <FrameworkComponent imageString={sklearnLogo} imageAlt={"Sci-Kit learn"} description={"Sci-Kit Learn"}/>
           <FrameworkComponent imageString={nextLogo} imageAlt={"nextjs"} description={"Next.js"}/>
           <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
