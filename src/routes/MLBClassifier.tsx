@@ -73,19 +73,21 @@ export default function MLBClassifier(){
 
         </p>
       </div>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
-      <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
+      <h1 className="mb-5 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
+      <div className="flex flex-col items-center justify-center lg:flex-row  ">
         <FrameworkComponent imageString={sklearnLogo} imageAlt={"Sci-Kit learn"} description={"Sci-Kit Learn"}/>
           <FrameworkComponent imageString={nextLogo} imageAlt={"nextjs"} description={"Next.js"}/>
           <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
           <FrameworkComponent imageString={reactLogo} imageAlt={"react.js"} description={"React.js"}/>
-          <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
-          <FrameworkComponent imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
-          <FrameworkComponent imageString={flaskLogo} imageAlt={"Flask"} description={"Flask"}/>
-          <FrameworkComponent imageString={postgresLogo} imageAlt={"postgreSQL"} description={"PostgreSQL"}/>
+
+        </div> <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
+      <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
+      <FrameworkComponent imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
+      <FrameworkComponent imageString={flaskLogo} imageAlt={"Flask"} description={"Flask"}/>
+      <FrameworkComponent imageString={postgresLogo} imageAlt={"postgreSQL"} description={"PostgreSQL"}/>
 
 
-        </div>
+    </div>
 
 
       <div className="flex flex-row items-center justify-center">
@@ -133,7 +135,7 @@ export default function MLBClassifier(){
         pitch</h3>
 
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Cloud Deployment</h1>
+      <h1 className="mb-5 mt-10 text-3xl font-bold font-arial">Cloud Deployment</h1>
 
         <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
 
@@ -181,7 +183,7 @@ export default function MLBClassifier(){
 
         </p>
       </div>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Developing the Machine Learning Model with Sci-Kit
+      <h1 className="mb-5 mt-10 text-3xl font-bold font-arial">Developing the Machine Learning Model with Sci-Kit
         Learn</h1>
 
       <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">

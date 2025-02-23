@@ -17,6 +17,7 @@ import expressLogo from "../assets/express.svg";
 import postgresLogo from "../assets/postgresqllogo.png";
 import nodeLogo from "../assets/nodeLogo.png";
 import prismaLogo from "../assets/prismaLogo.png";
+import aws from "../assets/aws.svg";
 export default function SoftEngProject(){
   return(
     <div className=" mt-20 text-center">
@@ -85,18 +86,22 @@ export default function SoftEngProject(){
           of the application. The final application allows users to navigate around the hospital, edit the hospital map (admins. only), submit service requests, and manage hospital employees.
         </p>
       </div>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
-      <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
-        <FrameworkComponent imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
-
+      <h1 className="mt-10 text-3xl font-bold font-arial mb-5">The Technology Stack</h1>
+      <div className="flex flex-col items-center justify-center lg:flex-row ">
+          <FrameworkComponent imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
           <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
           <FrameworkComponent imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
           <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
-          <FrameworkComponent imageString={expressLogo} imageAlt={"ExpressJS"} description={"Express.JS"}/>
-          <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"}
-                              description={"PrismaORM"}/><FrameworkComponent imageString={postgresLogo} imageAlt={"PostgreSQL"}
-                              description={"PostgreSQL"}/>
 
+        </div>
+      <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
+        <FrameworkComponent imageString={expressLogo} imageAlt={"ExpressJS"} description={"Express.JS"}/>
+        <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"}
+                            description={"PrismaORM"}/>
+        <FrameworkComponent imageString={postgresLogo} imageAlt={"PostgreSQL"}
+                            description={"PostgreSQL"}/>
+        <FrameworkComponent imageString={aws} imageAlt={"AWS"}
+                            description={"AWS EC2 & RDS"}/>
         </div>
 
 

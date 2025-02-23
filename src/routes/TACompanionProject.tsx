@@ -77,16 +77,21 @@ export default function TACompanionProject(){
 
         </p>
       </div>
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
-        <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
+      <h1 className="mb-5 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
+        <div className="flex flex-col items-center justify-center lg:flex-row  ">
           <FrameworkComponent imageString={nextLogo} imageAlt={"nextjs"} description={"Next.js"}/>
 
           <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
           <FrameworkComponent imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
-          <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
-          <FrameworkComponent imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
-          <FrameworkComponent imageString={mongoLogo} imageAlt={"MongoDB"}
-                              description={"MongoDB"}/>
+
+
+        </div>
+ <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
+   <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
+   <FrameworkComponent imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
+   <FrameworkComponent imageString={mongoLogo} imageAlt={"MongoDB"}
+                       description={"MongoDB"}/>
+
 
         </div>
 
@@ -141,7 +146,7 @@ export default function TACompanionProject(){
       </div>
 
 
-      <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Cloud Deployment</h1>
+      <h1 className="mb-5 mt-10 text-3xl font-bold font-arial">Cloud Deployment</h1>
       <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
         <FrameworkComponent imageString={vercelLogo} imageAlt={"vercel platform"} description={"Vercel Cloud"}/>
           <FrameworkComponent imageString={atlasLogo} imageAlt={"MongoDB Atlas"} description={"MongoDB Atlas"}/>
