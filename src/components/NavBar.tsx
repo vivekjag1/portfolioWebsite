@@ -8,9 +8,6 @@ export default function NavBar(){
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [contactModalOpen, setContactModalOpen] = useState<boolean>(false);
   const handleClickX = () => setMobileOpen(!mobileOpen);
-
-
-
   return(
     <div>
     <div >

@@ -7,11 +7,17 @@ interface FrameworkProps{
 
 export const FrameworkComponent = (props:FrameworkProps) => {
   return(
-    <div className="flex flex-col items-center">
-      <img src={props.imageString} alt={props.imageAlt} className="w-full h-[10rem] "/>
-      <p className="mt-2 text-center italic">{props.description}</p>
 
+    <div className="flex flex-col items-center justify-center shadow-2xl  rounded-2xl h-[12rem] w-[12rem] bg-green-300 mr-3 mb-3">
+      <div className="flex flex-col  items-center justify-center  rounded-2xl h-[11.75rem] w-[11.75rem] bg-white">
+        <div className="items-center justify-center">
+          <img src={props.imageString} alt={props.imageAlt} className="w-[8rem] h-[8rem] justify-center "/>
+          <p className="mt-2 text-center italic">{props.description}</p>
+        </div>
+
+      </div>
     </div>
+
   )
 }
 export default FrameworkComponent;

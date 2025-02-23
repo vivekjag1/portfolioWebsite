@@ -10,12 +10,11 @@ import LanguageIcon from '@mui/icons-material/Language';
 import userManual from "../assets/TeamOUserManual.pdf";
 import DownloadIcon from '@mui/icons-material/Download';
 import FrameworkComponent from "../components/FrameworkComponent.tsx";
-import typescriptLogo from "../assets/typescriptLogo.png";
-import reactLogo from "../assets/reactLogo.png";
-import tailwindCSSLogo from "../assets/tailwindLogo.png";
-import expressLogo from "../assets/expressLogo.png";
+import typescriptLogo from "../assets/TypeScript.svg";
+import reactLogo from "../assets/react.svg";
+import tailwindCSSLogo from "../assets/tailwind.svg";
+import expressLogo from "../assets/express.svg";
 import postgresLogo from "../assets/postgresqllogo.png";
-import MobileFramework from "../components/MobileFramework.tsx";
 import nodeLogo from "../assets/nodeLogo.png";
 import prismaLogo from "../assets/prismaLogo.png";
 export default function SoftEngProject(){
@@ -87,9 +86,8 @@ export default function SoftEngProject(){
         </p>
       </div>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
-      <div className="hidden sm:flex md:flex items-center justify-center">
-        <div className="flex flex-row space-x-4 mb-10">
-          <FrameworkComponent imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
+      <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
+        <FrameworkComponent imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
 
           <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
           <FrameworkComponent imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
@@ -100,20 +98,8 @@ export default function SoftEngProject(){
                               description={"PostgreSQL"}/>
 
         </div>
-      </div>
 
-      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
-        <MobileFramework imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
 
-        <MobileFramework imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
-        <MobileFramework imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
-        <MobileFramework imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
-        <MobileFramework imageString={expressLogo} imageAlt={"ExpressJS"} description={"Express.JS"}/>
-        <MobileFramework imageString={prismaLogo} imageAlt={"PrismaORM"}
-                         description={"PrismaORM"}/>
-        <MobileFramework imageString={postgresLogo} imageAlt={"PostgreSQL"}
-                         description={"PostgreSQL"}/>
-      </div>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
           Our application was built using Node.js and Vite as our JavaScript frameworks. Furthermore, we utilized TypeScript rather than JavaScript for the purposes of ensuring type-safety throughout the application.

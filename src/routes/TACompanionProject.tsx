@@ -5,10 +5,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Stack} from "@mui/material";
 import LanguageIcon from '@mui/icons-material/Language';
 import FrameworkComponent from "../components/FrameworkComponent.tsx";
-import typescriptLogo from "../assets/typescriptLogo.png";
-import nextLogo from "../assets/nextLogo.png";
-import reactLogo from "../assets/reactLogo.png";
-import tailwindCSSLogo from "../assets/tailwindLogo.png";
+import typescriptLogo from "../assets/TypeScript.svg";
+import nextLogo from "../assets/next.svg";
+import reactLogo from "../assets/react.svg";
+import tailwindCSSLogo from "../assets/tailwind.svg";
 import graphqlLogo from "../assets/graphqlLogo.png";
 import mongoLogo from "../assets/mongodbLogo.png";
 import atlasLogo from "../assets/atlas-raw.webp"
@@ -16,7 +16,6 @@ import vercelLogo from "../assets/vercelLogo.png"
 import kanban from "../assets/kanban.png"
 
 
-import MobileFramework from "../components/MobileFramework.tsx";
 
 export default function TACompanionProject(){
   return(
@@ -79,8 +78,7 @@ export default function TACompanionProject(){
         </p>
       </div>
       <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">The Technology Stack</h1>
-      <div className="hidden sm:flex md:flex items-center justify-center">
-        <div className="flex flex-row space-x-4 mb-10">
+        <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
           <FrameworkComponent imageString={nextLogo} imageAlt={"nextjs"} description={"Next.js"}/>
 
           <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
@@ -91,18 +89,8 @@ export default function TACompanionProject(){
                               description={"MongoDB"}/>
 
         </div>
-      </div>
 
-      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
-        <MobileFramework imageString={nextLogo} imageAlt={"nextjs"} description={"Next.js"}/>
 
-        <MobileFramework imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
-        <MobileFramework imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
-        <MobileFramework imageString={tailwindCSSLogo} imageAlt={"tailwindcss"} description={"TailwindCSS"}/>
-        <MobileFramework imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
-        <MobileFramework imageString={mongoLogo} imageAlt={"MongoDB"}
-                         description={"MongoDB"}/>
-      </div>
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5 ">
           The first choice that I made in designing the technology stack for this application was using Next.js.
@@ -154,19 +142,14 @@ export default function TACompanionProject(){
 
 
       <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Cloud Deployment</h1>
-      <div className="hidden sm:flex md:flex items-center justify-center">
-        <div className="flex flex-row space-x-4 mb-10">
-          <FrameworkComponent imageString={vercelLogo} imageAlt={"vercel platform"} description={"Vercel Cloud"}/>
+      <div className="flex flex-col items-center justify-center lg:flex-row  mb-10">
+        <FrameworkComponent imageString={vercelLogo} imageAlt={"vercel platform"} description={"Vercel Cloud"}/>
           <FrameworkComponent imageString={atlasLogo} imageAlt={"MongoDB Atlas"} description={"MongoDB Atlas"}/>
 
 
         </div>
-      </div>
 
-      <div className="md:hidden sm:flex flex-col space-x-4 mb-10">
-        <MobileFramework imageString={vercelLogo} imageAlt={"vercel platform"} description={"Vercel Cloud"}/>
-        <MobileFramework imageString={atlasLogo} imageAlt={"MongoDB Atlas"} description={"MongoDB Atlas"}/>
-      </div>
+
 
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
