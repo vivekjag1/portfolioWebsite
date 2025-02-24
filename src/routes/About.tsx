@@ -28,6 +28,7 @@ import dockerLogo from "../assets/docker.svg"
 import flaskLogo from "../assets/Flask.svg"
 import kerasLogo from "../assets/keras.svg"
 import tensorFlow from "../assets/tensorflow.svg"
+import { Separator } from "@/components/ui/separator"
 
  import FrameworkComponent from "../components/FrameworkComponent.tsx";
 function About(){
@@ -139,7 +140,7 @@ function About(){
                 key={exp.id}
                 date={exp.date}
                 icon={exp.icon}
-                contentStyle={{background:  '#E2E8F0', color: '#333'}}
+                contentStyle={{background: '#E2E8F0', color: '#333'}}
                 contentArrowStyle={{borderRight: '7px solid  black'}}
                 iconStyle={{background: 'black', color: 'white'}}
                 className=" rounded-xl  p-4  mx-4"
@@ -158,9 +159,11 @@ function About(){
       </div>
 
 
-
-      <div className=" flex flex-row justify-center">
-        <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Programming Languages</h1>
+      <div className="flex flex-col items-center text-center">
+        <div className=" flex flex-row text-center justify-center">
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Programming Languages</h1>
+        </div>
+        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
       </div>
       <div className="flex flex-col lg:flex-row  mb-10">
         <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
@@ -173,9 +176,13 @@ function About(){
       </div>
 
 
-      <div className=" flex flex-row justify-center">
-        <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Software Frameworks</h1>
+      <div className="flex flex-col items-center text-center">
+        <div className=" flex flex-row text-center justify-center">
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Software Frameworks</h1>
+        </div>
+        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
       </div>
+
       <div className="flex flex-col lg:flex-row lg:mb-3 ">
         <FrameworkComponent imageString={nextLogo} imageAlt={"Next.js"} description={"Next.js"}/>
         <FrameworkComponent imageString={nodeLogo} imageAlt={"Node.js"} description={"Node.js"}/>
@@ -183,18 +190,21 @@ function About(){
         <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"TailwindCSS"} description={"TailwindCSS"}/>
 
 
-
       </div>
       <div className="flex flex-col lg:flex-row  mb-10">
-      <FrameworkComponent imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
-      <FrameworkComponent imageString={flaskLogo} imageAlt={"Flask"} description={"Flask"}/>
-      <FrameworkComponent imageString={expressLogo} imageAlt={"GraphQL"} description={"Express.js"}/>
-      <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"} description={"PrismaORM"}/>
+        <FrameworkComponent imageString={graphqlLogo} imageAlt={"GraphQL"} description={"GraphQL"}/>
+        <FrameworkComponent imageString={flaskLogo} imageAlt={"Flask"} description={"Flask"}/>
+        <FrameworkComponent imageString={expressLogo} imageAlt={"GraphQL"} description={"Express.js"}/>
+        <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"} description={"PrismaORM"}/>
       </div>
 
-      <div className=" flex flex-row justify-center">
-        <h1 className="font-bold text-3xl font-arial mt-4 text-center mb-4">Database Management Systems</h1>
+      <div className="flex flex-col items-center text-center">
+        <div className=" flex flex-row text-center justify-center">
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Database Management Systems</h1>
+        </div>
+        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
       </div>
+
 
       <div className="flex flex-col lg:flex-row  mb-10">
         <FrameworkComponent imageString={oracleLogo} imageAlt={"Oracle"} description={"Oracle"}/>
@@ -202,10 +212,14 @@ function About(){
         <FrameworkComponent imageString={mongoLogo} imageAlt={"MongoDB"} description={"MongoDB"}/>
       </div>
 
+      <div className="flex flex-col items-center text-center">
 
-      <div className=" flex flex-row text-center justify-center">
-        <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Machine & Deep learning </h1>
+        <div className=" flex flex-row text-center justify-center">
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Machine & Deep learning </h1>
+        </div>
+        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
       </div>
+
 
       <div className="flex flex-col lg:flex-row  mb-10">
         <FrameworkComponent imageString={skLearnLogo} imageAlt={"Sci-Kit Learn"} description={"Sci-Kit Learn"}/>
@@ -213,10 +227,13 @@ function About(){
         <FrameworkComponent imageString={tensorFlow} imageAlt={"tensorFlow"} description={"TensorFlow"}/>
       </div>
 
-
-      <div className=" flex flex-row text-center justify-center">
-        <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Cloud Computing & Containers</h1>
+      <div className="flex flex-col items-center text-center">
+        <div className=" flex flex-row text-center justify-center">
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Cloud Computing & Containers</h1>
+        </div>
+        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
       </div>
+
 
       <div className="flex flex-col lg:flex-row  mb-10">
         <FrameworkComponent imageString={awsLogo} imageAlt={"AWS"} description={"AWS EC2 & RDS"}/>
