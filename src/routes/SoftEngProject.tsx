@@ -87,7 +87,7 @@ export default function SoftEngProject(){
         </p>
       </div>
       <h1 className="mt-10 text-3xl font-bold font-arial mb-5">The Technology Stack</h1>
-      <div className="flex flex-col items-center justify-center lg:flex-row mb-3 ">
+      <div className="flex flex-col items-center justify-center lg:flex-row lg:mb-3 ">
           <FrameworkComponent imageString={nodeLogo} imageAlt={"nodejs"} description={"Node.js"}/>
           <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
           <FrameworkComponent imageString={reactLogo} imageAlt={"react.js"} description={"react.js"}/>
