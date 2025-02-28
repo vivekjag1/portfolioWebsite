@@ -9,7 +9,7 @@ import {Stack} from "@mui/material";
 function Home(){
   return(
     <>
-      <section className = "hidden md:flex overflow-hidden">
+      <section className = "hidden lg:flex overflow-hidden">
         <div className="w-screen mt-20 grid grid-cols-2  ">
           <div className = "flex flex-col  items-center justify-center  h-full col-span-1  ">
             <TypeAnimation className="text-black font-mono font-bold md:text-6xl lg:text-6xl cursor-hidden" sequence={["Hello, World!"]}
@@ -43,7 +43,7 @@ function Home(){
           </div>
         </div>
       </section>
-      <section className="flex md:hidden">
+      <section className="flex lg:hidden">
         <div className = "flex flex-col sm:flex-row w-screen">
           <div className="w-full h-auto grid grid-row-2 py-10 sm:py-0">
             <div className="flex flex-col items-center justify-center w-full">
