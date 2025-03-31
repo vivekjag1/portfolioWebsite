@@ -83,21 +83,23 @@ function About(){
     <div className="flex flex-col mt-20 justify-center items-center mb-4">
       <h1 className="font-bold text-5xl font-arial mb-10">About me</h1>
       
-      <div className='flex flex-col lg:flex-row items-center '>
+      <div className='flex flex-col lg:flex-row items-center justify-center '>
         <div className="items-center justify-center flex  col-span-1  mb-5 ml-5">
-          <div className='items-center justify-center flex bg-black h-[25rem] w-[25rem] rounded-full'>
-            <div className='bg-white h-[24.3rem] max-w-[24.3rem] rounded-full'>
+          <div className='items-center justify-center flex bg-black h-[20rem] w-[20rem] rounded-full'>
+            <div className='bg-white h-[19.3rem] max-w-[19.3rem] rounded-full'>
               <img src={vivekHeadhshotCutout} alt="vivek jagadeesh " className=" mt-5 rounded-full max-h-[25rem]"/>
             </div>
           </div>
+          
         </div>
-      
-        <p className="ml-20 leading-tight text-black  text-2xl font-arial mx-10 max-w-2xl">
+        <p className=" text-black  text-2xl font-arial mx-10 max-w-2xl">
                 I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
                 with a concentration in systems development.
                 I'm primarily interested in the intersection between software and hardware, which has led me to focus 
                 my education on operating systems, computer networks, and cybersecurity. 
         </p>
+      
+       
       </div>
 
       <div className=" flex flex-row justify-center ">
