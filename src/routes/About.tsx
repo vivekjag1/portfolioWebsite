@@ -92,7 +92,7 @@ function About(){
           </div>
           
         </div>
-        <p className=" text-black  text-2xl font-arial mx-10 max-w-2xl">
+        <p className=" ml-5 text-black  text-2xl font-arial ">
                 I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
                 with a concentration in systems development.
                 I'm primarily interested in the intersection between software and hardware, which has led me to focus 
