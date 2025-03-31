@@ -81,54 +81,26 @@ function About(){
   ]
   return(
     <div className="flex flex-col  mt-20 justify-center items-center mb-4">
-      <h1 className="font-bold text-5xl font-arial">About me</h1>
-      <section className="hidden md:flex">
-        <div className=" mt-20 grid grid-cols-2 overflow-hidden">
-          <div className="flex flex-col  items-center justify-center  h-full col-span-1 ">
-            <p className="text-black  text-2xl font-arial  ml-20">
-              I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
-              with a concentration in systems development.
-              In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
-              In this role, I assist both professors and students in creating a meaningful and substantive learning
-              experience.
-              My primary responsibilities include coaching agile software engineering teams, running recitation
-              sessions, analyzing web applications, and working with professors to develop course materials.
-            </p>
-          </div>
-          <div className="items-center justify-center flex ml-20 col-span-1">
-            <img src={vivekHeadhshotCutout} alt="vivek jagadeesh " className=" ml-20 max-h-[40rem]"/>
-
-          </div>
-        </div>
-      </section>
-      <section className="flex md:hidden">
-        <div className="flex flex-col sm:flex-row w-screen">
-          <div className="w-full h-auto grid grid-row-2 py-10 sm:py-0">
-            <div className="flex flex-col items-center justify-center w-full">
-              <div className="flex flex-col items-center justify-center w-full">
-                <img src={vivekHeadhshotCutout} alt="vivek jagadeesh "/>
-
-                <div className="w-full h-auto flex flex-col items-center justify-center   sm:ml-5">
-                  <h1
-                    className="text-xl mt-7 text-left md:w-1/2 ml-5">
-                    I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
-                    with a concentration in systems development.
-                    In addition to being a student, I am a teaching assistant in the Computer Science department at WPI.
-                    In this role, I assist both professors and students in creating a meaningful and substantive
-                    learning
-                    experience for everyone.
-                    My primary responsibilities include coaching agile software engineering teams, running recitation
-                    sessions, analyzing web applications, and working with professors to develop course materials.
-                  </h1>
-                </div>
-              </div>
+      <h1 className="font-bold text-5xl font-arial mb-10">About me</h1>
+      <div className='flex flex-col lg:flex-row items-center mr-10'>
+        <div className="items-center justify-center flex ml-20 col-span-1  mb-5">
+          <div className='items-center justify-center flex bg-black h-[25rem] w-[25rem] rounded-full'>
+            <div className='bg-white h-[24.3rem] max-w-[24.3rem] rounded-full'>
+              <img src={vivekHeadhshotCutout} alt="vivek jagadeesh " className=" mt-5 rounded-full max-h-[25rem]"/>
             </div>
-
           </div>
         </div>
-      </section>
+      
+        <p className="text-black  text-2xl font-arial  ml-20 mr-20">
+                I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
+                with a concentration in systems development.
+                I'm primarily interested in the intersection between software and hardware, which has led me to focus 
+                my education on operating systems, computer networks, and cybersecurity. 
+        </p>
+      </div>
+
       <div className=" flex flex-row justify-center ">
-        <h1 className="font-bold text-5xl  font-arial ">
+        <h1 className="font-bold text-5xl  font-arial mt-5">
           Experience
         </h1>
       </div>
