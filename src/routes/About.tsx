@@ -88,8 +88,8 @@ function About(){
     <div className="flex flex-col mt-20 justify-center items-center mb-4">
       <h1 className="font-bold text-5xl font-arial mb-10">About me</h1>
       
-      <div className='flex flex-col lg:flex-row items-center justify-center '>
-        <div className="items-center justify-center flex  col-span-1  mb-5 ml-5">
+      <div className='flex flex-col lg:flex-row items-center justify-center ml-2 mr-2 '>
+        <div className="items-center justify-center flex  col-span-1  mb-5 ">
           <div className='items-center justify-center flex bg-black h-[20rem] w-[20rem] rounded-full'>
             <div className='bg-white h-[19.3rem] max-w-[19.3rem] rounded-full'>
               <img src={vivek_headshot} alt="vivek jagadeesh " className=" rounded-full max-h-[25rem]"/>
