@@ -3,7 +3,6 @@ import WorkIcon from '@mui/icons-material/Work';
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 //import secondVivekHeadshot from "../assets/Vivek-Headshot-Updated.jpg";
-import vivekHeadhshotCutout from "../assets/vivekHeadshotCutout.png";
 import typescriptLogo from "../assets/TypeScript.svg";
 import CLogo from "../assets/CLogo.svg";
 import CPPLogo from "../assets/CPP.svg";
