@@ -16,8 +16,8 @@ function Home(){
             />
             <br></br>
             <h1 className = "text-black font-semibold text-2xl font-arial  ml-20">
-              I'm a junior at Worcester Polytechnic Institute (WPI) majoring in Computer Science.
-              My interests include Software Engineering, Embedded Systems, and Computer Networks. Use the links below to learn more about me and my interests!
+              I'm a senior at Worcester Polytechnic Institute (WPI) majoring in Computer Science.
+              My interests include Embedded Systems, Computer Networks, and Cybersecurity. Use the links below to learn more about me and my interests!
             </h1>
             <div className="hidden md:flex justify-center">
             <Stack spacing={2} direction="row" className="items-center mt-7">
@@ -54,8 +54,9 @@ function Home(){
                 <div className="w-full h-auto flex flex-col items-center justify-center   sm:ml-5">
                   <h1
                     className="text-xl mt-7 text-left md:w-1/2 ml-5 ">
-                    I'm a junior at Worcester Polytechnic Institute (WPI) majoring in Computer Science.
-                    My interests include Software Engineering, Embedded Systems, and Computer Networks. Use the links below to learn more about me and my interests!
+                    I'm a senior at Worcester Polytechnic Institute (WPI) majoring in Computer Science.
+                    My interests include Embedded Systems, Computer Networks, and Cybersecurity. 
+                    Use the links below to learn more about me and my interests!
                   </h1>
                   <div className="md:hidden sm:flex ">
                     <div className="flex justify-center">

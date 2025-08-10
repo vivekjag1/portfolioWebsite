@@ -28,7 +28,13 @@ import dockerLogo from "../assets/docker.svg"
 import flaskLogo from "../assets/Flask.svg"
 import kerasLogo from "../assets/keras.svg"
 import tensorFlow from "../assets/tensorflow.svg"
+import dynamoDB from "../assets/aws-dynamodb-svgrepo-com.svg"
+import bedrock from "../assets/Arch_Amazon-Bedrock_64.svg"
+import apigw from "../assets/Arch_Amazon-API-Gateway_64.svg"; 
+import s3 from "../assets/Res_Amazon-Simple-Storage-Service_S3-Standard_48.svg"; 
+import lambda from "../assets/Arch_AWS-Lambda_64.svg"; 
 import { Separator } from "@/components/ui/separator"
+import vivek_headshot from "../../public/Vivek_J_Headshot.jpg"
 
  import FrameworkComponent from "../components/FrameworkComponent.tsx";
 function About(){
@@ -39,14 +45,14 @@ function About(){
       title: "Student - Worcester Polytechnic Institute",
       location: "Worcester, Massachusetts",
       description: "Bachelor of Science in Computer Science.",
-      date: "August 2022 - Present",
+      date: "August 2022 - May 2026",
       icon: <SchoolIcon/>,
     },
     {
       id: 2,
       title: " Software Engineering Intern - Waters Corporation",
       location: "Milford, Massachusetts",
-      description: "Incoming Software Engineering intern for the Digital Experiences team at Waters Corporation",
+      description: "As a Software Engineering Intern for Waters, I developed a Retrieval Augmented Generation (RAG) AI chatbot to enhance the customer support experience for Waters customers.",
       date: "June 2025 - August 2025",
       icon: <WorkIcon/>,
     },
@@ -87,12 +93,12 @@ function About(){
         <div className="items-center justify-center flex  col-span-1  mb-5 ml-5">
           <div className='items-center justify-center flex bg-black h-[20rem] w-[20rem] rounded-full'>
             <div className='bg-white h-[19.3rem] max-w-[19.3rem] rounded-full'>
-              <img src={vivekHeadhshotCutout} alt="vivek jagadeesh " className=" mt-5 rounded-full max-h-[25rem]"/>
+              <img src={vivek_headshot} alt="vivek jagadeesh " className=" rounded-full max-h-[25rem]"/>
             </div>
           </div>
           
         </div>
-        <p className=" ml-5 text-black  text-2xl font-arial ">
+        <p className=" lg:max-w-[30vw] ml-10 text-black  text-2xl font-arial ">
                 I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
                 with a concentration in systems development.
                 I'm primarily interested in the intersection between software and hardware, which has led me to focus 
@@ -163,6 +169,7 @@ function About(){
         <FrameworkComponent imageString={nodeLogo} imageAlt={"Node.js"} description={"Node.js"}/>
         <FrameworkComponent imageString={reactLogo} imageAlt={"React.js"} description={"React.js"}/>
         <FrameworkComponent imageString={tailwindCSSLogo} imageAlt={"TailwindCSS"} description={"TailwindCSS"}/>
+        <FrameworkComponent imageString={lambda} imageAlt={"AWS Lambda" } description={"AWS Lambda"}/>
 
 
       </div>
@@ -171,6 +178,7 @@ function About(){
         <FrameworkComponent imageString={flaskLogo} imageAlt={"Flask"} description={"Flask"}/>
         <FrameworkComponent imageString={expressLogo} imageAlt={"GraphQL"} description={"Express.js"}/>
         <FrameworkComponent imageString={prismaLogo} imageAlt={"PrismaORM"} description={"PrismaORM"}/>
+        <FrameworkComponent imageString={apigw} imageAlt={"AWS API Gateway"} description={"AWS API Gateway"}/>
       </div>
 
       <div className="flex flex-col items-center text-center">
@@ -185,6 +193,8 @@ function About(){
         <FrameworkComponent imageString={oracleLogo} imageAlt={"Oracle"} description={"Oracle"}/>
         <FrameworkComponent imageString={postgresLogo} imageAlt={"PostgreSQL"} description={"PostgreSQL"}/>
         <FrameworkComponent imageString={mongoLogo} imageAlt={"MongoDB"} description={"MongoDB"}/>
+        <FrameworkComponent imageString={dynamoDB} imageAlt={"DynamoDB"} description={"DynamoDB"}/>
+        <FrameworkComponent imageString={s3} imageAlt={"AWS S3"} description={"AWS S3"}/>
       </div>
 
       <div className="flex flex-col items-center text-center">
@@ -200,6 +210,7 @@ function About(){
         <FrameworkComponent imageString={skLearnLogo} imageAlt={"Sci-Kit Learn"} description={"Sci-Kit Learn"}/>
         <FrameworkComponent imageString={kerasLogo} imageAlt={"Keras"} description={"Keras"}/>
         <FrameworkComponent imageString={tensorFlow} imageAlt={"tensorFlow"} description={"TensorFlow"}/>
+        <FrameworkComponent imageString={bedrock} imageAlt={"AWS Bedrock"} description={"AWS Bedrock"}/>
       </div>
 
       <div className="flex flex-col items-center text-center">
@@ -211,7 +222,7 @@ function About(){
 
 
       <div className="flex flex-col lg:flex-row  mb-10">
-        <FrameworkComponent imageString={awsLogo} imageAlt={"AWS"} description={"AWS EC2 & RDS"}/>
+        <FrameworkComponent imageString={awsLogo} imageAlt={"AWS"} description={"AWS"}/>
         <FrameworkComponent imageString={azureLogo} imageAlt={"Microsoft Azure"} description={"Microsoft Azure"}/>
         <FrameworkComponent imageString={atlasLogo} imageAlt={"MongoDB Atlas"} description={"MongoDB Atlas"}/>
         <FrameworkComponent imageString={vercelLogo} imageAlt={"Vercel Cloud"} description={"Vercel Cloud"}/>
