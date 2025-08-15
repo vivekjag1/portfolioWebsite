@@ -19,7 +19,7 @@ import kanban from "../assets/kanban.png"
 
 export default function TACompanionProject(){
   return(
-    <div className=" mt-20 text-center">
+    <div className="text-center">
       <h1 className="mb-5 text-4xl font-bold font-arial">TA Companion</h1>
       <h2 className="mb-5 text-lg font-semibold font-arial">May 2024 - July 2024 </h2>
       <h3 className="mb-5 text-lg italic font-arial"> UI/UX design, Full Stack Frameworks, No SQL Databases,

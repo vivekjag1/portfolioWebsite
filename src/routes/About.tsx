@@ -85,7 +85,7 @@ function About(){
 
   ]
   return(
-    <div className="flex flex-col mt-20 justify-center items-center mb-4">
+    <div className="flex flex-col  justify-center items-center mb-4">
       <h1 className="font-bold text-5xl font-arial mb-10">About me</h1>
       
       <div className='flex flex-col lg:flex-row items-center justify-center ml-2 mr-2 '>

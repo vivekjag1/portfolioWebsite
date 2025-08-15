@@ -5,9 +5,9 @@ import MLBHero from "../assets/MLBHero.png"
 
 function Projects(){
   return(
-    <>
-    <div className="flex flex-row mt-20 justify-center  mb-4">
-      <h1 className="font-bold md:text-5xl font-arial">Projects</h1>
+    <div className = "flex flex-col h-full w-full items-center ">
+    <div className="flex flex-row    mb-10">
+      <h1 className="font-bold text-5xl font-arial">Projects</h1>
     </div>
       <div className="flex flex-col md:flex-row items-center justify-center mb-5">
 
@@ -32,7 +32,7 @@ function Projects(){
         </div>
       </div>
 
-    </>
+    </div>
 
   )
 }
