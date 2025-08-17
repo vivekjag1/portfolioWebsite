@@ -23,7 +23,7 @@ export default function SoftEngProject(){
     <div className="text-center">
       <h1 className="mb-5 text-4xl font-bold font-arial">An application for Brigham and Women's Hospital</h1>
       <h2 className="mb-5 text-lg font-semibold font-arial ">March 2024 - May 2024</h2>
-      <h3 className="mb-5 text-lg italic font-arial "> Agile Methodology, Full stack development, User Authentication,
+      <h3 className="mb-5 text-lg italic font-arial "> Agile Development, Full stack development, User Authentication,
         Version Control, UI/UX design </h3>
       <h3 className="mb-5 text-lg italic font-arial ">Node.js, TypeScript, React.js, TailwindCSS, Express.js, PrismaORM, PostgreSQL,
         Auth0, AWS EC2 and RDS</h3>
@@ -36,12 +36,6 @@ export default function SoftEngProject(){
                   startIcon={<GitHubIcon/>}
                   sx={{"&.MuiButtonBase-root:hover": {backgroundColor: "black"}, width: "14rem", bgcolor: 'black'}}
                   className="mr-4 hover:bg-black"> GitHub Repository</Button>
-          <Button variant="contained" className=" text-white mx-auto" href="https://brighamwomens.com" target="_blank"
-                  startIcon={<LanguageIcon/>} sx={{
-            "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
-            width: "14rem",
-            bgcolor: 'black'
-          }}> Project Website</Button>
           <Button variant="contained" className=" text-white mx-auto" href={userManual} download="SoftEngUserManual"
                   target="_blank" startIcon={<DownloadIcon/>} sx={{
             "&.MuiButtonBase-root:hover": {backgroundColor: "black"},
