@@ -199,7 +199,7 @@ function About(){
       <div className="flex flex-col items-center text-center">
 
         <div className=" flex flex-row text-center justify-center">
-          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Machine & Deep learning </h1>
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Artificial Intelligence & Machine Learning </h1>
         </div>
         <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
       </div>
