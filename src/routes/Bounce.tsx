@@ -32,21 +32,6 @@ export default function Bounce(){
         </Stack>
       </div>
 
-      <div className="md:hidden sm:flex">
-        <div className="flex justify-center">
-        <Stack spacing={2} direction="row" className="items-center mt-5">
-          <Button href="https://digital.wpi.edu/concern/etds/sx61dq722?locale=en" target="_blank" variant="contained"
-                  startIcon={<DescriptionIcon/>}
-                  sx={{"&.MuiButtonBase-root:hover": {backgroundColor: "black"}, width: "14rem", bgcolor: 'black'}}
-                  className="mr-4 hover:bg-black"> Original Thesis</Button>
-          <Button href="https://zplin.me/papers/DirtyCred.pdf" target="_blank" variant="contained"
-                  startIcon={<DescriptionIcon/>}
-                  sx={{"&.MuiButtonBase-root:hover": {backgroundColor: "black"}, width: "14rem", bgcolor: 'black'}}
-                  className="mr-4 hover:bg-black"> Threat Model</Button>
-
-        </Stack>
-        </div>
-      </div>
 
 
       <h1 className="mb-2 mt-10 text-3xl font-bold font-arial">Project Overview</h1>

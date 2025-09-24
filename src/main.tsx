@@ -9,6 +9,18 @@ import SoftEngProject from '../src/routes/SoftEngProject.tsx';
 import TACompanionProject from '../src/routes/TACompanionProject.tsx';
 import MLBClassifier from '../src/routes/MLBClassifier.tsx';
 import Bounce from './routes/Bounce.tsx';
+
+import { Navigate } from 'react-router-dom';
+
+function SillyRedirect() {
+  window.location.replace('https://cnn.com');
+  return null;
+}
+
+// In your route config
+
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -46,6 +58,10 @@ const router = createBrowserRouter([
         path: '/secureMalloc',
         element: <Bounce />,
       },
+      {
+        path:"/silly",
+        element: <SillyRedirect/>
+      }
     ],
   },
 ]);
