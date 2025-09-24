@@ -6,7 +6,6 @@ import finalMapedit from "../assets/finalMapEditPage.png"
 import Button from "@mui/material/Button";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Stack} from "@mui/material";
-import LanguageIcon from '@mui/icons-material/Language';
 import userManual from "../assets/TeamOUserManual.pdf";
 import DownloadIcon from '@mui/icons-material/Download';
 import FrameworkComponent from "../components/FrameworkComponent.tsx";
