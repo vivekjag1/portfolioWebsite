@@ -8,7 +8,7 @@ import Certifications from '../src/routes/Certifications.tsx';
 import SoftEngProject from '../src/routes/SoftEngProject.tsx';
 import TACompanionProject from '../src/routes/TACompanionProject.tsx';
 import MLBClassifier from '../src/routes/MLBClassifier.tsx';
-
+import Bounce from './routes/Bounce.tsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -41,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/MLBClassifier',
         element: <MLBClassifier />,
+      },
+       {
+        path: '/secureMalloc',
+        element: <Bounce />,
       },
     ],
   },

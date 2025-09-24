@@ -34,6 +34,10 @@ import s3 from "../assets/Res_Amazon-Simple-Storage-Service_S3-Standard_48.svg";
 import lambda from "../assets/Arch_AWS-Lambda_64.svg"; 
 import { Separator } from "@/components/ui/separator"
 import vivek_headshot from "../../public/Vivek_J_Headshot.jpg"
+import linux from "../assets/linux.svg"
+import qemu from "../assets/qemu-logo.svg"
+import AOSP from "../assets/AOSP-logo.svg"
+import arm from "../assets/arm-logo.svg"
 
  import FrameworkComponent from "../components/FrameworkComponent.tsx";
 function About(){
@@ -152,6 +156,21 @@ function About(){
         <FrameworkComponent imageString={javaLogo} imageAlt={"Java"} description={"Java"}/>
         <FrameworkComponent imageString={pythonLogo} imageAlt={"Python"} description={"Python"}/>
 
+
+      </div>
+
+
+       <div className="flex flex-col items-center text-center">
+        <div className=" flex flex-row text-center justify-center">
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Operating Systems and Cybersecurity tools</h1>
+        </div>
+        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
+      </div>
+      <div className="flex flex-col lg:flex-row  mb-10">
+        <FrameworkComponent imageString={linux} imageAlt={"Linux Kernel"} description={"Linux Kernel"}/>
+        <FrameworkComponent imageString={qemu} imageAlt={"QEMU"} description={"QEMU"}/>
+        <FrameworkComponent imageString={AOSP} imageAlt={"AOSP"} description={"AOSP"}/>
+        <FrameworkComponent imageString={arm} imageAlt={"ARM MTE"} description={"ARM MTE"}/>
 
       </div>
 
