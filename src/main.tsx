@@ -10,7 +10,6 @@ import TACompanionProject from '../src/routes/TACompanionProject.tsx';
 import MLBClassifier from '../src/routes/MLBClassifier.tsx';
 import Bounce from './routes/Bounce.tsx';
 
-import { Navigate } from 'react-router-dom';
 
 function SillyRedirect() {
   window.location.replace('https://cnn.com');
