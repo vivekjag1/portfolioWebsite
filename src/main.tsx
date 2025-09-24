@@ -11,12 +11,6 @@ import MLBClassifier from '../src/routes/MLBClassifier.tsx';
 import Bounce from './routes/Bounce.tsx';
 
 
-function SillyRedirect() {
-  window.location.replace('https://cnn.com');
-  return null;
-}
-
-// In your route config
 
 
 
@@ -57,10 +51,7 @@ const router = createBrowserRouter([
         path: '/secureMalloc',
         element: <Bounce />,
       },
-      {
-        path:"/silly",
-        element: <SillyRedirect/>
-      }
+     
     ],
   },
 ]);

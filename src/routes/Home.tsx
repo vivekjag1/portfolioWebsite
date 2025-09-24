@@ -21,7 +21,7 @@ function Home(){
                       I'm a senior at Worcester Polytechnic Institute (WPI) majoring in Computer Science.
                       My interests include Embedded Systems, Computer Networks, and Cybersecurity. Use the links below to learn more about me and my interests!
                     </h1>
-                    <div className="hidden md:flex justify-center">
+                    <div className="flex justify-center">
                     <Stack spacing={2} direction="row" className="items-center mt-7">
                       <Link to="/about">
                         <Button  variant="contained"
