@@ -1,6 +1,4 @@
-import Button from "@mui/material/Button";
-import DescriptionIcon from '@mui/icons-material/Description';
-import { Stack} from "@mui/material";
+
 import FrameworkComponent from "../components/FrameworkComponent.tsx";
 
 import bounce from "../assets/bounce-image-full.png"
