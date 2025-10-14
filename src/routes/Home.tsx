@@ -18,8 +18,9 @@ function Home(){
                     />
                     <br></br>
                     <h1 className = "text-black font-semibold text-2xl font-arial  ml-5 mr-5">
-                      I'm a senior at Worcester Polytechnic Institute (WPI) majoring in Computer Science.
-                      My interests include Embedded Systems, Computer Networks, and Cybersecurity. Use the links below to learn more about me and my interests!
+                      I'm a senior at Worcester Polytechnic Institute (WPI) majoring in Computer Science with a concentration in Cybersecurity.
+                      My interests include Kernel Development, System Hardening, and Distributed Systems.
+                      Use the links below to learn more about me and my interests!
                     </h1>
                     <div className="flex justify-center">
                     <Stack spacing={2} direction="row" className="items-center mt-7">

@@ -47,15 +47,15 @@ function About(){
       id: 1,
       title: "Student - Worcester Polytechnic Institute",
       location: "Worcester, Massachusetts",
-      description: "Bachelor of Science in Computer Science.",
-      date: "August 2022 - May 2026",
+      description: "Bachelor and Master of Science in Computer Science.",
+      date: "August 2022 - May 2026 (Bachelor's), August 2024 - December 2026 (Masters)",
       icon: <SchoolIcon/>,
     },
     {
       id: 2,
-      title: " Software Engineering Intern - Waters Corporation",
+      title: "Software Engineering Intern - Waters Corporation",
       location: "Milford, Massachusetts",
-      description: "As a Software Engineering Intern for Waters, I developed a Retrieval Augmented Generation (RAG) AI chatbot to enhance the customer support experience for Waters customers.",
+      description: "Developed a Retrieval Augmented Generation (RAG) AI chatbot to enhance the customer support experience for Waters customers.",
       date: "June 2025 - August 2025",
       icon: <WorkIcon/>,
     },
@@ -102,10 +102,9 @@ function About(){
           
         </div>
         <p className=" lg:max-w-[30vw] ml-10 text-black  text-2xl font-arial ">
-                I'm currently pursuing a Bachelor of Science in Computer Science at Worcester Polytechnic Institute,
-                with a concentration in systems development.
-                I'm primarily interested in the intersection between software and hardware, which has led me to focus 
-                my education on operating systems, computer networks, and cybersecurity. 
+               I am pursuing both a Bachelor’s and Master’s degree in Computer Science at Worcester Polytechnic Institute, 
+               with a concentration in Cybersecurity. 
+               My interests lie at the intersection of software and hardware, driving my focus on operating systems, computer networks, and cybersecurity.
         </p>
       
        
@@ -162,7 +161,8 @@ function About(){
 
        <div className="flex flex-col items-center text-center">
         <div className=" flex flex-row text-center justify-center">
-          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Operating Systems and Cybersecurity tools</h1>
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Systems Engineering · Kernel Development · Emulation
+</h1>
         </div>
         <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
       </div>
@@ -171,8 +171,26 @@ function About(){
         <FrameworkComponent imageString={qemu} imageAlt={"QEMU"} description={"QEMU"}/>
         <FrameworkComponent imageString={AOSP} imageAlt={"AOSP"} description={"AOSP"}/>
         <FrameworkComponent imageString={arm} imageAlt={"ARM MTE"} description={"ARM MTE"}/>
+        <FrameworkComponent imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
 
       </div>
+
+       <div className="flex flex-col items-center text-center">
+
+        <div className=" flex flex-row text-center justify-center">
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Artificial Intelligence · Machine Learning </h1>
+        </div>
+        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
+      </div>
+
+
+      <div className="flex flex-col lg:flex-row  mb-10">
+        <FrameworkComponent imageString={skLearnLogo} imageAlt={"Sci-Kit Learn"} description={"Sci-Kit Learn"}/>
+        <FrameworkComponent imageString={kerasLogo} imageAlt={"Keras"} description={"Keras"}/>
+        <FrameworkComponent imageString={tensorFlow} imageAlt={"tensorFlow"} description={"TensorFlow"}/>
+        <FrameworkComponent imageString={bedrock} imageAlt={"AWS Bedrock"} description={"AWS Bedrock"}/>
+      </div>
+
 
 
       <div className="flex flex-col items-center text-center">
@@ -215,25 +233,10 @@ function About(){
         <FrameworkComponent imageString={s3} imageAlt={"AWS S3"} description={"AWS S3"}/>
       </div>
 
-      <div className="flex flex-col items-center text-center">
-
-        <div className=" flex flex-row text-center justify-center">
-          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Artificial Intelligence & Machine Learning </h1>
-        </div>
-        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
-      </div>
-
-
-      <div className="flex flex-col lg:flex-row  mb-10">
-        <FrameworkComponent imageString={skLearnLogo} imageAlt={"Sci-Kit Learn"} description={"Sci-Kit Learn"}/>
-        <FrameworkComponent imageString={kerasLogo} imageAlt={"Keras"} description={"Keras"}/>
-        <FrameworkComponent imageString={tensorFlow} imageAlt={"tensorFlow"} description={"TensorFlow"}/>
-        <FrameworkComponent imageString={bedrock} imageAlt={"AWS Bedrock"} description={"AWS Bedrock"}/>
-      </div>
-
+     
       <div className="flex flex-col items-center text-center">
         <div className=" flex flex-row text-center justify-center">
-          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Cloud Computing & Containers</h1>
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Cloud Platforms</h1>
         </div>
         <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
       </div>
@@ -244,7 +247,6 @@ function About(){
         <FrameworkComponent imageString={azureLogo} imageAlt={"Microsoft Azure"} description={"Microsoft Azure"}/>
         <FrameworkComponent imageString={atlasLogo} imageAlt={"MongoDB Atlas"} description={"MongoDB Atlas"}/>
         <FrameworkComponent imageString={vercelLogo} imageAlt={"Vercel Cloud"} description={"Vercel Cloud"}/>
-        <FrameworkComponent imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
       </div>
 
 
