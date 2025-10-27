@@ -104,12 +104,6 @@ export default function Bounce(){
 
       We are also conducting rigorous profiling and testing using Kunit and SimplePerf. This led us to realize the overhead associated with generating random numbers, 
       and led us to switch to a hardware based PRNG provided by ARM. 
-
-
-
-
-
-
     </p>
     <br></br>
 
