@@ -14,12 +14,11 @@ function Home(){
           <img src={vivekHeadshot} alt = "Vivek Jagadeesh" className="  max-h-[75vh] mt-5  overflow-hidden"/>
         </div>
         <div className = "flex flex-col  items-center justify-center  h-max md:max-w-[50vw]   ">
-                    <TypeAnimation className="text-black font-mono font-bold text-4xl md:text-5xl lg:text-6xl cursor-hidden" sequence={["Hello, World!"]}
-                    />
+                    <TypeAnimation className="text-black font-mono font-bold text-4xl md:text-5xl lg:text-6xl cursor-hidden" sequence={["Hello, World!"]}/>
                     <br></br>
                     <h1 className = "text-black font-semibold text-2xl font-arial  ml-5 mr-5">
                       I'm a senior at Worcester Polytechnic Institute (WPI) majoring in Computer Science with a concentration in Cybersecurity.
-                      My interests include Kernel Development, System Hardening, and Distributed Systems.
+                      My interests include Kernel Development, System Hardening, and Vulnerability Research.
                       Use the links below to learn more about me and my interests!
                     </h1>
                     <div className="flex justify-center">
@@ -43,18 +42,6 @@ function Home(){
         </div>
                  
     </div>
-
-
-
-
-
-
-
-
- 
-
-
-
   )
 }
 
