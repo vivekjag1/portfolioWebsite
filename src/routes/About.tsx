@@ -2,7 +2,6 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-//import secondVivekHeadshot from "../assets/Vivek-Headshot-Updated.jpg";
 import typescriptLogo from "../assets/TypeScript.svg";
 import CLogo from "../assets/CLogo.svg";
 import CPPLogo from "../assets/CPP.svg";
@@ -89,8 +88,8 @@ function About(){
 
   ]
   return(
-    <div className="flex flex-col  justify-center items-center mb-4">
-      <h1 className="font-bold text-5xl font-arial mb-10">About me</h1>
+    <div className="flex flex-col  justify-center items-center mb-4 text-white">
+      <h1 className="font-bold text-5xl font-arial mb-10 ">About me</h1>
       
       <div className='flex flex-col lg:flex-row items-center justify-center ml-2 mr-2 '>
         <div className="items-center justify-center flex  col-span-1  mb-5 ">
@@ -101,10 +100,10 @@ function About(){
           </div>
           
         </div>
-        <p className=" lg:max-w-[30vw] ml-10 text-black  text-2xl font-arial ">
+        <p className=" lg:max-w-[30vw] ml-10 text-white  text-2xl font-arial ">
                I am pursuing both a Bachelor’s and Master’s degree in Computer Science at Worcester Polytechnic Institute, 
                with a concentration in Cybersecurity. 
-               My interests lie at the intersection of software and hardware, driving my focus on operating systems, computer networks, and cybersecurity.
+               My research interests lie at the intersection of software and hardware, driving my focus on operating systems, computer networks, and cybersecurity.
         </p>
       
        
@@ -115,7 +114,7 @@ function About(){
           Experience
         </h1>
       </div>
-      <VerticalTimeline className="text-black">
+      <VerticalTimeline className="text-white">
         {
           experiences.map(exp => {
             return (
@@ -123,8 +122,9 @@ function About(){
                 key={exp.id}
                 date={exp.date}
                 icon={exp.icon}
-                contentStyle={{background: '#E2E8F0', color: '#333'}}
-                contentArrowStyle={{borderRight: '7px solid  black'}}
+                dateClassName='text-white'
+                contentStyle={{background: 'white', color: '#333'}}
+                contentArrowStyle={{borderRight: '7px solid  white'}}
                 iconStyle={{background: 'black', color: 'white'}}
                 className=" rounded-xl  p-4  mx-4"
               >
@@ -146,7 +146,7 @@ function About(){
         <div className=" flex flex-row text-center justify-center">
           <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Programming Languages</h1>
         </div>
-        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
+        <Separator className="w-full mb-5 bg-white h-[.25rem]"/>
       </div>
       <div className="flex flex-col lg:flex-row  mb-10">
         <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
@@ -164,7 +164,7 @@ function About(){
           <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Systems Engineering · Kernel Development · Emulation
 </h1>
         </div>
-        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
+        <Separator className="w-full mb-5 bg-white h-[.25rem]"/>
       </div>
       <div className="flex flex-col lg:flex-row  mb-10">
         <FrameworkComponent imageString={linux} imageAlt={"Linux Kernel"} description={"Linux Kernel"}/>
@@ -180,7 +180,7 @@ function About(){
         <div className=" flex flex-row text-center justify-center">
           <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Artificial Intelligence · Machine Learning </h1>
         </div>
-        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
+        <Separator className="w-full mb-5 bg-white h-[.25rem]"/>
       </div>
 
 
@@ -197,7 +197,7 @@ function About(){
         <div className=" flex flex-row text-center justify-center">
           <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Software Frameworks</h1>
         </div>
-        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
+        <Separator className="w-full mb-5 bg-white h-[.25rem]"/>
       </div>
 
       <div className="flex flex-col lg:flex-row lg:mb-3 ">
@@ -221,7 +221,7 @@ function About(){
         <div className=" flex flex-row text-center justify-center">
           <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Database Management Systems</h1>
         </div>
-        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
+        <Separator className="w-full mb-5 bg-white h-[.25rem]"/>
       </div>
 
 
@@ -238,7 +238,7 @@ function About(){
         <div className=" flex flex-row text-center justify-center">
           <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Cloud Platforms</h1>
         </div>
-        <Separator className="w-full mb-5 bg-black h-[.25rem]"/>
+        <Separator className="w-full mb-5 bg-white h-[.25rem]"/>
       </div>
 
 

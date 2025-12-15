@@ -10,7 +10,7 @@ import dockerLogo from "../assets/docker.svg"
 
 export default function Bounce(){
   return(
-    <div className="  text-center">
+    <div className="  text-center text-white">
       <h1 className="mb-5 text-4xl text-center font-bold font-arial">Secure Memory Allocator for Linux</h1>
       <h2 className="mb-5 text-lg font-semibold">August 2025 - Present </h2>
       <h3 className="mb-5 text-lg italic"> System Hardening, Operating Systems, Memory Allocation, Kernel Development, Cybersecurity Research </h3>
