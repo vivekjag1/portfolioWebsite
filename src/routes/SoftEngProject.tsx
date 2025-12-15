@@ -19,7 +19,7 @@ import prismaLogo from "../assets/prismaLogo.png";
 import aws from "../assets/aws.svg";
 export default function SoftEngProject(){
   return(
-    <div className="text-center">
+    <div className="text-center text-white">
       <h1 className="mb-5 text-4xl font-bold font-arial">An application for Brigham and Women's Hospital</h1>
       <h2 className="mb-5 text-lg font-semibold font-arial ">March 2024 - May 2024</h2>
       <h3 className="mb-5 text-lg italic font-arial "> Agile Development, Full stack development, User Authentication,

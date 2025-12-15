@@ -12,7 +12,7 @@ export const FrameworkComponent = (props:FrameworkProps) => {
       <div style={{background: '#E2E8F0'}} className="flex flex-col  items-center justify-center  rounded-2xl h-[11.75rem] w-[11.75rem] ">
         <div className="items-center justify-center">
           <img src={props.imageString} alt={props.imageAlt} className="w-[8rem] h-[8rem] justify-center "/>
-          <p className="mt-2 text-center italic">{props.description}</p>
+          <p className="mt-2 text-center italic text-black">{props.description}</p>
         </div>
 
       </div>
