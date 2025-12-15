@@ -10,9 +10,6 @@ export default function NavBar(){
   const handleClickX = () => setMobileOpen(!mobileOpen);
 
   return(
-    // 1. Add background color here (e.g., bg-black, bg-gray-900, or a specific color)
-    // 2. Ensure z-index is high (z-[999] is fine) and 'sticky' is present.
-    // I'm using a placeholder dark color (bg-[#123B32]) to match the darkest part of your gradient.
     <div className=" top-0 z-[999]"> 
 
       <ContactModal isOpen={contactModalOpen} setOpen={setContactModalOpen}/>
@@ -38,7 +35,7 @@ export default function NavBar(){
           </ul>
         </div>
         <div className = "flex flex-row lg:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
-          {mobileOpen? <IoMdClose size={30} className=" h-max"/> : <RxHamburgerMenu size = {30} className = " h-max" />}
+          {mobileOpen? <IoMdClose size={30} className=" text-white h-max"/> : <RxHamburgerMenu size = {30} className = "text-white h-max" />}
         </div>
         
         {/* Mobile Menu (unchanged) */}
@@ -48,7 +45,7 @@ export default function NavBar(){
           `}
         >
           <ul className={`${
-            mobileOpen ? 'text-white opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-y-full'} transition-transform absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center font-arial text-2xl
+            mobileOpen ? 'text-black opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-y-full'} transition-transform absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center font-arial text-2xl
           }`}>
             <IoMdClose onClick={handleClickX} size={30} className=" absolute right-5 top-5 h-max"/>
             <Link to="/" onClick={handleClickX}>
