@@ -47,7 +47,7 @@ function About(){
       title: "Student - Worcester Polytechnic Institute",
       location: "Worcester, Massachusetts",
       description: "Bachelor and Master of Science in Computer Science.",
-      date: "August 2022 - May 2026 (Bachelor's), August 2024 - December 2026 (Masters)",
+      date: "August 2022 - May 2026 (Bachelor's), August 2024 - May 2027 (Masters)",
       icon: <SchoolIcon/>,
     },
     {

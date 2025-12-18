@@ -43,7 +43,7 @@ function Home(){
                         <Button variant="contained"
                           startIcon={<PersonIcon />}
                           sx={{
-                            "&.MuiButtonBase-root:hover": { backgroundColor: "white" },
+                            "&.MuiButtonBase-root:hover": { backgroundColor: "black" },
                             width: "10rem",
                             bgcolor: "black",
                             color: "white"  
