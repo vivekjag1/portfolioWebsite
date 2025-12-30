@@ -17,14 +17,14 @@ interface ModalProps{
 }
 export const ContactModal = (props:ModalProps) => {
   return(
-    <div className="flex flex-row items-center font-black font-arial rounded-2xl">
+    <div className="flex flex-row items-center font-black font-arial rounded-2xl z-[999]">
 
-      <Dialog open={props.isOpen} onOpenChange={() => props.setOpen(!props.isOpen)}>
+      <Dialog open={props.isOpen} onOpenChange={props.setOpen}>
         <div className="hidden">
           <DialogTitle>Contact Vivek</DialogTitle>
         </div>
 
-        <DialogContent>
+        <DialogContent className="z-[9999]">
           <h1 className="text-3xl font-arial text-center">Lets Connect!</h1>
           <DialogHeader className="flex items-center  font-arial text-3xl font-bold">
             <DialogDescription className ="text-lg text-left text-black font-arial font-semibold">

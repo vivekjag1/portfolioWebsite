@@ -12,7 +12,7 @@ export default function NavBar(){
   return(
     <div className=" top-0 z-[999]"> 
 
-      <ContactModal isOpen={contactModalOpen} setOpen={setContactModalOpen}/>
+      <ContactModal isOpen={contactModalOpen} setOpen={(setContactModalOpen)}/>
       <div className = "flex flex-row items-center justify-between w-full p-5">
         <a className = "flex items-center" href="/">
           {/* <img src = {shellFull} alt = "shellClipart" className=" mr-2 mt h-8"/> */}
@@ -29,7 +29,11 @@ export default function NavBar(){
             <Link to="/projects">
               <li>Projects</li>
             </Link>
-            <div onClick={() => setContactModalOpen(true)} className="cursor-pointer">
+            <div onClick={() => {
+                  setMobileOpen(false);
+                  setContactModalOpen(true);
+
+            }} className="cursor-pointer">
               Contact Me
             </div>
           </ul>
@@ -57,7 +61,10 @@ export default function NavBar(){
             <Link to="/projects" onClick={handleClickX}>
               <li>Projects</li>
             </Link>
-            <div onClick={() => setContactModalOpen(true)} className="cursor-pointer">
+            <div onClick={() => {
+              setMobileOpen(false); 
+              setContactModalOpen(true); 
+              }} className="cursor-pointer">
               Contact Me
             </div>
           </ul>
