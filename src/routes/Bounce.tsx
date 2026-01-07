@@ -10,7 +10,7 @@ import dockerLogo from "../assets/docker.svg"
 
 export default function Bounce(){
   return(
-    <div className="  text-center text-white">
+    <div className="  bg-[#184B40] text-center text-white">
       <h1 className="mb-5 text-4xl text-center font-bold font-arial">Secure Memory Allocator for Linux</h1>
       <h2 className="mb-5 text-lg font-semibold">August 2025 - Present </h2>
       <h3 className="mb-5 text-lg italic"> System Hardening, Operating Systems, Memory Allocation, Kernel Development, Cybersecurity Research </h3>
@@ -26,8 +26,8 @@ export default function Bounce(){
           and two teammates to develop the Bounce Allocator - a secure memory allocator for the Linux Kernel. 
 
           The Bounce Allocator leverages ARM's Memory Tagging Extension (MTE) to mitigate temporal memory 
-          safety errors, such as use-after-free based vulnerabilities like DirtyCred. 
-
+          safety errors in the Linux Kernel. 
+          
           The architecture for the Bounce Allocator was originally proposed by Eris Backer, and our team 
           is extending and implementing it within the Linux Kernel to improve kernel memory safety while ensuring amortized constant allocation time. 
 
@@ -49,9 +49,9 @@ export default function Bounce(){
       <div className="flex flex-row items-center justify-center">
         <p className="text-lg text-left md:w-1/2 ml-5 mr-5">
 
-        The first layer of security provided by the Bounce Allocator leverages ARM's Memory Tagging Extension (MTE), first released in the ARMv8.5 standard. 
+        The first layer of security provided by the Bounce Allocator leverages ARM's Memory Tagging Extension (MTE), which was introduced in the ARMv8.5 standard. 
         MTE defends against use-after-free privilege escalation by embedding a 4-bit tag inside the top byte of pointers and memory locations. When a pointer dereference is performed, 
-        the CPU checks that the tag in the pointer matches the tag in memory before allowing memory access. 
+        the hardware checks that the tag in the pointer matches the tag in memory before allowing memory access. 
     
         In a use-after-free attack, such as DirtyCred, the memory would be re-tagged with a new value when the pointer is freed, preventing the attacker from reading memory using a dangling pointer. 
         Since MTE is a hardware feature, the tag check carries minimal overhead, and does not have to be triggered by developers once the tags are set. 
@@ -74,7 +74,7 @@ export default function Bounce(){
 
          Finally, the Ready Free List holds pointers to un-allocated Bounce Table Entries. This allows for amortized constant memory allocations without traversing the bounce table.
          Additionally, once half of the entries in the ready free list are allocated, the embedded free list is emptied, and all the entries are shuffled randomly using Fisher-Yates shuffle (linear time complexity), which
-         reduces the predictability of memory allocations.
+         reduces the predictability of memory allocations. The size of the ready free list can be tuned to configure the entropy provided by the Bounce Allocator
 
         
 
@@ -102,18 +102,13 @@ export default function Bounce(){
     <p>
 
       The end goal of our project is to contribute the Bounce Allocator to the Linux Kernel, positioning it as the de-facto hardened memory allocator for MTE enabled devices.
-      Our team has currently implemented a  version of the Bounce Allocator on the Pixel 9A's kernel, and is currently conducting an analysis of its performance and overhead. We've modified 
+      Our team has currently implemented a  version of the Bounce Allocator on the Google Pixel 9A, and is currently conducting an analysis of its performance and overhead. We've modified 
       the task and credential structure within the Android kernel to include pointers to bounce tables/entries, ensuring that future developers can take advantage of our design. 
 
-      Additionally, we are evaluating new memory safety techniques, including Apple's Memory Integrity Enforcement, PeTAL, and KASAN. 
-      Our team is also evaluating side-channel attacks against MTE. 
-
-      We are also conducting rigorous profiling and testing using Kunit and SimplePerf. This led us to realize the overhead associated with generating random numbers, 
-      and led us to switch to a hardware based PRNG provided by ARM. 
     </p>
     <br></br>
 
-    <p>In the next weeks and months of this project, we hope to continue developing the kernel space implementation of the bounce allocator, 
+    <p>We hope to continue developing the kernel space implementation of the bounce allocator, 
         and explore the possibility of creating a variant on iOS. 
         Furthermore, we hope to explore additional modifications to increase the security guarantees provided by the bounce allocator. 
         Finally, we hope to learn more about novel memory safety solutions, and incorporate them into the bounce allocator. 

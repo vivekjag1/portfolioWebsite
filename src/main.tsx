@@ -9,6 +9,7 @@ import SoftEngProject from '../src/routes/SoftEngProject.tsx';
 import TACompanionProject from '../src/routes/TACompanionProject.tsx';
 import MLBClassifier from '../src/routes/MLBClassifier.tsx';
 import Bounce from './routes/Bounce.tsx';
+import ResumePage from './routes/Resume.tsx';
 
 
 
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
         path: '/secureMalloc',
         element: <Bounce />,
       },
+      {
+        path:'/resume', 
+        element: <ResumePage/>
+      }
      
     ],
   },

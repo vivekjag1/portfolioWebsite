@@ -29,13 +29,9 @@ export default function NavBar(){
             <Link to="/projects">
               <li>Projects</li>
             </Link>
-            <div onClick={() => {
-                  setMobileOpen(false);
-                  setContactModalOpen(true);
-
-            }} className="cursor-pointer">
-              Contact Me
-            </div>
+             <Link to="/resume">
+              <li>Resume</li>
+            </Link>
           </ul>
         </div>
         <div className = "flex flex-row lg:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
@@ -61,12 +57,9 @@ export default function NavBar(){
             <Link to="/projects" onClick={handleClickX}>
               <li>Projects</li>
             </Link>
-            <div onClick={() => {
-              setMobileOpen(false); 
-              setContactModalOpen(true); 
-              }} className="cursor-pointer">
-              Contact Me
-            </div>
+             <Link to="/resume" onClick={handleClickX}>
+              <li>Resume</li>
+            </Link>
           </ul>
         </div>
         

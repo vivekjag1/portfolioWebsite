@@ -3,11 +3,9 @@ import Button from '@mui/material/Button';
 import PersonIcon from '@mui/icons-material/Person';
 import { Link } from "react-router-dom";
 import {Stack} from "@mui/material";
-
 function Home(){
   return(
-    
-    <div className=" flex flex-col lg:flex-row overflow-hidden items-center justify-center text-left">
+    <div className=" bg-[#184B40] flex flex-col lg:flex-row overflow-hidden items-center justify-center text-left">
       <div className = "flex items-center justify-center  h-fit w-11/12  mb-5 lg:hidden">
           <img src={vivekHeadshot} alt = "Vivek Jagadeesh" className="  max-h-[75vh] mt-5  overflow-hidden"/>
         </div>

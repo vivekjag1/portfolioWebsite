@@ -47,7 +47,7 @@ function About(){
       title: "Student - Worcester Polytechnic Institute",
       location: "Worcester, Massachusetts",
       description: "Bachelor and Master of Science in Computer Science.",
-      date: "August 2022 - May 2026 (Bachelor's), August 2024 - May 2027 (Masters)",
+      date: "August 2022 - May 2026 (Bachelor's), August 2025 - May 2027 (Masters)",
       icon: <SchoolIcon/>,
     },
     {
@@ -88,7 +88,7 @@ function About(){
 
   ]
   return(
-    <div className="flex flex-col  justify-center items-center mb-4 text-white">
+    <div className="bg-[#184B40] flex flex-col  justify-center items-center mb-4 text-white">
       <h1 className="font-bold text-5xl font-arial mb-10 ">About me</h1>
       
       <div className='flex flex-col lg:flex-row items-center justify-center ml-2 mr-2 '>

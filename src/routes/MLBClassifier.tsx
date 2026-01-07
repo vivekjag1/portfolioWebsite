@@ -19,7 +19,7 @@ import dockerLogo from "../assets/docker.svg"
 
 export default function MLBClassifier(){
   return(
-    <div className=" text-white text-center">
+    <div className=" bg-[#184B40] text-white text-center">
       <h1 className="mb-5 text-4xl text-center font-bold font-arial">MLB Classifier</h1>
       <h2 className="mb-5 text-lg font-semibold">July 2024 - August 2024 </h2>
       <h3 className="mb-5 text-lg italic"> Machine/Deep learning model development, Data Set design, CI/CD

@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom"; // Import Outlet to render child rout
 
 function App() {
   return (
-    <div className=" bg-[linear-gradient(135deg,_#123B32,_#1E5B4F)] flex flex-col min-h-screen">
+    <div className=" bg-[#184B40] flex flex-col min-h-screen">
       <NavBar />
       <div className="flex-grow flex  justify-center">
         <Outlet />
