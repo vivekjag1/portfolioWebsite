@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/dialog"
 import DownloadIcon from '@mui/icons-material/Download';
 import Button from "@mui/material/Button";
-import resume from "../assets/Jagadeesh_V_Resume_Oct_2025.pdf";
+import resume from "/Jagadeesh_V_Resume_Oct_2025.pdf";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
