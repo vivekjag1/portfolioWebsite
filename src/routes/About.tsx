@@ -1,8 +1,5 @@
-import SchoolIcon from '@mui/icons-material/School';
-import WorkIcon from '@mui/icons-material/Work';
-import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import typescriptLogo from "../assets/TypeScript.svg";
+import rustLogo from "../assets/rust_logo.svg";
 import CLogo from "../assets/CLogo.svg";
 import CPPLogo from "../assets/CPP.svg";
 import javaLogo from "../assets/Java.svg";
@@ -37,57 +34,11 @@ import linux from "../assets/linux.svg"
 import qemu from "../assets/qemu-logo.svg"
 import AOSP from "../assets/AOSP-logo.svg"
 import arm from "../assets/arm-logo.svg"
-
+import WorkExperience from '@/components/Work.tsx';
  import FrameworkComponent from "../components/FrameworkComponent.tsx";
 function About(){
 
-  const experiences = [
-    {
-      id: 1,
-      title: "Student - Worcester Polytechnic Institute",
-      location: "Worcester, Massachusetts",
-      description: "Bachelor and Master of Science in Computer Science.",
-      date: "August 2022 - May 2026 (Bachelor's), August 2025 - May 2027 (Masters)",
-      icon: <SchoolIcon/>,
-    },
-    {
-      id: 2,
-      title: "Software Engineering Intern - Waters Corporation",
-      location: "Milford, Massachusetts",
-      description: "Developed a Retrieval Augmented Generation (RAG) AI chatbot to enhance the customer support experience for Waters customers.",
-      date: "June 2025 - August 2025",
-      icon: <WorkIcon/>,
-    },
-
-    {
-      id:3,
-      title:"Student Assistant - Worcester Polytechnic Institute Department of Computer Science",
-      location: "Worcester, Massachusetts",
-      description: "As a Student Assistant for WPI's department of Computer Science, I serve as an agile coach and guide teams of four students in developing full stack web applications. I also provide feedback on assignments and collaborate with professors to develop course materials.",
-      date: "May 2024 - Present",
-      icon: <WorkIcon/>
-    },
-    {
-      id:4,
-      title: "Legislative Intern - Massachusetts House of Representatives",
-      location: "Boston, Massachusetts",
-      description: "As a legislative intern for State Representative Adam Scanlon, " +
-        "I was responsible for writing legislative memos, policy recommendations, and communicating with constituents.",
-      date: "June 2021 - June 2022",
-      icon: <WorkIcon/>
-    },
-    {
-      id: 5,
-      title: "Field Intern - Dave Cavell for Congress",
-      location: "Brookline, Massachusetts",
-      description: "As a field intern for Dave Cavell congressional campaign, I was responsible for speaking with members of my community, writing op-eds in support of the candidate, and hosting community events to discuss policies and issues.",
-      date: "June 2020 - September 2020",
-      icon: <WorkIcon/>,
-      textForButton: "Check out my editorial in the Sun Chronicle!"
-    }
-
-  ]
-  return(
+    return(
     <div className="bg-[#184B40] flex flex-col  justify-center items-center mb-4 text-white">
       <h1 className="font-bold text-5xl font-arial mb-10 ">About me</h1>
       
@@ -114,29 +65,8 @@ function About(){
           Experience
         </h1>
       </div>
-      <VerticalTimeline className="text-white">
-        {
-          experiences.map(exp => {
-            return (
-              <VerticalTimelineElement
-                key={exp.id}
-                date={exp.date}
-                icon={exp.icon}
-                dateClassName='text-white'
-                contentStyle={{background: 'white', color: '#333'}}
-                contentArrowStyle={{borderRight: '7px solid  white'}}
-                iconStyle={{background: 'black', color: 'white'}}
-                className=" rounded-xl  p-4  mx-4"
-              >
-                <h3 className="font-bold text-xl">{exp.title}</h3>
-                <h4 className="font-semibold text-l">{exp.location}</h4>
-                <p>{exp.description}</p>
 
-              </VerticalTimelineElement>
-            )
-          })
-        }
-      </VerticalTimeline>
+      <WorkExperience/>
       <div className=" flex flex-row justify-center">
         <h1 className="font-bold text-5xl font-arial">Skills</h1>
       </div>
@@ -149,7 +79,7 @@ function About(){
         <Separator className="w-full mb-5 bg-white h-[.25rem]"/>
       </div>
       <div className="flex flex-col lg:flex-row  mb-10">
-        <FrameworkComponent imageString={typescriptLogo} imageAlt={"TypesScript"} description={"TypeScript"}/>
+        <FrameworkComponent imageString={rustLogo} imageAlt={"Rust"} description={"Rust"}/>
         <FrameworkComponent imageString={CLogo} imageAlt={"C"} description={"C"}/>
         <FrameworkComponent imageString={CPPLogo} imageAlt={"C++"} description={"C++"}/>
         <FrameworkComponent imageString={javaLogo} imageAlt={"Java"} description={"Java"}/>
@@ -169,7 +99,7 @@ function About(){
       <div className="flex flex-col lg:flex-row  mb-10">
         <FrameworkComponent imageString={linux} imageAlt={"Linux Kernel"} description={"Linux Kernel"}/>
         <FrameworkComponent imageString={qemu} imageAlt={"QEMU"} description={"QEMU"}/>
-        <FrameworkComponent imageString={AOSP} imageAlt={"AOSP"} description={"AOSP"}/>
+        <FrameworkComponent imageString={AOSP} imageAlt={"AOSP Tools"} description={"AOSP Tools"}/>
         <FrameworkComponent imageString={arm} imageAlt={"ARM MTE"} description={"ARM MTE"}/>
         <FrameworkComponent imageString={dockerLogo} imageAlt={"Docker"} description={"Docker"}/>
 
@@ -195,7 +125,7 @@ function About(){
 
       <div className="flex flex-col items-center text-center">
         <div className=" flex flex-row text-center justify-center">
-          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Software Frameworks</h1>
+          <h1 className="font-bold text-3xl font-arial mt-4 mb-4">Web Development</h1>
         </div>
         <Separator className="w-full mb-5 bg-white h-[.25rem]"/>
       </div>
