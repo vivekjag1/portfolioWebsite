@@ -1,17 +1,7 @@
-import Button from "@mui/material/Button";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 
-interface Experience {
-  id: number;
-  title: string;
-  location: string;
-  description: string;
-  date: string;
-  icon: JSX.Element;
-  buttonText?: string;
-  buttonLink?: string;
-}
+
 const experiences = [
     {
       id: 1,
