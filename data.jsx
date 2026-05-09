@@ -7,8 +7,8 @@ const PROFILE = {
   location: "Worcester, MA",
   bio: (
     <>
-      I'm a graduate student at <a href="https://wpi.edu">Worcester Polytechnic Institute</a>, studying Cybersecurity and researching systems security in WPI's <a href="https://cake.wpi.edu"> Cake Lab</a>. 
-      Further, I am a Cybersecurity Research Intern at MIT Lincoln Laboratory. 
+      I'm a graduate student at <a href="https://wpi.edu">Worcester Polytechnic Institute</a>, studying cybersecurity and researching systems security in WPI's <a href="https://cake.wpi.edu"> Cake Lab</a>. 
+      I currently work as a Cybersecurity Research Intern at MIT Lincoln Laboratory. 
 
       
     </>
