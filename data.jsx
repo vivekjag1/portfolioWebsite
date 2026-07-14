@@ -1,9 +1,6 @@
-// data.jsx — edit this file to put in your own information.
-// Each section's content lives here. The components that render it are in app.jsx.
-
 const PROFILE = {
   name: "Vivek Jagadeesh",
-  role: "Cybersecurity Graduate Student · WPI",
+  role: "Cybersecurity Graduate Student · Worcester Polytechnic Institute",
   location: "Worcester, MA",
   bio: (
     <>
@@ -17,7 +14,7 @@ const PROFILE = {
 
 const RESEARCH = [
   { title: "Kernel Security", blurb: "Memory safety, system hardening, and runtime defenses in the Linux kernel." },
-  { title: "Networks Security", blurb: "Intrusion detection, traffic analysis, and network security mechanisms." },
+  { title: "Compiler-Based Defenses", blurb: "Adding security instrumentation at compile time, particularly in the Linux kernel" },
   { title: "Applied Cryptography", blurb: "Encryption standards, secure communications, and attack hardening" },
   {title: "Hardware-Based defenses", blurb:"Leveraging hardware-based defenses to enforce security primitives at runtime "}
 
@@ -25,7 +22,7 @@ const RESEARCH = [
 
 const NEWS = [
   { date: "May 2026", tag: "Experience",    body: <>I'm excited to be starting a cybersecurity research internship at MIT Lincoln Laboratory.</> },
-  { date: "May 2026", tag: "Education",    body: <>I graduated from Worcester Polytechnic Institute with a Bachelor of Science in Computer Science with a concentration in cybersecurity.</> },
+  { date: "May 2026", tag: "Education",    body: <>I graduated from Worcester Polytechnic Institute with a Bachelor of Science in Computer Science with a concentration in cybersecurity. I graduated with high distinction</> },
   { date: "May 2026", tag: "Projects",    body: <> Our Major Qualifying Project (MQP), completed with Charles Engler and Nicholas Golparvar, and advised by Professor Robert J. Walls, has been awarded WPI's Provost's MQP Award.</>},
   
 ];
