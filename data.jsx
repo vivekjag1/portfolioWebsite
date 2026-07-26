@@ -5,9 +5,7 @@ const PROFILE = {
   bio: (
     <>
       I'm a graduate student at <a href="https://wpi.edu">Worcester Polytechnic Institute</a>, studying cybersecurity and researching systems security in WPI's <a href="https://cake.wpi.edu"> Cake Lab</a>. 
-      I currently work as a Cybersecurity Research Intern at MIT Lincoln Laboratory. 
-
-      
+      I currently work as a Systems Security Research Intern with <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/secure-resilient-systems-and-technology">group 53 at MIT Lincoln Laboratory</a>. 
     </>
   ),
 };
@@ -75,7 +73,7 @@ const COURSES = [
   { code: "CS 578",  title: "Cryptography & Data Security",            term: "Fall 2025"   },
   { code: "CS 4404",  title: "Networks Security",                      term: "C-term 2025"   },
   { code: "CS 3013", title: "Operating Systems",                       term: "A-term 2023"   },
-  { code: "CS 2011",  title: "Machine Organization and Assembly Language",                    term: "Spring 2026" },
+  { code: "CS 2011",  title: "Machine Organization and Assembly Language",                    term: "D-term 2023" },
   { code: "CS 584",  title: "Design and Analysis of Algorithms",  term: "Fall 2025" },
   { code: "CS 3733",  title: "Software Engineering",              term: "D-term 2024" },
 
