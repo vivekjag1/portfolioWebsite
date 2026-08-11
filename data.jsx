@@ -5,7 +5,7 @@ export const PROFILE = {
   bio: (
     <>
       I'm a graduate student at <a href="https://wpi.edu">Worcester Polytechnic Institute</a>, studying cybersecurity and researching systems security in WPI's <a href="https://cake.wpi.edu"> Cake Lab</a>. 
-      I currently work as a Student Technical Assistant with <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/secure-resilient-systems-and-technology"> Secure Resilient Systems and Technology group at MIT Lincoln Laboratory</a>. 
+      I currently work as a Student Technical Assistant with the <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/secure-resilient-systems-and-technology"> Secure Resilient Systems and Technology group at MIT Lincoln Laboratory</a>. 
     </>
   ),
 };
@@ -19,10 +19,9 @@ export const RESEARCH = [
 ];
 
 export const NEWS = [
-    { date: "Aug 2026", tag: "Experience",    body: <>I'm pleased to be continuing my work at MIT Lincoln Laboratory as a Student Technical Assistant</> },
-
+  { date: "Aug 2026", tag: "Experience",    body: <>I'm pleased to be continuing my work at MIT Lincoln Laboratory as a Student Technical Assistant.</> },
   { date: "May 2026", tag: "Experience",    body: <>I'm excited to be starting a cybersecurity research internship at MIT Lincoln Laboratory.</> },
-  { date: "May 2026", tag: "Education",    body: <>I graduated from Worcester Polytechnic Institute with a Bachelor of Science in Computer Science with a concentration in cybersecurity. I graduated with high distinction</> },
+  { date: "May 2026", tag: "Education",    body: <>I graduated from Worcester Polytechnic Institute with a Bachelor of Science in Computer Science with a concentration in cybersecurity. I graduated with high distinction.</> },
   { date: "May 2026", tag: "Projects",    body: <> Our Major Qualifying Project (MQP), completed with Charles Engler and Nicholas Golparvar, and advised by Professor Robert J. Walls, has been awarded WPI's Provost's MQP Award.</>},
   
 ];
