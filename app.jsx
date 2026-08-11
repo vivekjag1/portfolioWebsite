@@ -1,7 +1,6 @@
-// app.jsx — components, navbar, scroll-spy.
-// Edit data.jsx for content. Edit portfolio.html for colors / fonts / layout vars.
+import React, { useEffect, useState } from "react";
+import { CONTACT, COURSES, EXPERIENCE, NEWS, PROFILE, PROJECTS, RESEARCH } from "./data.jsx";
 
-const { useState, useEffect } = React;
 const SECTIONS = [
   { id: "about",      label: "about" },
   { id: "news",       label: "news" },
@@ -238,7 +237,7 @@ function Footer() {
   );
 }
 
-function App() {
+export default function App() {
   const active = useScrollSpy(SECTIONS.map((s) => s.id), 140);
   return (
     <>
@@ -256,5 +255,3 @@ function App() {
     </>
   );
 }
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
