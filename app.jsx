@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { CONTACT, COURSES, EXPERIENCE, NEWS, PROFILE, PROJECTS, RESEARCH } from "./data.jsx";
 
+const HEADSHOT_URL = new URL("./headshot.jpg", import.meta.url).href;
+
 const SECTIONS = [
   { id: "about",      label: "about" },
   { id: "news",       label: "news" },
@@ -85,7 +87,7 @@ function Hero() {
           style={{ width: "auto", height: "auto", aspectRatio: "auto" }}
         >
         <img
-          src="headshot.jpg"
+          src={HEADSHOT_URL}
           alt="Vivek Jagadeesh"
           style={{ display: "block", maxWidth: "100%", height: "auto" }}
         />

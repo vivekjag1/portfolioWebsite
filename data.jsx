@@ -5,7 +5,7 @@ export const PROFILE = {
   bio: (
     <>
       I'm a graduate student at <a href="https://wpi.edu">Worcester Polytechnic Institute</a>, studying cybersecurity and researching systems security in WPI's <a href="https://cake.wpi.edu"> Cake Lab</a>. 
-      I currently work as a Systems Security Research Intern with <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/secure-resilient-systems-and-technology">group 53 at MIT Lincoln Laboratory</a>. 
+      I currently work as a Student Technical Assistant with <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/secure-resilient-systems-and-technology"> Secure Resilient Systems and Technology group at MIT Lincoln Laboratory</a>. 
     </>
   ),
 };
@@ -19,6 +19,8 @@ export const RESEARCH = [
 ];
 
 export const NEWS = [
+    { date: "Aug 2026", tag: "Experience",    body: <>I'm pleased to be continuing my work at MIT Lincoln Laboratory as a Student Technical Assistant</> },
+
   { date: "May 2026", tag: "Experience",    body: <>I'm excited to be starting a cybersecurity research internship at MIT Lincoln Laboratory.</> },
   { date: "May 2026", tag: "Education",    body: <>I graduated from Worcester Polytechnic Institute with a Bachelor of Science in Computer Science with a concentration in cybersecurity. I graduated with high distinction</> },
   { date: "May 2026", tag: "Projects",    body: <> Our Major Qualifying Project (MQP), completed with Charles Engler and Nicholas Golparvar, and advised by Professor Robert J. Walls, has been awarded WPI's Provost's MQP Award.</>},
@@ -27,12 +29,25 @@ export const NEWS = [
 
 export const EXPERIENCE = [
   {
-    role: "Cybersecurity Research Intern",
+    role: "Student Technical Assistant",
     org: "MIT Lincoln Laboratory",
     where: "Lexington, MA",
-    dates: "May 2026 - Present",
+    dates: "Aug 2026 - Present",
     bullets: [
-      "Group 05-53: Secure Resilient Systems and Technology.",
+      "Contributing to the development of Magnetite, an embedded, Rust-based RTOS built on the seL4 microkernel",
+    ],
+  },
+  {
+    role: "Systems Security Research Intern",
+    org: "MIT Lincoln Laboratory",
+    where: "Lexington, MA",
+    dates: "May 2026 - Aug 2026",
+    bullets: [
+      "Built a Clang-based transpiler to instrument Hardware Assisted Kernel Compartmentalization in the Linux kernel.",
+      "Designed a two-pass AST pipeline using cross-AST imports and targeted transformations for minimal patches.",
+      "Created a regression test suite to compare output against expected patches for instrumentation correctness.",
+      "Instrumented PAC and MTE primitives in kernel source to provide hardware-backed compartment isolation.",
+      "Compartmentalized IPv6 loadable kernel module using the transpiler, validating correctness by exercising the network stack within QEMU and BusyBox"
     ],
   },
   {
@@ -53,7 +68,7 @@ export const EXPERIENCE = [
     role: "Peer Learning Assistant",
     org: "Worcester Polytechnic Institute",
     where: "Worcester, MA",
-    dates: "Aug 2025 – May 2026",
+    dates: "June 2024 – May 2026",
     bullets: [
       "CS 3013 - Operating Systems (C/C++), E Term 2024, A term 2024, A term 2025.",
       "CS 3733 - Software Engineering (JavaScript/Python/Flask), B Term 2024, C Term 2025.",
@@ -65,8 +80,6 @@ export const EXPERIENCE = [
 export const PROJECTS = [
   { name: "Secure Memory Allocator for the Linux Kernel",  year: "2025-Present", desc: "An ARM MTE enabled secure memory allocator that mitigates use-after-free vulnerabilities in the Linux kernel. Designed and implemented prototype in the Linux kernel, running on the Google Pixel 9A.", stack: ["C", "Linux Kernel", "ARM MTE", "Memory Safety", "Kernel Development"]},
   { name: "Smart Grid Security: ANSI PSEM MITM attack simulation",     year: "2025", desc: "A simulation of a Man-in-the-Middle attack against the ANSI Protocol Specification for Electricity Meters (PSEM). Implemented the protocol on Arduino Mega 2560 boards, and performed the MITM attack over UART using a logic analyzer.", stack: ["Arduino", "Networks"], links: [{ label: "github", href: "https://github.com/vivekjag1/Smart-Grid-Security-CS-4404"}]},
-  { name: "CS 3733: A web application for Brigham and Women's Hospital", year: "2024", desc: "A Node.JS application, designed to run on Kiosks at Boston's Brigham and Women's Hospital as part of WPI CS3733 - Software Engineering.", stack: ["TypeScript", "AWS", "React.js"], links: [{ label: "github", href: "https://github.com/vivekjag1/BrighamWomens-CS3733" }] },
-  { name: "MLB Classifier",    year: "2024", desc: "A machine learning application for classifying MLB pitches developed using Next.JS Python Flask, and hosted on AWS EC2 & RDS.", stack: ["AWS", "Scikit Learn", "Machine Learning"], links: [{ label: "github", href: "https://github.com/vivekjag1/MLBStatClassifier" }] },
 ];
 
 export const COURSES = [
@@ -85,3 +98,6 @@ export const CONTACT = [
   { lbl: "linkedin", val: "in/vivek-jagadeesh",  href: "https://www.linkedin.com/in/vivek-jagadeesh/" },
   { lbl: "cv",       val: "resume.pdf",         href: "resume.pdf", download:"resume.pdf" },
 ];
+
+// expose for app.jsx
+Object.assign(window, { PROFILE, RESEARCH, NEWS, EXPERIENCE, PROJECTS, COURSES, CONTACT });
