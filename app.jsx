@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { CONTACT, COURSES, EXPERIENCE, NEWS, PROFILE, PROJECTS, RESEARCH } from "./data.jsx";
 
-const HEADSHOT_URL = new URL("./headshot.jpg", import.meta.url).href;
+const HEADSHOT_URL = new URL("./Jagadeesh_V_Headshot.jpg", import.meta.url).href;
 
 const SECTIONS = [
   { id: "about",      label: "about" },
@@ -81,24 +81,16 @@ function SectionLabel({ children, num }) {
 function Hero() {
   return (
     <section id="about" className="hero">
-        <div
-          className="hero-photo"
-          aria-label="Headshot"
-          style={{ width: "auto", height: "auto", aspectRatio: "auto" }}
-        >
-        <img
-          src={HEADSHOT_URL}
-          alt="Vivek Jagadeesh"
-          style={{ display: "block", maxWidth: "100%", height: "auto" }}
-        />
-</div>
-      <div>
+      <figure className="hero-photo" aria-label="Headshot">
+        <img src={HEADSHOT_URL} alt="Vivek Jagadeesh" loading="eager" decoding="async" />
+      </figure>
+      <div className="hero-text">
         <h1>{PROFILE.name.split(" ")[0]} <em>{PROFILE.name.split(" ").slice(1).join(" ")}</em></h1>
         <p className="role">{PROFILE.role}</p>
         <p className="bio">{PROFILE.bio}</p>
         <div className="hero-meta">
-          <span>{PROFILE.location}</span>
-          <span>{PROFILE.status}</span>
+          {PROFILE.location && <span>{PROFILE.location}</span>}
+          {PROFILE.status && <span>{PROFILE.status}</span>}
         </div>
       </div>
     </section>
@@ -141,6 +133,72 @@ function Research() {
   );
 }
 
+const INLINE_LINK = /\[([^\]]+)\]\(([^)\s]+)\)/g;
+
+const isExternal = (href) => /^(https?:)?\/\//.test(href || "");
+
+function Anchor({ href, className, children }) {
+  return (
+    <a
+      className={className}
+      href={href}
+      target={isExternal(href) ? "_blank" : undefined}
+      rel={isExternal(href) ? "noreferrer" : undefined}
+    >
+      {children}
+    </a>
+  );
+}
+
+/**
+ * Turn markdown-style [label](href) spans in a string into links, leaving the
+ * surrounding text alone, so only part of a bullet needs to be a link.
+ */
+function linkify(text) {
+  if (typeof text !== "string" || !text.includes("](")) return text;
+  const out = [];
+  let last = 0;
+  for (const m of text.matchAll(INLINE_LINK)) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    out.push(
+      <Anchor key={m.index} className="bullet-link" href={m[2]}>{m[1]}</Anchor>
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
+/**
+ * A bullet may be:
+ *   "plain text"                                  -> rendered as-is
+ *   "text with an [inline link](https://...)"      -> only that phrase becomes a link
+ *   <>JSX with <a href="...">inline links</a></>  -> rendered as-is
+ *   { text, href }                                -> whole bullet becomes a link
+ *   { text, links: [{ label, href }] }            -> text followed by labelled links
+ * `text` in the object forms also supports [label](href) spans.
+ */
+function Bullet({ item }) {
+  if (item == null || React.isValidElement(item)) return item;
+  if (typeof item !== "object") return linkify(item);
+  const { text, href, links } = item;
+  const body = href
+    ? <Anchor className="bullet-link" href={href}>{linkify(text)}</Anchor>
+    : linkify(text);
+  return (
+    <>
+      {body}
+      {links?.length > 0 && (
+        <span className="bullet-links">
+          {links.map((l) => (
+            <Anchor key={l.href || l.label} href={l.href}>{l.label}</Anchor>
+          ))}
+        </span>
+      )}
+    </>
+  );
+}
+
 function Experience() {
   return (
     <section id="experience">
@@ -156,7 +214,7 @@ function Experience() {
               <h3>{w.role}</h3>
               <span className="at">@ {w.org}</span>
               {w.bullets?.length > 0 && (
-                <ul>{w.bullets.map((b, j) => <li key={j}>{b}</li>)}</ul>
+                <ul>{w.bullets.map((b, j) => <li key={j}><Bullet item={b} /></li>)}</ul>
               )}
             </div>
           </div>

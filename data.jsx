@@ -12,9 +12,9 @@ export const PROFILE = {
 
 export const RESEARCH = [
   { title: "Kernel Security", blurb: "Memory safety, system hardening, and runtime defenses in the Linux kernel." },
-  { title: "Compiler-Based Defenses", blurb: "Adding security instrumentation at compile time, particularly in the Linux kernel" },
-  { title: "Applied Cryptography", blurb: "Encryption standards, secure communications, and attack hardening" },
-  {title: "Hardware-Based defenses", blurb:"Leveraging hardware-based defenses to enforce security primitives at runtime "}
+  { title: "Binary Reverse Engineering", blurb: "Reversing binaries to analyze source code structure and vulnerabilities." },
+  { title: "Compiler-Based Defenses", blurb: "Adding security instrumentation at compile time, particularly in the Linux kernel." },
+  { title: "Compartmentalization", blurb:"Segmenting legacy software into isolated compartments to enforce least privilege"}
 
 ];
 
@@ -26,6 +26,14 @@ export const NEWS = [
   
 ];
 
+// Each entry in `bullets` may be:
+//   "plain text"
+//   "text with an [inline link](https://...)"   -> only that phrase becomes a link
+//   <>JSX with <a href="...">inline links</a></>
+//   { text: "...", href: "..." }                         -> whole bullet is a link
+//   { text: "...", links: [{ label: "paper", href: "..." }] }  -> labelled links after the text
+// The [label](href) form works anywhere in a bullet string, including the
+// `text` field of the object forms.
 export const EXPERIENCE = [
   {
     role: "Student Technical Assistant",
@@ -42,7 +50,7 @@ export const EXPERIENCE = [
     where: "Lexington, MA",
     dates: "May 2026 - Aug 2026",
     bullets: [
-      "Built a Clang-based transpiler to instrument Hardware Assisted Kernel Compartmentalization in the Linux kernel.",
+      "Built a Clang-based transpiler to instrument [Hardware Assisted Kernel Compartmentalization](https://www.ndss-symposium.org/ndss-paper/auto-draft-257/) in the Linux kernel.",
       "Designed a two-pass AST pipeline using cross-AST imports and targeted transformations for minimal patches.",
       "Created a regression test suite to compare output against expected patches for instrumentation correctness.",
       "Instrumented PAC and MTE primitives in kernel source to provide hardware-backed compartment isolation.",
@@ -77,6 +85,7 @@ export const EXPERIENCE = [
 ];
 
 export const PROJECTS = [
+
   { name: "Secure Memory Allocator for the Linux Kernel",  year: "2025-Present", desc: "An ARM MTE enabled secure memory allocator that mitigates use-after-free vulnerabilities in the Linux kernel. Designed and implemented prototype in the Linux kernel, running on the Google Pixel 9A.", stack: ["C", "Linux Kernel", "ARM MTE", "Memory Safety", "Kernel Development"]},
   { name: "Smart Grid Security: ANSI PSEM MITM attack simulation",     year: "2025", desc: "A simulation of a Man-in-the-Middle attack against the ANSI Protocol Specification for Electricity Meters (PSEM). Implemented the protocol on Arduino Mega 2560 boards, and performed the MITM attack over UART using a logic analyzer.", stack: ["Arduino", "Networks"], links: [{ label: "github", href: "https://github.com/vivekjag1/Smart-Grid-Security-CS-4404"}]},
 ];
