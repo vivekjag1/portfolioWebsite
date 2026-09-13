@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { CONTACT, COURSES, EXPERIENCE, NEWS, PROFILE, PROJECTS, RESEARCH } from "./data.jsx";
+import { CONTACT, EXPERIENCE, NEWS, PROFILE, PROJECTS, RESEARCH } from "./data.jsx";
 
 const HEADSHOT_URL = new URL("./Jagadeesh_V_Headshot.jpg", import.meta.url).href;
 
@@ -8,8 +8,7 @@ const SECTIONS = [
   { id: "news",       label: "news" },
   { id: "research",   label: "interests" },
   { id: "experience", label: "experience" },
-  { id: "projects",   label: "projects" },
-  { id: "courses",    label: "coursework" },
+  { id: "projects",   label: "research" },
   { id: "contact",    label: "contact" },
 ];
 
@@ -227,7 +226,7 @@ function Experience() {
 function Projects() {
   return (
     <section id="projects">
-      <SectionLabel num="04">Projects</SectionLabel>
+      <SectionLabel num="04">Research</SectionLabel>
       <div className="proj-list">
         {PROJECTS.map((p, i) => (
           <article className="proj-item" key={i}>
@@ -253,27 +252,10 @@ function Projects() {
   );
 }
 
-function Coursework() {
-  return (
-    <section id="courses">
-      <SectionLabel num="05">Coursework</SectionLabel>
-      <div className="course-grid">
-        {COURSES.map((c, i) => (
-          <div className="course" key={i}>
-            <div className="code">{c.code}</div>
-            <div className="title">{c.title}</div>
-            <div className="term">{c.term}</div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function Contact() {
   return (
     <section id="contact">
-      <SectionLabel num="06">Contact</SectionLabel>
+      <SectionLabel num="05">Contact</SectionLabel>
       <div className="contact-wrap">
   
         <div className="contact-list">
@@ -308,7 +290,6 @@ export default function App() {
         <Research />
         <Experience />
         <Projects />
-        <Coursework />
         <Contact />
       </main>
       <Footer />

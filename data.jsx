@@ -21,9 +21,8 @@ export const RESEARCH = [
 export const NEWS = [
   { date: "Aug 2026", tag: "Experience",    body: <>I'm pleased to be continuing my work at MIT Lincoln Laboratory as a Student Technical Assistant.</> },
   { date: "May 2026", tag: "Experience",    body: <>I'm excited to be starting a cybersecurity research internship at MIT Lincoln Laboratory.</> },
-  { date: "May 2026", tag: "Education",    body: <>I graduated from Worcester Polytechnic Institute with a Bachelor of Science in Computer Science with a concentration in cybersecurity. I graduated with high distinction.</> },
-  { date: "May 2026", tag: "Projects",    body: <> Our Major Qualifying Project (MQP), completed with Charles Engler and Nicholas Golparvar, and advised by Professor Robert J. Walls, has been awarded WPI's Provost's MQP Award.</>},
-  
+  { date: "May 2026", tag: "Education",    body: <>I graduated from Worcester Polytechnic Institute with a Bachelor of Science in Computer Science. I graduated with high distinction, and earned a concentration in cybersecurity.</> },
+  { date: "May 2026", tag: "Projects",    body: <> My Major Qualifying Project (MQP), completed with Charles Engler and Nicholas Golparvar and advised by Professor Robert J. Walls, has been awarded WPI's Provost's MQP Award for the top undergraduate research project in Computer Science.</>},
 ];
 
 // Each entry in `bullets` may be:
@@ -85,20 +84,21 @@ export const EXPERIENCE = [
 ];
 
 export const PROJECTS = [
-
+  { name: "Compiler-informed decompilation",  year: "2026-Present", desc: "Researching the development of a decompiler which uses knowledge of the original compiler to recover source code effectively ", stack: ["ANGR", "Rust", "Decompilation", "Reverse Engineering"]},
+  { name: "Reverse Engineering course development",  year: "2026-Present", desc: "Developing the curriculum and syllabus for CS 4402: Reverse Engineering at Worcester Polytechnic Institute by researching modern reverse engineering techniques, instructional methodologies, and decompilation and binary analysis tools.", stack: ["Ghidra", "Course Design", "Reverse Engineering"]},
   { name: "Secure Memory Allocator for the Linux Kernel",  year: "2025-Present", desc: "An ARM MTE enabled secure memory allocator that mitigates use-after-free vulnerabilities in the Linux kernel. Designed and implemented prototype in the Linux kernel, running on the Google Pixel 9A.", stack: ["C", "Linux Kernel", "ARM MTE", "Memory Safety", "Kernel Development"]},
   { name: "Smart Grid Security: ANSI PSEM MITM attack simulation",     year: "2025", desc: "A simulation of a Man-in-the-Middle attack against the ANSI Protocol Specification for Electricity Meters (PSEM). Implemented the protocol on Arduino Mega 2560 boards, and performed the MITM attack over UART using a logic analyzer.", stack: ["Arduino", "Networks"], links: [{ label: "github", href: "https://github.com/vivekjag1/Smart-Grid-Security-CS-4404"}]},
 ];
 
-export const COURSES = [
-  { code: "CS 578",  title: "Cryptography & Data Security",            term: "Fall 2025"   },
-  { code: "CS 4404",  title: "Networks Security",                      term: "C-term 2025"   },
-  { code: "CS 3013", title: "Operating Systems",                       term: "A-term 2023"   },
-  { code: "CS 2011",  title: "Machine Organization and Assembly Language",                    term: "D-term 2023" },
-  { code: "CS 584",  title: "Design and Analysis of Algorithms",  term: "Fall 2025" },
-  { code: "CS 3733",  title: "Software Engineering",              term: "D-term 2024" },
+// export const COURSES = [
+//   { code: "CS 578",  title: "Cryptography & Data Security",            term: "Fall 2025"   },
+//   { code: "CS 4404",  title: "Networks Security",                      term: "C-term 2025"   },
+//   { code: "CS 3013", title: "Operating Systems",                       term: "A-term 2023"   },
+//   { code: "CS 2011",  title: "Machine Organization and Assembly Language",                    term: "D-term 2023" },
+//   { code: "CS 584",  title: "Design and Analysis of Algorithms",  term: "Fall 2025" },
+//   { code: "CS 3733",  title: "Software Engineering",              term: "D-term 2024" },
 
-];
+// ];
 
 export const CONTACT = [
   { lbl: "email",    val: "vivekjag1@gmail.com", href: "mailto:vivekjag1@gmail.com" },
@@ -108,4 +108,4 @@ export const CONTACT = [
 ];
 
 // expose for app.jsx
-Object.assign(window, { PROFILE, RESEARCH, NEWS, EXPERIENCE, PROJECTS, COURSES, CONTACT });
+Object.assign(window, { PROFILE, RESEARCH, NEWS, EXPERIENCE, PROJECTS, CONTACT });

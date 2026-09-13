@@ -404,27 +404,6 @@
     .work-meta { padding-top: 0; }
   }
 
-  /* ─── COURSEWORK ─────────────────────────────────────────────── */
-  .course-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
-    gap: 0;
-    border-top: 1px solid var(--line);
-  }
-  .course {
-    padding: 14px 16px;
-    border-bottom: 1px solid var(--line);
-    border-right: 1px solid var(--line);
-    display: flex; flex-direction: column; gap: 4px;
-    min-width: 0;
-  }
-  .course:nth-child(3n) { border-right: 0; }
-  @media (max-width: 820px) { .course { border-right: 0 !important; } }
-  .course .code {
-    font-family: var(--mono); font-size: 11px; color: var(--accent); letter-spacing: 0.06em;
-  }
-  .course .title { font-size: 15px; color: var(--fg); word-break: break-word; }
-  .course .term { font-family: var(--mono); font-size: 11px; color: var(--fg-mute); margin-top: 2px; }
-
   /* ─── CONTACT ────────────────────────────────────────────────── */
   .contact-wrap {
     display: flex; flex-direction: column; gap: 24px; align-items: stretch;
